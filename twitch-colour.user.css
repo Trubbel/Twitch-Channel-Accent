@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.08
+@version     0.0.09
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -57,6 +57,10 @@ var(--ffz-color-accent)
 /* prime loot, notifications, whispers, background-color */
 .ibisXf {
   background-color: var(--ffz-channel-color);
+}
+/* whispers window popup, on hover items */
+.tw-root--theme-dark .whispers-list-item:hover {
+  background-color: var(--ffz-channel-color-30) !important;
 }
 
 /* left side navigation, hover on followed channels */
@@ -147,13 +151,39 @@ var(--ffz-color-accent)
 /* ===== /streamer page */
 
 
+/* ===== streamer chat */
+/* live message chat separator line */
+.live-message-separator-line__hr {
+    border-top: var(--border-width-default) solid var(--ffz-channel-color) !important;
+}
+.eaBtlk {
+    color: var(--ffz-channel-color) !important;
+}
 
+
+
+
+
+
+
+
+
+/* ===== /streamer chat */
 
 
 
 
 
 /* ===== mod view page */
+/* "LIVE"-badge above stream */
+.live-indicator .YoxeW {
+  background-color: var(--ffz-channel-color);
+}
+
+/* current channel viewer count */
+.modview-player-widget__viewcount .gDuHZD {
+    color: var(--ffz-channel-color) !important;
+}
 
 /* ===== mod view page */
 
