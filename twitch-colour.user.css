@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.05
+@version     0.0.06
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -53,6 +53,22 @@ var(--ffz-color-accent)
 .search-tray .YoxeW {
   background-color: var(--ffz-channel-color);
 }
+
+/* prime loot, notifications, whispers, background-color */
+.ibisXf {
+  background-color: var(--ffz-channel-color);
+}
+
+/* left side navigation, hover on followed channels */
+.tw-root--theme-dark .side-nav-card__link:hover {
+  background-color: var(--ffz-channel-color) !important;
+}
+/* left side navigation, hover on followed channels "LIVE"-badge - if experiments is enabled */
+.online-side-nav-channel-tooltip__body--image .tw-media-card-image__corners .YoxeW {
+    background-color: var(--ffz-channel-color);
+}
+
+
 
 
 
