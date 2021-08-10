@@ -45,6 +45,22 @@ var(--ffz-color-accent)
   color: var(--ffz-channel-color) !important;
 }
 
+
+
+
+
+
+
+
+
+/* input, textareas */
+.iXuYMh:focus, .iXuYMh:focus:hover {
+  border-color: var(--ffz-channel-color);
+}
+.iXuYMh:focus::placeholder, .iXuYMh:focus:hover::placeholder {
+  color: var(--ffz-channel-color) !important;
+  opacity: 1 !important;
+}
 /* ===== /streamer page */
 
 
