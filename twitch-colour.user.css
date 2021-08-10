@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.09
+@version     0.0.10
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -84,6 +84,10 @@ var(--ffz-color-accent)
 .channel-info-content .BNeRR [d="M12.5 3.5L8 2L3.5 3.5L2 8L3.5 12.5L8 14L12.5 12.5L14 8L12.5 3.5ZM7.00008 11L11.5 6.5L10 5L7.00008 8L5.5 6.5L4 8L7.00008 11Z"] {
   fill: var(--ffz-channel-color);
 }
+/* verified badge in the about streamer section */
+.about-section__panel .BNeRR [d="M10 2l6 2 2 6-2 6-6 2-6-2-2-6 2-6 6-2zM8.889 13.636l5.43-5.429-1.415-1.414-4.015 4.015-2.015-2.015-1.414 1.414 3.429 3.43z"] {
+  fill: var(--ffz-channel-color);
+}
 
 /* current channel viewer count */
 .kJGhvW {
@@ -98,6 +102,10 @@ var(--ffz-color-accent)
   background-color: var(--ffz-channel-color-30);
 }
 
+/* "NEW"-badge -> "Add your bio and social links. Help your viewers get to know you better" */
+.about-section__panel .ftltSw {
+  background-color: var(--ffz-channel-color);
+}
 
 
 
@@ -108,22 +116,67 @@ var(--ffz-color-accent)
 
 
 
+/* buttons, checkboxes, radio-buttons */
+/* buttons on hover */
+/* buttons on hover */
+.cdnWrb:hover {
+  background-color: var(--ffz-channel-color-30);
+}
+.cdnWrb:hover:active {
+  background-color: var(--ffz-channel-color-30);
+}
+.cdnWrb:active {
+  background-color: var(--ffz-channel-color-30);
+}
 
+.fUKJNe:hover {
+  background-color: var(--ffz-channel-color-30);
+}
+.fUKJNe:hover:active {
+  background-color: var(--ffz-channel-color-30);
+}
+.fUKJNe:active {
+  background-color: var(--ffz-channel-color-30);
+}
 
+.gZBhPi {
+  background-color: var(--ffz-channel-color-30);
+}
+.gZBhPi:hover {
+  background-color: var(--ffz-channel-color-30);
+}
+.gZBhPi:hover:active {
+  background-color: var(--ffz-channel-color-30);
+}
+.gZBhPi:active {
+  background-color: var(--ffz-channel-color-30);
+}
+.dvWyTt:hover {
+  background-color: var(--ffz-channel-color-30);
+}
 
+/* checkboxes */
+.ScToggleInput-sc-796zbf-1:checked + .oHwVV {
+  border-color: var(--ffz-channel-color);
+}
+.ScToggleInput-sc-796zbf-1:checked + .oHwVV::before {
+  border-color: var(--ffz-channel-color);
+}
+.ScToggleInput-sc-796zbf-1:checked + .oHwVV::after {
+  background-color: var(--ffz-channel-color);
+}
+.oHwVV:hover {
+  border-color: var(--ffz-channel-color);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+/* radio-buttons */
+.ScCheckBoxInputBase-sc-1wz0osy-1:checked + .iKUipA::before {
+  background-color: var(--color-background-base);
+  border-color: var(--ffz-channel-color);
+}
+.ScCheckBoxInputBase-sc-1wz0osy-1:checked + .iKUipA::after {
+  background-color: var(--ffz-channel-color);
+}
 
 
 /* input, textareas */
@@ -154,19 +207,31 @@ var(--ffz-color-accent)
 /* ===== streamer chat */
 /* live message chat separator line */
 .live-message-separator-line__hr {
-    border-top: var(--border-width-default) solid var(--ffz-channel-color) !important;
+  border-top: var(--border-width-default) solid var(--ffz-channel-color) !important;
 }
 .eaBtlk {
-    color: var(--ffz-channel-color) !important;
+  color: var(--ffz-channel-color) !important;
+}
+
+/* usercard, add background-color to active tabs */
+.tw-root--theme-dark .viewer-card-mod-drawer-tab--active {
+  background-color: var(--ffz-channel-color-30);
+  box-shadow: 0 calc(var(--border-width-default)*-3) 0 var(--ffz-channel-color) inset;
 }
 
 
 
 
 
-
-
-
+/* chat settings new request indicator */
+.chat-settings-toggle__new-requests-indicator {
+  background-color: var(--ffz-channel-color);
+}
+/* Review Unban Requests "X NEW"-badge */
+.kMobNr {
+  color: var(--color-text-alt);
+  background-color: var(--ffz-channel-color);
+}
 
 /* ===== /streamer chat */
 
@@ -182,10 +247,16 @@ var(--ffz-color-accent)
 
 /* current channel viewer count */
 .modview-player-widget__viewcount .gDuHZD {
-    color: var(--ffz-channel-color) !important;
+  color: var(--ffz-channel-color) !important;
+}
+/* same as above, but in the session widget */
+[data-test-selector="session-widget-viewer-count"] .efDIpy {
+  color: var(--ffz-channel-color) !important;
 }
 
-/* ===== mod view page */
+
+
+/* ===== /mod view page */
 
 
 
