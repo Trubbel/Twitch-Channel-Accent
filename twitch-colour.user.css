@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.04
+@version     0.0.05
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -45,8 +45,14 @@ var(--ffz-color-accent)
   color: var(--ffz-channel-color) !important;
 }
 
-
-
+/* search bar drop down, verified badge */
+.search-tray .BNeRR {
+  fill: var(--ffz-channel-color);
+}
+/* search bar drop down, "LIVE"-badge */
+.search-tray .YoxeW {
+  background-color: var(--ffz-channel-color);
+}
 
 
 
