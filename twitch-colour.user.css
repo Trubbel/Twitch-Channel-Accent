@@ -46,7 +46,7 @@ var(--ffz-color-accent)
 }
 
 /* search bar drop down, verified badge */
-.search-tray .BNeRR {
+.search-tray .BNeRR [d="M10 2l6 2 2 6-2 6-6 2-6-2-2-6 2-6 6-2zM8.889 13.636l5.43-5.429-1.415-1.414-4.015 4.015-2.015-2.015-1.414 1.414 3.429 3.43z"] {
   fill: var(--ffz-channel-color);
 }
 /* search bar drop down, "LIVE"-badge */
