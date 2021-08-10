@@ -1,0 +1,70 @@
+/* ==UserStyle==
+@name        Twitch – Channel Colouring
+@namespace   Trubbel
+@version     0.0.03
+@homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
+@updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
+@author      Trubbel
+==/UserStyle== */
+
+@-moz-document domain("twitch.tv") {
+
+/* needs FFZ to work
+
+var(--ffz-channel-color)
+var(--ffz-channel-color-20)
+var(--ffz-channel-color-30)
+var(--ffz-color-accent)
+*/
+
+/* Twitch logo, top left */
+.top-nav__menu .cmvTeQ {
+  fill: var(--ffz-channel-color);
+}
+
+
+/* ===== following page */
+/* changes the "LIVE"-badge colour on the preview cards, to be the same as their channel accent colour */
+.tw-media-card-image__corners .YoxeW {
+  background-color: var(--color-accent);
+}
+/* ===== /following page */
+
+
+/* ===== streamer page */
+::selection {
+  background-color: var(--ffz-channel-color);
+}
+
+/* navigation links, on hover */
+/* following, browse, etc. */
+.tw-root--theme-dark .navigation-link.active,
+.tw-root--theme-dark .navigation-link:hover,
+.dark-theme .navigation-link.active,
+.dark-theme .navigation-link:hover {
+  color: var(--ffz-channel-color) !important;
+}
+
+/* ===== /streamer page */
+
+
+
+
+
+
+
+
+/* ===== mod view page */
+
+/* ===== mod view page */
+
+
+
+
+
+
+
+
+
+
+}
