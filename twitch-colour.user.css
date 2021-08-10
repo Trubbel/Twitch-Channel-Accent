@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.03
+@version     0.0.04
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -58,6 +58,20 @@ var(--ffz-color-accent)
   border-color: var(--ffz-channel-color);
 }
 .iXuYMh:focus::placeholder, .iXuYMh:focus:hover::placeholder {
+  color: var(--ffz-channel-color) !important;
+  opacity: 1 !important;
+}
+.cGTeWj:focus, .cGTeWj:focus:hover {
+  border-color: var(--ffz-channel-color);
+}
+.cGTeWj:focus::placeholder, .cGTeWj:focus:hover::placeholder {
+  color: var(--ffz-channel-color) !important;
+  opacity: 1 !important;
+}
+.jmiGwb:focus, .jmiGwb:focus:hover {
+  border-color: var(--ffz-channel-color);
+}
+.jmiGwb:focus::placeholder, .jmiGwb:focus:hover::placeholder {
   color: var(--ffz-channel-color) !important;
   opacity: 1 !important;
 }
