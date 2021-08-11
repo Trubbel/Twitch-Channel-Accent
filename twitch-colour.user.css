@@ -67,7 +67,7 @@ var(--ffz-color-accent)
 .tw-root--theme-dark .side-nav-card__link:hover {
   background-color: var(--ffz-channel-color-30) !important;
 }
-/* left side navigation, hover on followed channels "LIVE"-badge - if experiments is enabled */
+/* left side navigation, hover on followed channels "LIVE"-badge - if (vx_left*) experiments is enabled */
 .online-side-nav-channel-tooltip__body--image .tw-media-card-image__corners .YoxeW {
   background-color: var(--ffz-channel-color);
 }
