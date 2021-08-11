@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.12
+@version     0.0.13
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -122,7 +122,6 @@ var(--ffz-color-accent)
 
 /* buttons, checkboxes, radio-buttons */
 /* buttons on hover */
-/* buttons on hover */
 .cdnWrb:hover {
   background-color: var(--ffz-channel-color-30);
 }
@@ -156,6 +155,10 @@ var(--ffz-color-accent)
   background-color: var(--ffz-channel-color-30);
 }
 .dvWyTt:hover {
+  background-color: var(--ffz-channel-color-30);
+}
+/* current active language, background-color */
+.user-menu-language-list .bKIQd {
   background-color: var(--ffz-channel-color-30);
 }
 
@@ -242,6 +245,25 @@ var(--ffz-color-accent)
 }
 /* bits - "Cheering Supports Your Streamer!"-popup, bottom background-color */
 .tw-root--theme-dark .t-bits-card__footer {
+  background-color: var(--ffz-channel-color-30);
+}
+
+
+/* twitch native emote menu */
+/* current active emote tab */
+.emote-picker-tab-item-wrapper__active {
+  border-left: 3px solid var(--ffz-channel-color);
+}
+/* "Frequently Used"-emote tab */
+.emote-picker-tab-item-wrapper__active .BNeRR {
+  fill: var(--ffz-channel-color);
+}
+/* hover on emotes, background-color */
+.tw-root--theme-dark .emote-button__link:hover {
+  background-color: var(--ffz-channel-color-30);
+}
+/* active streamer-emote tab, balloon popup (for "Report X's Emote)"*/
+.tw-root--theme-dark .emote-grid-section__balloon-title {
   background-color: var(--ffz-channel-color-30);
 }
 
@@ -338,7 +360,20 @@ var(--ffz-color-accent)
 }
 
 
-
+/* ffz emote menu */
+/* Chat > Emote Menu > "Use the FrankerFaceZ Emote Menu." */
+/* current active emote tab */
+.ffz-interactable--default.ffz-interactable--selected, .ffz-interactable--default.ffz-interactable--selected.ffz-interactable--hover-enabled:hover:active, .ffz-interactable--default.ffz-interactable--selected.ffz-interactable--hover-forced, .ffz-interactable--default.ffz-interactable--selected:active, .ffz-interactable--default.ffz-interactable--selected[data-focus-visible-added], .tw-root .ffz-interactable--default.ffz-interactable--selected.ffz-interactable--hover-enabled:hover {
+  background-color: var(--ffz-channel-color-30);
+}
+/* hover on emote tabs */
+.ffz-interactable--default.ffz-interactable--hover-forced, .ffz-interactable--default[data-focus-visible-added], .tw-root--hover .ffz-interactable--default.ffz-interactable--hover-enabled:hover {
+  background-color: var(--ffz-channel-color-30);
+}
+/* hover on emotes, background-color */
+.tw-root--theme-dark .emote-picker__emote-link:hover {
+  background-color: var(--ffz-channel-color-30);
+}
 
 
 
