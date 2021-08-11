@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.11
+@version     0.0.12
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -227,6 +227,26 @@ var(--ffz-color-accent)
 
 
 
+/* bits - "Cheering Anonymously"-ghost icon */
+.t-bits-card__contents--anonymous .dcKAIn {
+  fill: var(--ffz-channel-color);
+}
+/* bits - on hover cheer items */
+.tw-root--theme-dark .cheermote-prefix-selector__item-button:focus:not([disabled]), .tw-root--theme-dark .cheermote-prefix-selector__item-button:hover:not([disabled]) {
+  background-color: var(--ffz-channel-color-30);
+  box-shadow: none;
+}
+.tw-root--theme-dark .cheermote-tier-selector__item-button:focus:not([disabled]), .tw-root--theme-dark .cheermote-tier-selector__item-button:hover:not([disabled]) {
+  background-color: var(--ffz-channel-color-30);
+  box-shadow: none;
+}
+/* bits - "Cheering Supports Your Streamer!"-popup, bottom background-color */
+.tw-root--theme-dark .t-bits-card__footer {
+  background-color: var(--ffz-channel-color-30);
+}
+
+
+
 /* chat settings new request indicator */
 .chat-settings-toggle__new-requests-indicator {
   background-color: var(--ffz-channel-color);
@@ -275,6 +295,15 @@ var(--ffz-color-accent)
 
 
 /* ===== addons/extensions */
+/* ffz control center - current active profile, border-color */
+.ffz--profile-row.current {
+  border-left-color: var(--ffz-channel-color);
+}
+/* ffz control center - on hover profile */
+.ffz--profile-row:focus, .ffz--profile-row:hover {
+  background-color: var(--ffz-channel-color-30);
+}
+
 /* ffz control center - input textarea */
 .ffz-input:focus, .ffz-input:focus:hover, .ffz-select:focus, .ffz-select:focus:hover, .ffz-textarea:focus, .ffz-textarea:focus:hover {
   border: var(--border-width-input) solid var(--ffz-channel-color);
@@ -286,19 +315,27 @@ var(--ffz-color-accent)
 
 /* ffz control center - active item */
 .ffz--menu-tree .active > div, .ffz--menu-tree .active > div:hover, .tw-root--theme-dark .ffz--menu-tree .active > div:hover {
-    background-color: var(--ffz-channel-color-30);
+  background-color: var(--ffz-channel-color-30);
 }
 /* ffz control center - hover on item */
 .ffz--menu-tree div:hover {
-    background-color: var(--ffz-channel-color-30);
+  background-color: var(--ffz-channel-color-30);
 }
 
 /* ffz control center - for stuff like "This profile is not active.", "It's dangerous to go at all." etc. */
 .ffz--menu-page .tw-c-background-accent {
-    background-color: var(--ffz-channel-color-30) !important;
+  background-color: var(--ffz-channel-color-30) !important;
 }
 
-
+/* current channel viewer count */
+/* with "Alternative Viewer Count" enabled within ffz */
+/* Channel > Metadata > Alternative Viewer Count */
+.ffz-stat[data-key="viewers"] figure::before {
+  color: var(--ffz-channel-color) !important;
+}
+[data-color="var(--color-text-live)"] .ffz-stat-text {
+  color: var(--ffz-channel-color) !important;
+}
 
 
 
