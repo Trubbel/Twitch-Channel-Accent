@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.10
+@version     0.0.11
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -82,6 +82,10 @@ var(--ffz-color-accent)
 }
 /* verified badge next to the user avatar */
 .channel-info-content .BNeRR [d="M12.5 3.5L8 2L3.5 3.5L2 8L3.5 12.5L8 14L12.5 12.5L14 8L12.5 3.5ZM7.00008 11L11.5 6.5L10 5L7.00008 8L5.5 6.5L4 8L7.00008 11Z"] {
+  fill: var(--ffz-channel-color);
+}
+/* verified badge when on, Home, About, Schedule, Videos-tabs */
+.dcKAIn [d="M10 2l6 2 2 6-2 6-6 2-6-2-2-6 2-6 6-2zM8.889 13.636l5.43-5.429-1.415-1.414-4.015 4.015-2.015-2.015-1.414 1.414 3.429 3.43z"] {
   fill: var(--ffz-channel-color);
 }
 /* verified badge in the about streamer section */
@@ -254,6 +258,15 @@ var(--ffz-color-accent)
   color: var(--ffz-channel-color) !important;
 }
 
+/* widget resizing */
+.mosaic-split:active, .mosaic-split:hover {
+  background-color: var(--ffz-channel-color);
+}
+.mod-view-context-bar__resizer--resizing, .mod-view-context-bar__resizer:hover {
+  background-color: var(--ffz-channel-color);
+}
+
+
 
 
 /* ===== /mod view page */
@@ -261,10 +274,41 @@ var(--ffz-color-accent)
 
 
 
+/* ===== addons/extensions */
+/* ffz control center - input textarea */
+.ffz-input:focus, .ffz-input:focus:hover, .ffz-select:focus, .ffz-select:focus:hover, .ffz-textarea:focus, .ffz-textarea:focus:hover {
+  border: var(--border-width-input) solid var(--ffz-channel-color);
+}
+.ffz-input:focus::placeholder, .ffz-input:focus:hover::placeholder, .ffz-select:focus::placeholder, .ffz-select:focus:hover::placeholder, .ffz-textarea:focus::placeholder, .ffz-textarea:focus:hover::placeholder {
+  color: var(--ffz-channel-color) !important;
+  opacity: 1 !important;
+}
+
+/* ffz control center - active item */
+.ffz--menu-tree .active > div, .ffz--menu-tree .active > div:hover, .tw-root--theme-dark .ffz--menu-tree .active > div:hover {
+    background-color: var(--ffz-channel-color-30);
+}
+/* ffz control center - hover on item */
+.ffz--menu-tree div:hover {
+    background-color: var(--ffz-channel-color-30);
+}
+
+/* ffz control center - for stuff like "This profile is not active.", "It's dangerous to go at all." etc. */
+.ffz--menu-page .tw-c-background-accent {
+    background-color: var(--ffz-channel-color-30) !important;
+}
 
 
 
 
+
+
+
+
+
+
+
+/* ===== /addons/extensions */
 
 
 }
