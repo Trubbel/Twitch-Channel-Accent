@@ -196,24 +196,24 @@ var(--ffz-color-accent)
 
 
 /* input, textareas */
-.iXuYMh:focus, .iXuYMh:focus:hover {
+.eBJFwo:focus, .eBJFwo:focus:hover {
   border-color: var(--ffz-channel-color);
 }
-.iXuYMh:focus::placeholder, .iXuYMh:focus:hover::placeholder {
+.eBJFwo:focus::placeholder, .eBJFwo:focus:hover::placeholder {
   color: var(--ffz-channel-color) !important;
   opacity: 1 !important;
 }
-.cGTeWj:focus, .cGTeWj:focus:hover {
+.XFvNK:focus, .XFvNK:focus:hover {
   border-color: var(--ffz-channel-color);
 }
-.cGTeWj:focus::placeholder, .cGTeWj:focus:hover::placeholder {
+.XFvNK:focus::placeholder, .XFvNK:focus:hover::placeholder {
   color: var(--ffz-channel-color) !important;
   opacity: 1 !important;
 }
-.jmiGwb:focus, .jmiGwb:focus:hover {
+.kYJGMC:focus, .kYJGMC:focus:hover {
   border-color: var(--ffz-channel-color);
 }
-.jmiGwb:focus::placeholder, .jmiGwb:focus:hover::placeholder {
+.kYJGMC:focus::placeholder, .kYJGMC:focus:hover::placeholder {
   color: var(--ffz-channel-color) !important;
   opacity: 1 !important;
 }
