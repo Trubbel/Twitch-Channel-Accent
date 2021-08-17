@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.14
+@version     0.0.15
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -216,6 +216,20 @@ var(--ffz-color-accent)
 .kYJGMC:focus::placeholder, .kYJGMC:focus:hover::placeholder {
   color: var(--ffz-channel-color) !important;
   opacity: 1 !important;
+}
+
+/* Request Unban-popup window */
+/* "Enter a Reason for Your Unban" */
+.cubAjy:focus, .cubAjy:focus:hover {
+  border-color: var(--ffz-channel-color);
+}
+.cubAjy:focus::placeholder, .cubAjy:focus:hover::placeholder {
+  color: var(--ffz-channel-color) !important;
+  opacity: 1 !important;
+}
+/* hint "i"-icon below the textarea */
+.unban-request-form__hint-icon {
+  color: var(--ffz-channel-color);
 }
 /* ===== /streamer page */
 
