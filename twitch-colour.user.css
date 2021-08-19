@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.16
+@version     0.0.17
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -290,6 +290,20 @@ var(--ffz-color-accent)
   background-color: var(--ffz-channel-color-30);
 }
 
+
+/* channel points */
+.community-points-summary .BNeRR {
+  color: var(--ffz-channel-color);
+}
+/* channel points icon in "Rewards & Challenges"-popup */
+.channel-points-icon .BNeRR {
+  color: var(--ffz-channel-color);
+}
+/* "NEW"-badge in "Rewards & Challenges"-popup */
+.reward-list-item .ciyqCe {
+  color: var(--color-text-alt);
+  background-color: var(--ffz-channel-color);
+}
 
 
 /* chat settings new request indicator */
