@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.15
+@version     0.0.16
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -400,7 +400,14 @@ var(--ffz-color-accent)
 
 
 
-
+/* bttv - user dropdown menu, on hover */
+.user-menu-dropdown__main-menu .bttvSettingsDropDown:hover {
+  background-color: var(--ffz-channel-color-30);
+}
+/* bttv - chat settings menu, on hover */
+.chat-settings__popover .bttv-chat-settings .settingButton:hover {
+  background-color: var(--ffz-channel-color-30);
+}
 
 
 /* ===== /addons/extensions */
