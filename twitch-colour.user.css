@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.19
+@version     0.0.20
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -75,6 +75,10 @@ var(--ffz-color-accent)
 .online-side-nav-channel-tooltip__body--image .tw-media-card-image__corners .YoxeW {
   background-color: var(--ffz-channel-color);
 }
+/* left side navigation, hover on current game being played - if (vx_left*) experiments is enabled */
+.tw-root--theme-dark .side-nav-card__link:hover .tw-link:hover {
+  color: var(--ffz-channel-color);
+}
 
 /* "LIVE"-badge on the html player */
 .video-player .YoxeW {
@@ -104,6 +108,10 @@ var(--ffz-color-accent)
 /* verified badge in the about streamer section */
 .about-section__panel .BNeRR [d="M10 2l6 2 2 6-2 6-6 2-6-2-2-6 2-6 6-2zM8.889 13.636l5.43-5.429-1.415-1.414-4.015 4.015-2.015-2.015-1.414 1.414 3.429 3.43z"] {
   fill: var(--ffz-channel-color);
+}
+/* about streamer, social links on hover, arrow colouring */
+.social-media-link__container:hover + .social-media-link__external-link-icon {
+  color: var(--ffz-channel-color);
 }
 
 /* current channel viewer count */
@@ -288,6 +296,23 @@ var(--ffz-color-accent)
 
 
 
+
+
+
+/* Small notification popup above the chat input */
+/* "Animated Emotes can be disabled in Settings" */
+[data-test-selector="chat-private-callout-queue__callout-container"] .dlgPzd {
+  background-color: var(--ffz-channel-color-30) !important;
+}
+
+/* "You scored a Drop! Claim now or go to Inventory" -- Background-color */
+.chat-input .fWWDCN {
+  background-color: var(--ffz-channel-color-30) !important;
+}
+/* "You scored a Drop! Claim now or go to Inventory" -- Progress bar */
+.chat-input [data-a-target="tw-progress-bar-animation"] {
+  background: var(--ffz-channel-color);
+}
 
 
 /* bits - "Cheering Anonymously"-ghost icon */
