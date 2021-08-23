@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.21
+@version     0.0.22
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -409,14 +409,59 @@ var(--ffz-color-accent)
   background-color: var(--ffz-channel-color);
 }
 
+/* mod view, hosting header above player */
+.video-player-hosting-ui__container [data-a-target="hosting-ui-header"] {
+  background-color: var(--ffz-channel-color-30) !important;
+}
+
 /* current channel viewer count */
 .modview-player-widget__viewcount .gDuHZD {
   color: var(--ffz-channel-color) !important;
 }
-/* same as above, but in the session widget */
+
+
+/* widgets */
+/* mod view -- widgets -- "Active Mods"-text-color */
+[data-test-selector="active-mods"] .fpkNHz {
+  color: var(--ffz-channel-color);
+}
+
+/* mod view -- widgets -- whispers (amount of whispers icon) */
+[class="modview-dock-widget__panel"] .cPWHLJ {
+  color: var(--color-text-alt);
+  background-color: var(--ffz-channel-color);
+}
+
+/* mod view -- widgets -- "Reward Requests Queue" -- "All Requests"-background-color */
+.reward-queue-view .BXTpY {
+  background-color: var(--ffz-channel-color-30);
+}
+.BXTpY:hover:active {
+  background-color: var(--ffz-channel-color-30);
+}
+
+/* mod view -- widgets -- "Session"-viewer count text-color */
 [data-test-selector="session-widget-viewer-count"] .efDIpy {
   color: var(--ffz-channel-color) !important;
 }
+
+/* mod view -- widgets -- "Other Channels You Follow (X Live)" */
+[class="modview-dock-widget__panel"] .fhGgsz {
+  color: var(--color-text-alt);
+  background-color: var(--ffz-channel-color);
+}
+/* mod view -- widgets -- "Other Channels You Follow (X Live)" -- "Show offline channels"-text-color */
+[data-test-selector="followed-channels-modded"] .fPiOdK {
+  color: var(--ffz-channel-color) !important;
+}
+
+/* mod view -- widgets -- "Unban Requests" -- "Unban Request Cooldown Icon"-color */
+.unban-requests-list-sidebar-footer__cooldown-icon {
+  color: var(--ffz-channel-color);
+}
+/* /widgets */
+
+
 
 /* widget resizing */
 .mosaic-split:active, .mosaic-split:hover {
@@ -424,6 +469,11 @@ var(--ffz-color-accent)
 }
 .mod-view-context-bar__resizer--resizing, .mod-view-context-bar__resizer:hover {
   background-color: var(--ffz-channel-color);
+}
+
+/* mod view -- "Users In Chat" -- "Refresh User List"-icon color */
+[data-test-selector="chat-viewers__disabled-refresh"] .jhLCRX {
+  fill: var(--ffz-channel-color);
 }
 
 
