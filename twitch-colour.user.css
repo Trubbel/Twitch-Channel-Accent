@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.22
+@version     0.0.23
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -145,7 +145,7 @@ var(--ffz-color-accent)
 }
 
 /* "NEW"-badge -> "Add your bio and social links. Help your viewers get to know you better" */
-.about-section__panel .ftltSw {
+.about-section__panel .ciyqCe {
   background-color: var(--ffz-channel-color);
 }
 
@@ -453,6 +453,21 @@ var(--ffz-color-accent)
 /* mod view -- widgets -- "Other Channels You Follow (X Live)" -- "Show offline channels"-text-color */
 [data-test-selector="followed-channels-modded"] .fPiOdK {
   color: var(--ffz-channel-color) !important;
+}
+
+/* mod view -- widgets -- "What's New & Feedback"-indicator */
+.tw-root--theme-dark .whats-new-button__new-entries-indicator {
+  background-color: var(--ffz-channel-color);
+}
+
+/* mod view -- widgets -- "What's New & Feedback" -- "Watch Tutorial"-highlight component */
+.tw-root--theme-dark .component-highlighter {
+  border-color: var(--ffz-channel-color) !important;
+}
+
+/* mod view -- widgets -- "Activity Feed" -- New Items Highlight */
+.activity-base-list-item__new--dark {
+  background-color: var(--ffz-channel-color-30);
 }
 
 /* mod view -- widgets -- "Unban Requests" -- "Unban Request Cooldown Icon"-color */
