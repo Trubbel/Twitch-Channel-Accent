@@ -536,7 +536,9 @@ var(--ffz-color-accent)
 .right-column__resize-handle-container .krelXX {
   background-color: var(--ffz-channel-color) !important;
 }
-
+.right-column__resize-handle-container .dKmapp {
+  background-color: var(--ffz-channel-color) !important;
+}
 
 
 
