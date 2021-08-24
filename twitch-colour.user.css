@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.23
+@version     0.0.24
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -500,16 +500,16 @@ var(--ffz-color-accent)
 
 
 /* ===== addons/extensions */
-/* ffz control center - current active profile, border-color */
+/* ffz -- control center -- current active profile, border-color */
 .ffz--profile-row.current {
   border-left-color: var(--ffz-channel-color);
 }
-/* ffz control center - on hover profile */
+/* ffz -- control center -- on hover profile */
 .ffz--profile-row:focus, .ffz--profile-row:hover {
   background-color: var(--ffz-channel-color-30);
 }
 
-/* ffz control center - input textarea */
+/* ffz -- control center -- input textarea */
 .ffz-input:focus, .ffz-input:focus:hover, .ffz-select:focus, .ffz-select:focus:hover, .ffz-textarea:focus, .ffz-textarea:focus:hover {
   border: var(--border-width-input) solid var(--ffz-channel-color);
 }
@@ -518,19 +518,27 @@ var(--ffz-color-accent)
   opacity: 1 !important;
 }
 
-/* ffz control center - active item */
+/* ffz -- control center -- active item */
 .ffz--menu-tree .active > div, .ffz--menu-tree .active > div:hover, .tw-root--theme-dark .ffz--menu-tree .active > div:hover {
   background-color: var(--ffz-channel-color-30);
 }
-/* ffz control center - hover on item */
+/* ffz -- control center -- hover on item */
 .ffz--menu-tree div:hover {
   background-color: var(--ffz-channel-color-30);
 }
 
-/* ffz control center - for stuff like "This profile is not active.", "It's dangerous to go at all." etc. */
+/* ffz -- control center -- for stuff like "This profile is not active.", "It's dangerous to go at all." etc. */
 .ffz--menu-page .tw-c-background-accent {
   background-color: var(--ffz-channel-color-30) !important;
 }
+
+/* ffz -- control center -- enabled experiments -- "resizable_chat_column"-color */
+.right-column__resize-handle-container .krelXX {
+  background-color: var(--ffz-channel-color) !important;
+}
+
+
+
 
 /* current channel viewer count */
 /* with "Alternative Viewer Count" enabled within ffz */
@@ -560,11 +568,11 @@ var(--ffz-color-accent)
 
 
 
-/* bttv - user dropdown menu, on hover */
+/* bttv -- user dropdown menu, on hover */
 .user-menu-dropdown__main-menu .bttvSettingsDropDown:hover {
   background-color: var(--ffz-channel-color-30);
 }
-/* bttv - chat settings menu, on hover */
+/* bttv -- chat settings menu, on hover */
 .chat-settings__popover .bttv-chat-settings .settingButton:hover {
   background-color: var(--ffz-channel-color-30);
 }
