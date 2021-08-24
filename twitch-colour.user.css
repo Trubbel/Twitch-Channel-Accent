@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.24
+@version     0.0.25
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -89,6 +89,11 @@ var(--ffz-color-accent)
 .channel-status-info--live {
   background: var(--ffz-channel-color);
 }
+/* Same as above but streamer is offline -- hover on social links */
+.home-offline-hero .xQnrn:hover {
+  color: var(--ffz-channel-color);
+}
+
 /* (below the "LIVE NOW"-badge) "Watch now with X viewers" */
 .home-carousel-info--live.home-carousel-info .jxwNWA {
   color: var(--ffz-channel-color);
@@ -149,6 +154,11 @@ var(--ffz-color-accent)
   background-color: var(--ffz-channel-color);
 }
 
+/* Your own stream page -- Home, About, Schedule, Videos-tabs -- "NEW"-badge - "Customize your channel Update your stream schedule, add your social links, and manage your channel preferences" */
+.home-offline-hero__upsell .ciyqCe {
+  color: var(--color-text-alt);
+  background-color: var(--ffz-channel-color);
+}
 
 /* Subscribe-button -- opened */
 /* Subscribe-button -- opened -- verified badge */
