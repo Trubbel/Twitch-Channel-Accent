@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.26
+@version     0.0.27
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -338,32 +338,66 @@ var(--ffz-color-accent)
 
 
 
+/* Current Streamer -- "Stream Chat" -- "Usercard" -- "Messages" -- Automod Message */
+.automod-message {
+  color: var(--ffz-channel-color) !important;
+  background-color: var(--ffz-channel-color-30);
+}
+/* Current Streamer -- "Stream Chat" -- "Usercard" -- "Messages" -- Automod Message Flagged/Rejected */
+.flagged-message--rejected {
+  border-left: 3px solid var(--ffz-channel-color);
+  background-color: var(--ffz-channel-color-30);
+}
 
 
+/* Current Streamer -- "Stream Chat" -- "Chat Input Tray Opened" -- "Emote Only"-"Followers-Only"-"Message Not Sent"-"Slow Mode"-"Subscribers Only"-chat */
+.chat-input-tray__open .chat-restriction-tray-icon .iFvwlr {
+  fill: var(--ffz-channel-color);
+}
+/* Message Not Sent */
+/* Your message is identical to the one you sent within the last 30 seconds. */
+.chat-input-tray__open .warning-modifier-tray-icon .cMQeyU {
+  fill: var(--ffz-channel-color);
+}
+.chat-input-tray__open .hNHsQv {
+  color: var(--ffz-channel-color) !important;
+}
+.chat-input-tray__open .common-tray-body .ovrFe {
+  color: var(--ffz-channel-color) !important;
+}
+/* Current Streamer -- "Stream Chat" -- "Chat Input Tray Opened" -- "Sub Mode" */
+.chat-input-tray__open .cSGWxZ {
+  color: var(--ffz-channel-color) !important;
+}
+/* Current Streamer -- "Stream Chat" -- "Sub Mode" -- "You can chat in X"-text-color */
+.chat-input [data-test-selector="chat-input-buttons-container"] .ixQLCM {
+  color: var(--ffz-channel-color) !important;
+}
 
-/* Small notification popup above the chat input */
-/* "Animated Emotes can be disabled in Settings" */
+
+/* Current Streamer -- "Stream Chat" -- "Animated Emotes can be disabled in Settings" */
 [data-test-selector="chat-private-callout-queue__callout-container"] .dlgPzd {
   background-color: var(--ffz-channel-color-30) !important;
 }
 
 
-/* When you unlock a Reward with channel points, it looks the same as below */
-/* "You scored a Drop! Claim now or go to Inventory" -- Background-color */
+/* Current Streamer -- "Stream Chat" -- "You scored a Drop! Claim now or go to Inventory" -- Background-color */
+/* Current Streamer -- "Stream Chat" -- "Unlocked Channel Point Rewards" -- Background-color */
 .chat-input .fWWDCN {
   background-color: var(--ffz-channel-color-30) !important;
 }
-/* "You scored a Drop! Claim now or go to Inventory" -- Progress bar */
+/* Current Streamer -- "Stream Chat" -- "You scored a Drop! Claim now or go to Inventory" -- Progress bar */
+/* Current Streamer -- "Stream Chat" -- "Unlocked Channel Point Rewards" -- Progress bar */
 .chat-input [data-a-target="tw-progress-bar-animation"] {
   background: var(--ffz-channel-color);
 }
 
 
-/* bits - "Cheering Anonymously"-ghost icon */
+/* Current Streamer -- "Stream Chat" -- "Cheering Supports Your Streamer!" -- "Cheering Anonymously"-Ghost Icon */
 .t-bits-card__contents--anonymous .dcKAIn {
   fill: var(--ffz-channel-color);
 }
-/* bits - on hover cheer items */
+/* Current Streamer -- "Stream Chat" -- "Cheering Supports Your Streamer!" -- hover on items */
 .tw-root--theme-dark .cheermote-prefix-selector__item-button:focus:not([disabled]), .tw-root--theme-dark .cheermote-prefix-selector__item-button:hover:not([disabled]) {
   background-color: var(--ffz-channel-color-30);
   box-shadow: none;
@@ -372,7 +406,7 @@ var(--ffz-color-accent)
   background-color: var(--ffz-channel-color-30);
   box-shadow: none;
 }
-/* bits - "Cheering Supports Your Streamer!"-popup, bottom background-color */
+/* Current Streamer -- "Stream Chat" -- "Cheering Supports Your Streamer!"-bottom-background-color */
 .tw-root--theme-dark .t-bits-card__footer {
   background-color: var(--ffz-channel-color-30);
 }
@@ -407,6 +441,10 @@ var(--ffz-color-accent)
 /* Current Streamer -- "Stream Chat" -- "Channel Points" -- "Rewards & Challenges" -- Channel Points "NEW"-badge */
 .reward-list-item .ciyqCe {
   color: var(--color-text-alt);
+  background-color: var(--ffz-channel-color);
+}
+/* Current Streamer -- "Stream Chat" -- "Channel Points" -- "Rewards & Challenges" -- "Community Goals Item -- 100% Raised" */
+.community-goals-list-item__fill {
   background-color: var(--ffz-channel-color);
 }
 
