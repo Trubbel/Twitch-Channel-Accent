@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.25
+@version     0.0.26
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -56,6 +56,10 @@ var(--ffz-color-accent)
 /* search bar drop down, "LIVE"-badge */
 .search-tray .YoxeW {
   background-color: var(--ffz-channel-color);
+}
+/* search bar drop down, search item color */
+.tw-root--theme-dark .search-item__history {
+  color: var(--ffz-channel-color) !important;
 }
 
 /* prime loot, notifications, whispers, background-color */
@@ -151,6 +155,7 @@ var(--ffz-color-accent)
 
 /* "NEW"-badge -> "Add your bio and social links. Help your viewers get to know you better" */
 .about-section__panel .ciyqCe {
+  color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
 
@@ -307,7 +312,13 @@ var(--ffz-color-accent)
 
 
 /* ===== streamer chat */
-/* live message chat separator line */
+
+/* Current Streamer -- "Stream Chat" -- "Gift a Sub now to be #1!" & "Cheer now to be #1!"-text color */
+[data-test-selector="empty-leaderboard-item-test-selector"] {
+  color: var(--ffz-channel-color) !important;
+}
+
+/* Current Streamer -- "Stream Chat" -- "Live Chat Message Separator Line" */
 .live-message-separator-line__hr {
   border-top: var(--border-width-default) solid var(--ffz-channel-color) !important;
 }
@@ -315,7 +326,11 @@ var(--ffz-color-accent)
   color: var(--ffz-channel-color) !important;
 }
 
-/* usercard, add background-color to active tabs */
+
+
+
+
+/* Current Streamer -- "Stream Chat" -- "Usercard" -- Background-color to Active Tabs */
 .tw-root--theme-dark .viewer-card-mod-drawer-tab--active {
   background-color: var(--ffz-channel-color-30);
   box-shadow: 0 calc(var(--border-width-default)*-3) 0 var(--ffz-channel-color) inset;
@@ -363,49 +378,62 @@ var(--ffz-color-accent)
 }
 
 
-/* twitch native emote menu */
-/* current active emote tab */
+/* Current Streamer -- "Stream Chat" -- "Twitch Native Emote Menu" -- Current Active Emote Tab */
 .emote-picker-tab-item-wrapper__active {
   border-left: 3px solid var(--ffz-channel-color);
 }
-/* "Frequently Used"-emote tab */
+/* Current Streamer -- "Stream Chat" -- "Twitch Native Emote Menu" -- "Frequently Used"-emote tab */
 .emote-picker-tab-item-wrapper__active .BNeRR {
   fill: var(--ffz-channel-color);
 }
-/* hover on emotes, background-color */
+/* Current Streamer -- "Stream Chat" -- "Twitch Native Emote Menu" -- hover on emotes, background-color */
 .tw-root--theme-dark .emote-button__link:hover {
   background-color: var(--ffz-channel-color-30);
 }
-/* active streamer-emote tab, balloon popup (for "Report X's Emote)"*/
+/* Current Streamer -- "Stream Chat" -- "Twitch Native Emote Menu" -- active streamer-emote tab, balloon popup (for "Report X's Emote)" */
 .tw-root--theme-dark .emote-grid-section__balloon-title {
   background-color: var(--ffz-channel-color-30);
 }
 
 
-/* channel points */
+/* Current Streamer -- "Stream Chat" -- "Channel Points" */
 .community-points-summary .BNeRR {
   color: var(--ffz-channel-color);
 }
-/* channel points icon in "Rewards & Challenges"-popup */
+/* Current Streamer -- "Stream Chat" -- "Channel Points" -- "Rewards & Challenges" -- Channel Points Icon */
 .channel-points-icon .BNeRR {
   color: var(--ffz-channel-color);
 }
-/* "NEW"-badge in "Rewards & Challenges"-popup */
+/* Current Streamer -- "Stream Chat" -- "Channel Points" -- "Rewards & Challenges" -- Channel Points "NEW"-badge */
 .reward-list-item .ciyqCe {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
 
 
-/* chat settings new request indicator */
+/* Current Streamer -- "Stream Chat" -- "Chat Settings" -- "Chat Identity" -- Badge-border-color */
+.edit-appearance__badge-chooser--selected--thick {
+  border-color: var(--ffz-channel-color);
+}
+.edit-appearance__static-badge {
+  border: 2px solid var(--ffz-channel-color);
+}
+
+/* Current Streamer -- "Stream Chat" -- "Chat Settings" -- New Request Indicator */
 .chat-settings-toggle__new-requests-indicator {
   background-color: var(--ffz-channel-color);
 }
-/* Review Unban Requests "X NEW"-badge */
-.kMobNr {
+/* Current Streamer -- "Stream Chat" -- "Chat Settings" -- "Tasks" -- "Review Unban Requests" -- "X NEW"-badge */
+.chat-settings__content .dGLRmS {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
+
+/* Current Streamer -- "Stream Chat" -- "Chat Settings" -- "Switch to Non-Mod Settings"-text-color */
+[data-test-selector="moderation-mode-toggle-selector"] .biBebI {
+  color: var(--ffz-channel-color);
+}
+
 
 /* ===== /streamer chat */
 
