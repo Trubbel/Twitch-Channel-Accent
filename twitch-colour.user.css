@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.27
+@version     0.0.28
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -97,6 +97,16 @@ var(--ffz-color-accent)
 .home-offline-hero .xQnrn:hover {
   color: var(--ffz-channel-color);
 }
+
+/* Current Streamer -- Home - About - Schedule - Videos - Chat-active-color */
+.home-header-sticky .WQbWe {
+  color: var(--ffz-channel-color) !important;
+}
+/* Current Streamer -- Home - About - Schedule - Videos - Chat-hover-color */
+.home-header-sticky .ccxfwO:hover {
+  color: var(--ffz-channel-color);
+}
+
 
 /* (below the "LIVE NOW"-badge) "Watch now with X viewers" */
 .home-carousel-info--live.home-carousel-info .jxwNWA {
