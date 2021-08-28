@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.28
+@version     0.0.29
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -36,12 +36,17 @@ var(--ffz-color-accent)
 
 
 /* ===== streamer page */
+/* Current Streamer -- "Cookie Preferences" > "We value your privacy."-background-color */
+.hnxsEt .consent-banner {
+  background-color: var(--ffz-channel-color-30) !important;
+}
+
+/* Current Streamer -- Selected Elements Colouring */
 ::selection {
   background-color: var(--ffz-channel-color);
 }
 
-/* navigation links, on hover */
-/* following, browse, etc. */
+/* Current Streamer -- Navigation Links -- on hover */
 .tw-root--theme-dark .navigation-link.active,
 .tw-root--theme-dark .navigation-link:hover,
 .dark-theme .navigation-link.active,
@@ -49,37 +54,37 @@ var(--ffz-color-accent)
   color: var(--ffz-channel-color) !important;
 }
 
-/* search bar drop down, verified badge */
+/* Current Streamer -- Search Bar -- Drop Down Menu -- Verified Badge-color */
 .search-tray .BNeRR [d="M10 2l6 2 2 6-2 6-6 2-6-2-2-6 2-6 6-2zM8.889 13.636l5.43-5.429-1.415-1.414-4.015 4.015-2.015-2.015-1.414 1.414 3.429 3.43z"] {
   fill: var(--ffz-channel-color);
 }
-/* search bar drop down, "LIVE"-badge */
+/* Current Streamer -- Search Bar -- Drop Down Menu -- "LIVE"-badge-color */
 .search-tray .YoxeW {
   background-color: var(--ffz-channel-color);
 }
-/* search bar drop down, search item color */
+/* Current Streamer -- Search Bar -- Drop Down Menu -- Search Item Color */
 .tw-root--theme-dark .search-item__history {
   color: var(--ffz-channel-color) !important;
 }
 
-/* prime loot, notifications, whispers, background-color */
+/* Current Streamer -- Notifications -- Prime Loot, Notifications, Whispers -- Background-color */
 .ibisXf {
   background-color: var(--ffz-channel-color);
 }
-/* whispers window popup, on hover items */
+/* Current Streamer -- Notifications -- Whispers -- Whispers Popup -- on Hover Items */
 .tw-root--theme-dark .whispers-list-item:hover {
   background-color: var(--ffz-channel-color-30) !important;
 }
 
-/* left side navigation, hover on followed channels */
+/* Current Streamer -- "Followed Channels" -- on Hover */
 .tw-root--theme-dark .side-nav-card__link:hover {
   background-color: var(--ffz-channel-color-30) !important;
 }
-/* left side navigation, hover on followed channels "LIVE"-badge - if (vx_left*) experiments is enabled */
+/* Current Streamer -- "Followed Channels" -- on Hover -- "LIVE"-badge - {if (vx_left*) experiments are enabled} */
 .online-side-nav-channel-tooltip__body--image .tw-media-card-image__corners .YoxeW {
   background-color: var(--ffz-channel-color);
 }
-/* left side navigation, hover on current game being played - if (vx_left*) experiments is enabled */
+/* Current Streamer -- "Followed Channels" -- Hover on Current Game Played - {if (vx_left*) experiments are enabled} */
 .tw-root--theme-dark .side-nav-card__link:hover .tw-link:hover {
   color: var(--ffz-channel-color);
 }
@@ -125,19 +130,54 @@ var(--ffz-color-accent)
   fill: var(--ffz-channel-color);
 }
 
-/* Streamer "Videos"-tab */
-/* Streamer "Videos"-tab -- "Filter by"-dropdown & "Top"-dropdown, current selected */
+
+/* Current Streamer -- "Schedule" -- Stream Schedule Times */
+.stream-schedule__header .kMWmAK {
+  background-color: var(--ffz-channel-color-30) !important;
+  border-color: var(--ffz-channel-color) !important;
+}
+/* Current Streamer -- "Schedule" -- Stream Schedule Current Day */
+.stream-schedule-week .dBdrZB {
+  background-color: var(--ffz-channel-color-30) !important;
+}
+/* Current Streamer -- "Schedule" -- Stream Schedule Current Day */
+[data-a-target="stream-schedule-day"].ITYph {
+  background-color: var(--ffz-channel-color-20) !important;
+}
+/* Current Streamer -- "Schedule" -- Stream Schedule Segment */
+.stream-schedule-day .stream-schedule-segment--element {
+  background-color: var(--ffz-channel-color-20) !important;
+}
+/* Current Streamer -- "Schedule" -- Stream Schedule Segment -- "Live Now" "LIVE"-badge */
+.stream-schedule-segment--element .YoxeW {
+  background-color: var(--ffz-channel-color);
+}
+/* Current Streamer -- "Schedule" -- Stream Schedule Segment -- "Live Now" -- Popout "LIVE"-badge */
+[data-test-selector="segment-popover-content"] .YoxeW {
+  background-color: var(--ffz-channel-color);
+}
+/* Current Streamer -- "Schedule" -- Stream Schedule Segment -- Thumbnail -- Shadow left of Thumbnail */
+.stream-schedule-segment--fade::after {
+  background: linear-gradient(270deg,var(--ffz-channel-color-20) 10%,transparent 30%);
+}
+
+
+/* Current Streamer -- "Videos" -- "Filter by"-dropdown & "Top"-dropdown, current selected */
 [data-test-selector="balloon-inside-click-detector"] .bbvncg {
   background-color: var(--ffz-channel-color-30);
 }
-/* Streamer "Videos"-tab -- "Top"-dropdown, time filter options */
+/* Current Streamer -- "Videos" -- "Top"-dropdown, time filter options */
 [data-test-selector="balloon-inside-click-detector"] .ciyqCe {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
-/* Streamer "Videos"-tab -- Recent broadcasts -- Chapters button */
+/* Current Streamer -- "Videos" -- Recent broadcasts -- Chapters button */
 [data-test-selector="toggle-balloon-wrapper__mouse-enter-detector"] .fhGgsz {
   color: var(--color-text-alt);
+  background-color: var(--ffz-channel-color);
+}
+/* Current Streamer -- "Videos" - VOD Progress Bar-color */
+[data-a-target="preview-card-image-link"] [data-a-target="tw-progress-bar-animation"] {
   background-color: var(--ffz-channel-color);
 }
 
@@ -210,8 +250,10 @@ var(--ffz-color-accent)
 }
 
 
-
-
+/* Continue Sub - X Days Remaining -- opened -- "Your Subscription" -- "Tier Y Gifted Subscription"-star-icon */
+.support-panel [data-test-selector="CurrentSubscriptionIcon"] .dcKAIn {
+  fill: var(--ffz-channel-color);
+}
 
 
 
@@ -346,8 +388,6 @@ var(--ffz-color-accent)
   box-shadow: 0 calc(var(--border-width-default)*-3) 0 var(--ffz-channel-color) inset;
 }
 
-
-
 /* Current Streamer -- "Stream Chat" -- "Usercard" -- "Messages" -- Automod Message */
 .automod-message {
   color: var(--ffz-channel-color) !important;
@@ -357,6 +397,11 @@ var(--ffz-color-accent)
 .flagged-message--rejected {
   border-left: 3px solid var(--ffz-channel-color);
   background-color: var(--ffz-channel-color-30);
+}
+
+/* Current Streamer -- "Stream Chat" -- "Usercard" -- "⚠ Unable to fetch account"-text-color */
+.viewer-card__empty .viewer-card__account-status-banner {
+  color: var(--ffz-channel-color);
 }
 
 
@@ -400,6 +445,12 @@ var(--ffz-color-accent)
 /* Current Streamer -- "Stream Chat" -- "Unlocked Channel Point Rewards" -- Progress bar */
 .chat-input [data-a-target="tw-progress-bar-animation"] {
   background: var(--ffz-channel-color);
+}
+
+
+/* Current Streamer -- "Stream Chat" -- Chant Popup */
+.chat-input .erNLda {
+  background-color: var(--ffz-channel-color-30) !important;
 }
 
 
@@ -490,7 +541,7 @@ var(--ffz-color-accent)
 
 
 /* ===== mod view page */
-/* "LIVE"-badge above stream */
+/* Current Streamer -- Mod View -- "LIVE"-badge Above Stream */
 .live-indicator .YoxeW {
   background-color: var(--ffz-channel-color);
 }
