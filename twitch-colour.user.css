@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.32
+@version     0.0.33
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -468,6 +468,16 @@ var(--ffz-color-accent)
 /* Current Streamer -- "Stream Chat" -- Pinned Above Chat-background-color */
 .pinned-callout.goHOHS {
   background-color: var(--ffz-channel-color-20) !important;
+}
+
+/* Current Streamer -- "Stream Chat" -- "It's your X month sub anniversary!" -- Pinned in Chat -- Background-color */
+.stream-chat .dCIGFL .hXdwOk {
+  background-color: var(--ffz-channel-color-20);
+}
+/* Current Streamer -- "Stream Chat" -- "It's your X month sub anniversary!" -- Pinned in Chat -- Star-background-border-color */
+.stream-chat .dCIGFL .hXdwOk .inline-private-callout-line__icon {
+  background-color: transparent !important;
+  border-color: var(--ffz-channel-color) !important;
 }
 
 
