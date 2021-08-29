@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.29
+@version     0.0.30
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -379,6 +379,10 @@ var(--ffz-color-accent)
 }
 
 
+/* Current Streamer -- "Stream Chat" -- "Only visible to you" -- "It's your X month sub anniversary!"-star-icon */
+.chat-room .jhLCRX {
+  fill: var(--ffz-channel-color);
+}
 
 
 
@@ -445,6 +449,16 @@ var(--ffz-color-accent)
 /* Current Streamer -- "Stream Chat" -- "Unlocked Channel Point Rewards" -- Progress bar */
 .chat-input [data-a-target="tw-progress-bar-animation"] {
   background: var(--ffz-channel-color);
+}
+
+
+/* Current Streamer -- "Stream Chat" -- "It's your X month sub anniversary!"-star-icon */
+.chat-input .jhLCRX {
+  fill: var(--ffz-channel-color);
+}
+/* Current Streamer -- "Stream Chat" -- "It's your X month sub anniversary!"-star-background-color */
+.tw-root--theme-dark .chat-private-callout__icon--overlay {
+  background: transparent;
 }
 
 
