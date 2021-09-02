@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.33
+@version     0.0.34
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -211,6 +211,19 @@ var(--ffz-color-accent)
 
 /* Your own stream page -- Home, About, Schedule, Videos-tabs -- "NEW"-badge - "Customize your channel Update your stream schedule, add your social links, and manage your channel preferences" */
 .home-offline-hero__upsell .ciyqCe {
+  color: var(--color-text-alt);
+  background-color: var(--ffz-channel-color);
+}
+
+
+/* Subscribe, Resubscribe & Gift a Sub-button -- opened */
+/* Subscribe, Resubscribe & Gift a Sub-button -- opened -- "X's Sub Goal" */
+.support-panel .goal_widget__progress_bar {
+  background-color: var(--ffz-channel-color);
+}
+
+/* Subscribe, Resubscribe & Gift a Sub-button -- opened -- Promo-badge (SUBtember) */
+.support-panel .ciyqCe {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
@@ -748,6 +761,12 @@ var(--ffz-color-accent)
 .chat-settings__popover .bttv-chat-settings .settingButton:hover {
   background-color: var(--ffz-channel-color-30);
 }
+
+/* bttv -- mod view -- chat header panel settings menu, on hover */
+.bttv-chat-settings .settingButton:hover {
+  background-color: var(--ffz-channel-color-30);
+}
+
 
 
 /* ===== /addons/extensions */
