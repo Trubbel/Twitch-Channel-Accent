@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.41
+@version     0.0.42
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -322,26 +322,29 @@ var(--ffz-color-accent)
 
 
 
-/* checkboxes */
-.ScToggleInput-sc-796zbf-1:checked + .oHwVV {
+/* hover on checkbox */
+/* off, on hover border-color */
+.ObwAb:hover {
   border-color: var(--ffz-channel-color);
 }
-.ScToggleInput-sc-796zbf-1:checked + .oHwVV::before {
+/* toggled on border-color */
+.ScToggleInput-sc-796zbf-1:checked + .ObwAb.ObwAb {
   border-color: var(--ffz-channel-color);
 }
-.ScToggleInput-sc-796zbf-1:checked + .oHwVV::after {
+/* toggled on, checkbox button */
+.ScToggleInput-sc-796zbf-1:checked + .ObwAb.ObwAb::after {
   background-color: var(--ffz-channel-color);
 }
-.oHwVV:hover {
+/* toggled on, ✔️ icon */
+.ScToggleInput-sc-796zbf-1:checked + .ObwAb.ObwAb::before {
   border-color: var(--ffz-channel-color);
 }
 
-/* radio-buttons */
-.ScCheckBoxInputBase-sc-1wz0osy-1:checked + .iKUipA::before {
-  background-color: var(--color-background-base);
+/* toggled radio button */
+.ScCheckBoxInputBase-sc-1wz0osy-1:checked + .kEnAMA.kEnAMA::before {
   border-color: var(--ffz-channel-color);
 }
-.ScCheckBoxInputBase-sc-1wz0osy-1:checked + .iKUipA::after {
+.ScCheckBoxInputBase-sc-1wz0osy-1:checked + .kEnAMA.kEnAMA::after {
   background-color: var(--ffz-channel-color);
 }
 
@@ -689,6 +692,18 @@ var(--ffz-color-accent)
   color: var(--ffz-channel-color);
 }
 
+/* ffz -- control center -- checkboxes */
+.ffz-checkbox__input:checked + .ffz-checkbox__label::before, .ffz-checkbox__input:indeterminate + .ffz-checkbox__label::before {
+  border: var(--border-width-input) solid var(--ffz-channel-color);
+}
+.ffz-checkbox__input:checked + .ffz-checkbox__label::after, .ffz-checkbox__input:indeterminate + .ffz-checkbox__label::after {
+ background-color: var(--ffz-channel-color);
+}
+/* same as above, on hover */
+.ffz-checkbox__input:hover:checked + .ffz-checkbox__label::before, .ffz-checkbox__input:hover:indeterminate + .ffz-checkbox__label::before {
+  border: var(--border-width-input) solid var(--ffz-channel-color);
+}
+
 /* ffz -- control center -- input textarea */
 .ffz-input:focus, .ffz-input:focus:hover, .ffz-select:focus, .ffz-select:focus:hover, .ffz-textarea:focus, .ffz-textarea:focus:hover {
   border: var(--border-width-input) solid var(--ffz-channel-color);
@@ -720,6 +735,10 @@ var(--ffz-color-accent)
   background-color: var(--ffz-channel-color) !important;
 }
 
+/* fzz -- Stream Chat -- Mentions - On hover */
+.ffz--reply-mention:hover, .ffz--reply-mention:focus {
+  background-color: var(--ffz-channel-color-30);
+}
 
 
 /* current channel viewer count */
