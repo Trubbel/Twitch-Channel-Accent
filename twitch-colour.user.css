@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.35
+@version     0.0.36
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -199,7 +199,7 @@ var(--ffz-color-accent)
 }
 
 /* tags below stream, on hover */
-.hiSYRQ:not(:disabled):hover {
+.fHyEvT:not(:disabled):hover {
   background-color: var(--ffz-channel-color-30);
 }
 
@@ -230,7 +230,7 @@ var(--ffz-color-accent)
 
 /* Subscribe-button -- opened */
 /* Subscribe-button -- opened -- verified badge */
-.support-panel .cMQeyU [d="M10 2l6 2 2 6-2 6-6 2-6-2-2-6 2-6 6-2zM8.889 13.636l5.43-5.429-1.415-1.414-4.015 4.015-2.015-2.015-1.414 1.414 3.429 3.43z"] {
+.support-panel .eOJUoR [d="M10 2l6 2 2 6-2 6-6 2-6-2-2-6 2-6 6-2zM8.889 13.636l5.43-5.429-1.415-1.414-4.015 4.015-2.015-2.015-1.414 1.414 3.429 3.43z"] {
   fill: var(--ffz-channel-color);
 }
 /* "SAVE"-badge left of "Save by subscribing for longer" */
@@ -246,7 +246,7 @@ var(--ffz-color-accent)
 
 /* Gift a Sub-button -- opened */
 /* Gift a Sub-button -- opened -- "Gift a specific viewer"-text color */
-.support-panel .fRayLE {
+.support-panel .bUeMDh {
   color: var(--ffz-channel-color);
 }
 
@@ -262,9 +262,8 @@ var(--ffz-color-accent)
   background: var(--ffz-channel-color);
 }
 
-
 /* Continue Sub - X Days Remaining -- opened -- "Your Subscription" -- "Tier Y Gifted Subscription"-star-icon */
-.support-panel [data-test-selector="CurrentSubscriptionIcon"] .dcKAIn {
+.support-panel [data-test-selector="CurrentSubscriptionIcon"] .kcrFWs {
   fill: var(--ffz-channel-color);
 }
 
@@ -588,7 +587,7 @@ var(--ffz-color-accent)
 
 /* ===== mod view page */
 /* Current Streamer -- Mod View -- "LIVE"-badge Above Stream */
-.live-indicator .YoxeW {
+.live-indicator .hwlNix {
   background-color: var(--ffz-channel-color);
 }
 
@@ -597,25 +596,30 @@ var(--ffz-color-accent)
   background-color: var(--ffz-channel-color-30) !important;
 }
 
-/* current channel viewer count */
-.modview-player-widget__viewcount .gDuHZD {
+/* Current Streamer -- Mod View -- Viewer Count */
+.modview-player-widget__viewcount .fgVyFY {
   color: var(--ffz-channel-color) !important;
 }
 
 
 /* widgets */
-/* mod view -- widgets -- "Active Mods"-text-color */
+/* Current Streamer -- Mod View -- widgets -- "Session"-viewer count text-color */
+[data-test-selector="session-widget-viewer-count"] .XDxkB {
+  color: var(--ffz-channel-color) !important;
+}
+
+/* Current Streamer -- Mod View -- widgets -- "Active Mods"-text-color */
 [data-test-selector="active-mods"] .fpkNHz {
   color: var(--ffz-channel-color);
 }
 
-/* mod view -- widgets -- whispers (amount of whispers icon) */
+/* Current Streamer -- Mod View -- widgets -- whispers (amount of whispers icon) */
 [class="modview-dock-widget__panel"] .cPWHLJ {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
 
-/* mod view -- widgets -- "Reward Requests Queue" -- "All Requests"-background-color */
+/* Current Streamer -- Mod View -- widgets -- "Reward Requests Queue" -- "All Requests"-background-color */
 .reward-queue-view .BXTpY {
   background-color: var(--ffz-channel-color-30);
 }
@@ -623,37 +627,32 @@ var(--ffz-color-accent)
   background-color: var(--ffz-channel-color-30);
 }
 
-/* mod view -- widgets -- "Session"-viewer count text-color */
-[data-test-selector="session-widget-viewer-count"] .efDIpy {
-  color: var(--ffz-channel-color) !important;
-}
-
-/* mod view -- widgets -- "Other Channels You Follow (X Live)" */
+/* Current Streamer -- Mod View -- widgets -- "Other Channels You Follow (X Live)" */
 [class="modview-dock-widget__panel"] .fhGgsz {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
-/* mod view -- widgets -- "Other Channels You Follow (X Live)" -- "Show offline channels"-text-color */
+/* Current Streamer -- Mod View -- widgets -- "Other Channels You Follow (X Live)" -- "Show offline channels"-text-color */
 [data-test-selector="followed-channels-modded"] .fPiOdK {
   color: var(--ffz-channel-color) !important;
 }
 
-/* mod view -- widgets -- "What's New & Feedback"-indicator */
+/* Current Streamer -- Mod View -- widgets -- "What's New & Feedback"-indicator */
 .tw-root--theme-dark .whats-new-button__new-entries-indicator {
   background-color: var(--ffz-channel-color);
 }
 
-/* mod view -- widgets -- "What's New & Feedback" -- "Watch Tutorial"-highlight component */
+/* Current Streamer -- Mod View -- widgets -- "What's New & Feedback" -- "Watch Tutorial"-highlight component */
 .tw-root--theme-dark .component-highlighter {
   border-color: var(--ffz-channel-color) !important;
 }
 
-/* mod view -- widgets -- "Activity Feed" -- New Items Highlight */
+/* Current Streamer -- Mod View -- widgets -- "Activity Feed" -- New Items Highlight */
 .activity-base-list-item__new--dark {
   background-color: var(--ffz-channel-color-30);
 }
 
-/* mod view -- widgets -- "Unban Requests" -- "Unban Request Cooldown Icon"-color */
+/* Current Streamer -- Mod View -- widgets -- "Unban Requests" -- "Unban Request Cooldown Icon"-color */
 .unban-requests-list-sidebar-footer__cooldown-icon {
   color: var(--ffz-channel-color);
 }
@@ -669,8 +668,8 @@ var(--ffz-color-accent)
   background-color: var(--ffz-channel-color);
 }
 
-/* mod view -- "Users In Chat" -- "Refresh User List"-icon color */
-[data-test-selector="chat-viewers__disabled-refresh"] .jhLCRX {
+/* Current Streamer -- Mod View -- "Users In Chat" -- "Refresh User List"-icon color */
+[data-test-selector="chat-viewers__disabled-refresh"] .cCsRcI {
   fill: var(--ffz-channel-color);
 }
 
