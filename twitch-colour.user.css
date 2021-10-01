@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.37
+@version     0.0.38
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -38,6 +38,11 @@ var(--ffz-color-accent)
 /* ===== streamer page */
 /* Current Streamer -- "Cookie Preferences" > "We value your privacy."-background-color */
 .consent-banner {
+  background-color: var(--ffz-channel-color-30) !important;
+}
+
+/* Current Streamer -- Sticky Footer (when not signed in) "Sign up to experience the best of X Chat, follow or subscribe – Twitch is your oyster."-background-color */
+[id="twilight-sticky-footer-root"] .jSwKMB {
   background-color: var(--ffz-channel-color-30) !important;
 }
 
@@ -182,7 +187,7 @@ var(--ffz-color-accent)
 }
 
 /* verified badge in the about streamer section */
-.about-section__panel .BNeRR [d="M10 2l6 2 2 6-2 6-6 2-6-2-2-6 2-6 6-2zM8.889 13.636l5.43-5.429-1.415-1.414-4.015 4.015-2.015-2.015-1.414 1.414 3.429 3.43z"] {
+.about-section__panel .kMNUwy [d="M10 2l6 2 2 6-2 6-6 2-6-2-2-6 2-6 6-2zM8.889 13.636l5.43-5.429-1.415-1.414-4.015 4.015-2.015-2.015-1.414 1.414 3.429 3.43z"] {
   fill: var(--ffz-channel-color);
 }
 /* about streamer, social links on hover, arrow colouring */
@@ -204,13 +209,13 @@ var(--ffz-color-accent)
 }
 
 /* "NEW"-badge -> "Add your bio and social links. Help your viewers get to know you better" */
-.about-section__panel .ciyqCe {
+.about-section__panel .eqaYMR {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
 
 /* Your own stream page -- Home, About, Schedule, Videos-tabs -- "NEW"-badge - "Customize your channel Update your stream schedule, add your social links, and manage your channel preferences" */
-.home-offline-hero__upsell .ciyqCe {
+.home-offline-hero__upsell .eqaYMR {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
@@ -223,7 +228,7 @@ var(--ffz-color-accent)
 }
 
 /* Subscribe, Resubscribe & Gift a Sub-button -- opened -- Promo-badge (SUBtember) */
-.support-panel .ciyqCe {
+.support-panel .eqaYMR {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
@@ -337,27 +342,15 @@ var(--ffz-color-accent)
 
 
 /* input, textareas */
-.eBJFwo:focus, .eBJFwo:focus:hover {
+.hZWbpp:focus, .hZWbpp:focus:hover {
   border-color: var(--ffz-channel-color);
 }
-.eBJFwo:focus::placeholder, .eBJFwo:focus:hover::placeholder {
+.hZWbpp:focus::placeholder, .hZWbpp:focus:hover::placeholder {
   color: var(--ffz-channel-color) !important;
   opacity: 1 !important;
 }
-.XFvNK:focus, .XFvNK:focus:hover {
-  border-color: var(--ffz-channel-color);
-}
-.XFvNK:focus::placeholder, .XFvNK:focus:hover::placeholder {
-  color: var(--ffz-channel-color) !important;
-  opacity: 1 !important;
-}
-.kYJGMC:focus, .kYJGMC:focus:hover {
-  border-color: var(--ffz-channel-color);
-}
-.kYJGMC:focus::placeholder, .kYJGMC:focus:hover::placeholder {
-  color: var(--ffz-channel-color) !important;
-  opacity: 1 !important;
-}
+
+
 
 /* Request Unban-popup window */
 /* "Enter a Reason for Your Unban" */
@@ -376,6 +369,11 @@ var(--ffz-color-accent)
 
 
 /* ===== streamer chat */
+
+/* Current Streamer -- "Stream Chat" -- "Resizable Chat"  - {if (resizable_chat_column) experiment is enabled} */
+[data-test-selector="resize-handle-container"] .fmDPDU {
+  background-color: var(--ffz-channel-color) !important;
+}
 
 /* Current Streamer -- "Stream Chat" -- "Gift a Sub now to be #1!" & "Cheer now to be #1!"-text color */
 [data-test-selector="empty-leaderboard-item-test-selector"] {
@@ -447,7 +445,7 @@ var(--ffz-color-accent)
 
 
 /* Current Streamer -- "Stream Chat" -- "Animated Emotes can be disabled in Settings" */
-[data-test-selector="chat-private-callout-queue__callout-container"] .dlgPzd {
+[data-test-selector="chat-private-callout-queue__callout-container"] .hpRepK {
   background-color: var(--ffz-channel-color-30) !important;
 }
 
@@ -691,6 +689,11 @@ var(--ffz-color-accent)
   background-color: var(--ffz-channel-color-30);
 }
 
+/* ffz -- control center -- "Reset to Default"-button-color */
+.tw-button--text {
+  color: var(--ffz-channel-color);
+}
+
 /* ffz -- control center -- input textarea */
 .ffz-input:focus, .ffz-input:focus:hover, .ffz-select:focus, .ffz-select:focus:hover, .ffz-textarea:focus, .ffz-textarea:focus:hover {
   border: var(--border-width-input) solid var(--ffz-channel-color);
@@ -749,6 +752,16 @@ var(--ffz-color-accent)
 .tw-root--theme-dark .emote-picker__emote-link:hover {
   background-color: var(--ffz-channel-color-30);
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
