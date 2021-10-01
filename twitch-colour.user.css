@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.44
+@version     0.0.45
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -160,11 +160,11 @@ var(--ffz-color-accent)
   background-color: var(--ffz-channel-color-20) !important;
 }
 /* Current Streamer -- "Schedule" -- Stream Schedule Segment -- "Live Now" "LIVE"-badge */
-.stream-schedule-segment--element .YoxeW {
+.stream-schedule-segment--element .hwlNix {
   background-color: var(--ffz-channel-color);
 }
 /* Current Streamer -- "Schedule" -- Stream Schedule Segment -- "Live Now" -- Popout "LIVE"-badge */
-[data-test-selector="segment-popover-content"] .YoxeW {
+[data-test-selector="segment-popover-content"] .hwlNix {
   background-color: var(--ffz-channel-color);
 }
 /* Current Streamer -- "Schedule" -- Stream Schedule Segment -- Thumbnail -- Shadow left of Thumbnail */
