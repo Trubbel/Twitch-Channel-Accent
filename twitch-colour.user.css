@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.42
+@version     0.0.43
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -530,7 +530,7 @@ var(--ffz-color-accent)
   color: var(--ffz-channel-color);
 }
 /* Current Streamer -- "Stream Chat" -- "Channel Points" -- "Rewards & Challenges" -- Channel Points "NEW"-badge */
-.reward-list-item .ciyqCe {
+.reward-list-item .eqaYMR {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
