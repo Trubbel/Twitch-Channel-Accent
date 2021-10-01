@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.39
+@version     0.0.40
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -256,7 +256,7 @@ var(--ffz-color-accent)
 }
 
 /* Gift a Sub-button -- opened -- "Theme Your Gift"-border-color */
-.support-panel .ScSelectableInput-sc-19xo10b-0:checked + .kaLMia {
+.support-panel .ScSelectableInput-sc-19xo10b-0:checked + .gSmHib.gSmHib {
   border: var(--border-width-input) solid var(--ffz-channel-color);
 }
 
@@ -274,48 +274,47 @@ var(--ffz-color-accent)
 
 
 
-
-/* buttons, checkboxes, radio-buttons */
-/* buttons on hover */
-.cdnWrb:hover {
+/* buttons on hover, hover+active, active */
+.kjAHnz:hover {
   background-color: var(--ffz-channel-color-30);
 }
-.cdnWrb:hover:active {
+.kjAHnz:hover:active {
   background-color: var(--ffz-channel-color-30);
 }
-.cdnWrb:active {
-  background-color: var(--ffz-channel-color-30);
-}
-
-.fUKJNe:hover {
-  background-color: var(--ffz-channel-color-30);
-}
-.fUKJNe:hover:active {
-  background-color: var(--ffz-channel-color-30);
-}
-.fUKJNe:active {
+.kjAHnz:active {
   background-color: var(--ffz-channel-color-30);
 }
 
-.gZBhPi {
-  background-color: var(--ffz-channel-color-30);
-}
-.gZBhPi:hover {
-  background-color: var(--ffz-channel-color-30);
-}
-.gZBhPi:hover:active {
-  background-color: var(--ffz-channel-color-30);
-}
-.gZBhPi:active {
-  background-color: var(--ffz-channel-color-30);
-}
-.dvWyTt:hover {
-  background-color: var(--ffz-channel-color-30);
-}
 /* current active language, background-color */
-.user-menu-language-list .bKIQd {
+.user-menu-language-list .eCuOGt {
   background-color: var(--ffz-channel-color-30);
 }
+
+/* /commands "channel management"-buttons */
+.dMEcCM {
+  background-color: var(--ffz-channel-color-30);
+}
+.dMEcCM:hover {
+  background-color: var(--ffz-channel-color-30);
+}
+.dMEcCM:hover:active {
+  background-color: var(--ffz-channel-color-30);
+}
+.dMEcCM:active {
+  background-color: var(--ffz-channel-color-30);
+}
+
+/* pinned new commands in /commands list */
+[data-test-selector="autocomplete-matches-container"] .epIGZ {
+  background-color: var(--ffz-channel-color-30) !important;
+}
+/* same as above, but the "NEW"-badge */
+[data-test-selector="autocomplete-matches-container"] .eqaYMR {
+  color: var(--color-text-alt);
+  background-color: var(--ffz-channel-color-30);
+}
+
+
 
 /* checkboxes */
 .ScToggleInput-sc-796zbf-1:checked + .oHwVV {
@@ -532,6 +531,10 @@ var(--ffz-color-accent)
 .tw-root--theme-dark .emote-grid-section__balloon-title {
   background-color: var(--ffz-channel-color-30);
 }
+/* Current Streamer -- "Stream Chat" -- "Twitch Native Emote Menu" -- Emotes with Options */
+.tw-root--theme-dark .emote-button__options {
+  border-color: transparent transparent var(--ffz-channel-color);
+}
 
 
 /* Current Streamer -- "Stream Chat" -- "Channel Points" */
@@ -572,7 +575,7 @@ var(--ffz-color-accent)
 }
 
 /* Current Streamer -- "Stream Chat" -- "Chat Settings" -- "Switch to Non-Mod Settings"-text-color */
-[data-test-selector="moderation-mode-toggle-selector"] .biBebI {
+[data-test-selector="moderation-mode-toggle-selector"] .bUeMDh {
   color: var(--ffz-channel-color);
 }
 
