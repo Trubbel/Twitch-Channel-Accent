@@ -18,18 +18,18 @@ var(--ffz-color-accent)
 */
 
 /* Twitch logo, top left */
-.top-nav__menu .cmvTeQ {
+.top-nav__menu .bjjKun {
   fill: var(--ffz-channel-color);
 }
 
 /* "LIVE"-badge in the subscriptions-page */
-.subscription-card__channel-avatar .YoxeW {
+.subscription-card__channel-avatar .hwlNix {
   background-color: var(--color-accent) !important;
 }
 
 /* ===== following page */
 /* changes the "LIVE"-badge colour on the preview cards, to be the same as their channel accent colour */
-.tw-media-card-image__corners .YoxeW {
+.tw-media-card-image__corners .hwlNix {
   background-color: var(--color-accent);
 }
 /* ===== /following page */
@@ -37,7 +37,7 @@ var(--ffz-color-accent)
 
 /* ===== streamer page */
 /* Current Streamer -- "Cookie Preferences" > "We value your privacy."-background-color */
-.hnxsEt .consent-banner {
+.consent-banner {
   background-color: var(--ffz-channel-color-30) !important;
 }
 
@@ -55,11 +55,11 @@ var(--ffz-color-accent)
 }
 
 /* Current Streamer -- Search Bar -- Drop Down Menu -- Verified Badge-color */
-.search-tray .BNeRR [d="M10 2l6 2 2 6-2 6-6 2-6-2-2-6 2-6 6-2zM8.889 13.636l5.43-5.429-1.415-1.414-4.015 4.015-2.015-2.015-1.414 1.414 3.429 3.43z"] {
+.search-tray .kMNUwy [d="M10 2l6 2 2 6-2 6-6 2-6-2-2-6 2-6 6-2zM8.889 13.636l5.43-5.429-1.415-1.414-4.015 4.015-2.015-2.015-1.414 1.414 3.429 3.43z"] {
   fill: var(--ffz-channel-color);
 }
 /* Current Streamer -- Search Bar -- Drop Down Menu -- "LIVE"-badge-color */
-.search-tray .YoxeW {
+.search-tray .hwlNix {
   background-color: var(--ffz-channel-color);
 }
 /* Current Streamer -- Search Bar -- Drop Down Menu -- Search Item Color */
@@ -80,17 +80,17 @@ var(--ffz-color-accent)
 .tw-root--theme-dark .side-nav-card__link:hover {
   background-color: var(--ffz-channel-color-30) !important;
 }
-/* Current Streamer -- "Followed Channels" -- on Hover -- "LIVE"-badge - {if (vx_left*) experiments are enabled} */
-.online-side-nav-channel-tooltip__body--image .tw-media-card-image__corners .YoxeW {
+/* Current Streamer -- "Followed Channels" -- on Hover -- "LIVE"-badge - {if (vx_left_pop) experiment is enabled} */
+.online-side-nav-channel-tooltip__body--image .tw-media-card-image__corners .hwlNix {
   background-color: var(--ffz-channel-color);
 }
-/* Current Streamer -- "Followed Channels" -- Hover on Current Game Played - {if (vx_left*) experiments are enabled} */
+/* Current Streamer -- "Followed Channels" -- Hover on Current Game Played - {if (vx_left_nav_category_click_thru) experiment is enabled} */
 .tw-root--theme-dark .side-nav-card__link:hover .tw-link:hover {
   color: var(--ffz-channel-color);
 }
 
 /* "LIVE"-badge on the html player */
-.video-player .YoxeW {
+.video-player .hwlNix {
   background-color: var(--ffz-channel-color);
 }
 /* "LIVE NOW"-badge on Home, About, Schedule, Videos-tabs */
@@ -118,11 +118,11 @@ var(--ffz-color-accent)
   color: var(--ffz-channel-color);
 }
 /* "LIVE"-badge below user avatar */
-.user-avatar-card__live .YoxeW {
+.user-avatar-card__live .hwlNix {
   background-color: var(--ffz-channel-color);
 }
 /* verified badge next to the user avatar */
-.channel-info-content .BNeRR [d="M12.5 3.5L8 2L3.5 3.5L2 8L3.5 12.5L8 14L12.5 12.5L14 8L12.5 3.5ZM7.00008 11L11.5 6.5L10 5L7.00008 8L5.5 6.5L4 8L7.00008 11Z"] {
+.channel-info-content .kMNUwy [d="M12.5 3.5L8 2L3.5 3.5L2 8L3.5 12.5L8 14L12.5 12.5L14 8L12.5 3.5ZM7.00008 11L11.5 6.5L10 5L7.00008 8L5.5 6.5L4 8L7.00008 11Z"] {
   fill: var(--ffz-channel-color);
 }
 /* verified badge when on, Home, About, Schedule, Videos-tabs */
@@ -191,10 +191,10 @@ var(--ffz-color-accent)
 }
 
 /* current channel viewer count */
-.kJGhvW {
+.iPvYCd {
   fill: var(--ffz-channel-color);
 }
-.dRrnwM {
+.jBRdND {
   color: var(--ffz-channel-color) !important;
 }
 
