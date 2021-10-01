@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.40
+@version     0.0.41
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -94,7 +94,13 @@ var(--ffz-color-accent)
   color: var(--ffz-channel-color);
 }
 
-/* "LIVE"-badge on the html player */
+/* Current Streamer -- (on avatar hover) "The profile image can take you to the channel home" -- "NEW"-badge */
+.home-affordance .eqaYMR {
+  color: var(--color-text-alt);
+  background-color: var(--ffz-channel-color);
+}
+
+/* Current Streamer -- "LIVE"-badge on the html player */
 .video-player .hwlNix {
   background-color: var(--ffz-channel-color);
 }
@@ -418,31 +424,6 @@ var(--ffz-color-accent)
 }
 
 
-/* Current Streamer -- "Stream Chat" -- "Chat Input Tray Opened" -- "Emote Only"-"Followers-Only"-"Message Not Sent"-"Slow Mode"-"Subscribers Only"-chat */
-.chat-input-tray__open .chat-restriction-tray-icon .iFvwlr {
-  fill: var(--ffz-channel-color);
-}
-/* Message Not Sent */
-/* Your message is identical to the one you sent within the last 30 seconds. */
-.chat-input-tray__open .warning-modifier-tray-icon .cMQeyU {
-  fill: var(--ffz-channel-color);
-}
-.chat-input-tray__open .hNHsQv {
-  color: var(--ffz-channel-color) !important;
-}
-.chat-input-tray__open .common-tray-body .ovrFe {
-  color: var(--ffz-channel-color) !important;
-}
-/* Current Streamer -- "Stream Chat" -- "Chat Input Tray Opened" -- "Sub Mode" */
-.chat-input-tray__open .cSGWxZ {
-  color: var(--ffz-channel-color) !important;
-}
-/* Current Streamer -- "Stream Chat" -- "Sub Mode" -- "You can chat in X"-text-color */
-.chat-input [data-test-selector="chat-input-buttons-container"] .ixQLCM {
-  color: var(--ffz-channel-color) !important;
-}
-
-
 /* Current Streamer -- "Stream Chat" -- "Animated Emotes can be disabled in Settings" */
 [data-test-selector="chat-private-callout-queue__callout-container"] .hpRepK {
   background-color: var(--ffz-channel-color-30) !important;
@@ -562,6 +543,17 @@ var(--ffz-color-accent)
 }
 .edit-appearance__static-badge {
   border: 2px solid var(--ffz-channel-color);
+}
+
+/* Current Streamer -- "Stream Chat" -- "Chat Settings" -- "Chat Appearance" -- Font Size */
+/* setting toggled */
+.notched-range--handle {
+  border: .5rem solid var(--ffz-channel-color);
+}
+/* setting hover */
+.notched-range--handle:hover, .notched-range--handle[data-focus-visible-added], .notched-range--handle__active {
+  border-color: var(--ffz-channel-color);
+  box-shadow: 0 0 5px var(--ffz-channel-color);
 }
 
 /* Current Streamer -- "Stream Chat" -- "Chat Settings" -- New Request Indicator */
