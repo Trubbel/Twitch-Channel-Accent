@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.43
+@version     0.0.44
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -114,12 +114,12 @@ var(--ffz-color-accent)
   color: var(--ffz-channel-color);
 }
 
-/* Current Streamer -- Home - About - Schedule - Videos - Chat-active-color */
-.home-header-sticky .WQbWe {
+/* Current Streamer -- Home - About - Schedule - Videos - Chat-active-color (ACTIVE_TAB_INDICATOR) */
+.home-header-sticky .iyBJMB {
   color: var(--ffz-channel-color) !important;
 }
-/* Current Streamer -- Home - About - Schedule - Videos - Chat-hover-color */
-.home-header-sticky .ccxfwO:hover {
+/* Current Streamer -- Home - About - Schedule - Videos - Chat-hover-color (ACTIVE_TAB_INDICATOR) */
+.home-header-sticky .dCwXIp:hover {
   color: var(--ffz-channel-color);
 }
 
