@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.38
+@version     0.0.39
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -384,7 +384,7 @@ var(--ffz-color-accent)
 .live-message-separator-line__hr {
   border-top: var(--border-width-default) solid var(--ffz-channel-color) !important;
 }
-.eaBtlk {
+.fooZzD {
   color: var(--ffz-channel-color) !important;
 }
 
@@ -498,7 +498,7 @@ var(--ffz-color-accent)
 
 
 /* Current Streamer -- "Stream Chat" -- "Cheering Supports Your Streamer!" -- "Cheering Anonymously"-Ghost Icon */
-.t-bits-card__contents--anonymous .dcKAIn {
+.t-bits-card__contents--anonymous .kcrFWs {
   fill: var(--ffz-channel-color);
 }
 /* Current Streamer -- "Stream Chat" -- "Cheering Supports Your Streamer!" -- hover on items */
@@ -521,7 +521,7 @@ var(--ffz-color-accent)
   border-left: 3px solid var(--ffz-channel-color);
 }
 /* Current Streamer -- "Stream Chat" -- "Twitch Native Emote Menu" -- "Frequently Used"-emote tab */
-.emote-picker-tab-item-wrapper__active .BNeRR {
+.emote-picker-tab-item-wrapper__active .kMNUwy {
   fill: var(--ffz-channel-color);
 }
 /* Current Streamer -- "Stream Chat" -- "Twitch Native Emote Menu" -- hover on emotes, background-color */
@@ -535,11 +535,11 @@ var(--ffz-color-accent)
 
 
 /* Current Streamer -- "Stream Chat" -- "Channel Points" */
-.community-points-summary .BNeRR {
+.community-points-summary .kMNUwy {
   color: var(--ffz-channel-color);
 }
 /* Current Streamer -- "Stream Chat" -- "Channel Points" -- "Rewards & Challenges" -- Channel Points Icon */
-.channel-points-icon .BNeRR {
+.channel-points-icon .kMNUwy {
   color: var(--ffz-channel-color);
 }
 /* Current Streamer -- "Stream Chat" -- "Channel Points" -- "Rewards & Challenges" -- Channel Points "NEW"-badge */
