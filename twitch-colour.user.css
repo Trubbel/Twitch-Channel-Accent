@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.45
+@version     0.0.46
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -100,10 +100,15 @@ var(--ffz-color-accent)
   background-color: var(--ffz-channel-color);
 }
 
-/* Current Streamer -- "LIVE"-badge on the html player */
+/* Current Streamer -- HTML Player -- "LIVE"-badge */
 .video-player .hwlNix {
   background-color: var(--ffz-channel-color);
 }
+/* Current Streamer -- HTML Player -- "Is video buffering? Use the Low Latency toggle under the Advanced menu in Settings to disable low latency mode"-popup border-color */
+.tw-root--theme-dark .low-latency-notification {
+  border-top: 3px solid var(--ffz-channel-color);
+}
+
 /* "LIVE NOW"-badge on Home, About, Schedule, Videos-tabs */
 /* "X is streaming Y" */
 .channel-status-info--live {
@@ -183,7 +188,7 @@ var(--ffz-color-accent)
   background-color: var(--ffz-channel-color);
 }
 /* Current Streamer -- "Videos" -- Recent broadcasts -- Chapters button */
-[data-test-selector="toggle-balloon-wrapper__mouse-enter-detector"] .fhGgsz {
+[data-test-selector="toggle-balloon-wrapper__mouse-enter-detector"] .iodoaw {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
@@ -435,7 +440,7 @@ var(--ffz-color-accent)
 
 /* Current Streamer -- "Stream Chat" -- "You scored a Drop! Claim now or go to Inventory" -- Background-color */
 /* Current Streamer -- "Stream Chat" -- "Unlocked Channel Point Rewards" -- Background-color */
-.chat-input .fWWDCN {
+.chat-input .fVJaKG {
   background-color: var(--ffz-channel-color-30) !important;
 }
 /* Current Streamer -- "Stream Chat" -- "You scored a Drop! Claim now or go to Inventory" -- Progress bar */
@@ -446,7 +451,7 @@ var(--ffz-color-accent)
 
 
 /* Current Streamer -- "Stream Chat" -- "It's your X month sub anniversary!"-star-icon */
-.chat-input .jhLCRX {
+.chat-input .fVJaKG .cCsRcI {
   fill: var(--ffz-channel-color);
 }
 /* Current Streamer -- "Stream Chat" -- "It's your X month sub anniversary!"-star-background-color */
@@ -477,6 +482,13 @@ var(--ffz-color-accent)
 /* Current Streamer -- "Stream Chat" -- Chant Popup */
 .chat-input .erNLda {
   background-color: var(--ffz-channel-color-30) !important;
+}
+
+
+/* Current Streamer -- "Stream Chat" -- "Use [Alt] [⬆️] to select recent messages sent by this user." -- "Tip"-badge-color */
+[data-test-selector="chat-private-callout-queue__callout-container"] .eqaYMR {
+  color: var(--color-text-alt);
+  background-color: var(--ffz-channel-color);
 }
 
 
