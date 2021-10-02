@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.48
+@version     0.0.49
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -415,6 +415,22 @@ var(--ffz-color-accent)
 }
 
 
+
+/* Current Streamer -- "Stream Chat" -- Subscribe Message -- "X subscribed at Tier Y. They've subscribed for Z months!"-background-color */
+/* & "X subscribed with Prime Gaming. */
+.ffz--subscribe-line {
+  background-color: var(--ffz-channel-color-30);
+}
+/* Current Streamer -- "Stream Chat" -- Subscribe Message -- Star Icon-color */
+.ffz--subscribe-line .ffz-i-star::before {
+ color: var(--ffz-channel-color);
+}
+/* Current Streamer -- "Stream Chat" -- Subscribe Message -- Twitch Prime Icon-color */
+.ffz--subscribe-line .ffz-i-crown::before {
+ color: var(--ffz-channel-color);
+}
+
+
 /* Current Streamer -- "Stream Chat" -- "Only visible to you" -- "It's your X month sub anniversary!"-star-icon */
 .chat-room .jhLCRX {
   fill: var(--ffz-channel-color);
@@ -589,7 +605,7 @@ var(--ffz-color-accent)
   background-color: var(--ffz-channel-color);
 }
 /* Current Streamer -- "Stream Chat" -- "Chat Settings" -- "Tasks" -- "Review Unban Requests" -- "X NEW"-badge */
-.chat-settings__content .dGLRmS {
+.chat-settings__content .fToerh {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
