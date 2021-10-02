@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.47
+@version     0.0.48
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -254,12 +254,12 @@ var(--ffz-color-accent)
   fill: var(--ffz-channel-color);
 }
 /* "SAVE"-badge left of "Save by subscribing for longer" */
-.support-panel .dGLRmS {
+.support-panel .fToerh {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
 /* "Save by subscribing for longer"-expanded, "Renew every"-month-border-color */
-.support-panel .ScSelectableInput-sc-19xo10b-0:checked + .kikcMO {
+.support-panel .ScSelectableInput-sc-19xo10b-0:checked + .cKjUjD.cKjUjD {
   border: var(--border-width-input) solid var(--ffz-channel-color);
 }
 
@@ -274,6 +274,15 @@ var(--ffz-color-accent)
 .support-panel .ScSelectableInput-sc-19xo10b-0:checked + .gSmHib.gSmHib {
   border: var(--border-width-input) solid var(--ffz-channel-color);
 }
+
+/* Gift a Sub-button -- opened -- "Gift a specific viewer" -- "Select months to gift"-border-color */
+.support-panel .ScSelectableInput-sc-19xo10b-0:checked + .cKjUjD.cKjUjD {
+  border: var(--border-width-input) solid var(--ffz-channel-color);
+}
+.support-panel .ScSelectableInput-sc-19xo10b-0:checked:hover + .cKjUjD.cKjUjD {
+  border: var(--border-width-input) solid var(--ffz-channel-color);
+}
+
 
 /* Gift a Sub-button -- "Instantly unlock your first gifter badge by gifting at least 1 Sub!"-progress bar */
 /* Gift a Sub-button -- "You've given X gift subs to Y's channel. Gift Z more to unlock your next badge!"-progress bar */
