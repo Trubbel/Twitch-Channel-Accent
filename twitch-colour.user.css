@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.50
+@version     0.0.51
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -521,7 +521,7 @@ var(--ffz-color-accent)
 
 
 /* Current Streamer -- "Stream Chat" -- Chant Popup */
-.chat-input .erNLda {
+.chat-input .ibEnMt {
   background-color: var(--ffz-channel-color-30) !important;
 }
 
@@ -731,6 +731,10 @@ var(--ffz-color-accent)
 
 
 /* ===== addons/extensions */
+/* ffz -- new settings notification badge */
+.ffz-top-nav .tw-pill {
+  background-color: var(--ffz-channel-color);
+}
 /* ffz -- control center -- current active profile, border-color */
 .ffz--profile-row.current {
   border-left-color: var(--ffz-channel-color);
