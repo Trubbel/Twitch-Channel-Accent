@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.49
+@version     0.0.50
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -104,6 +104,7 @@ var(--ffz-color-accent)
   background-color: var(--ffz-channel-color);
 }
 
+
 /* Current Streamer -- HTML Player -- "LIVE"-badge */
 .video-player .hwlNix {
   background-color: var(--ffz-channel-color);
@@ -112,6 +113,12 @@ var(--ffz-color-accent)
 .tw-root--theme-dark .low-latency-notification {
   border-top: 3px solid var(--ffz-channel-color);
 }
+/* Current Streamer -- HTML Player -- Current Quality-popup */
+.video-player .gMetEn {
+  color: var(--color-text-alt);
+  background-color: var(--ffz-channel-color-30);
+}
+
 
 /* "LIVE NOW"-badge on Home, About, Schedule, Videos-tabs */
 /* "X is streaming Y" */
@@ -396,8 +403,12 @@ var(--ffz-color-accent)
 
 /* ===== streamer chat */
 
-/* Current Streamer -- "Stream Chat" -- "Resizable Chat"  - {if (resizable_chat_column) experiment is enabled} */
+/* Current Streamer -- "Stream Chat" -- "Resizable Chat" - On Hover - {if (resizable_chat_column) experiment is enabled} */
 [data-test-selector="resize-handle-container"] .fmDPDU {
+  background-color: var(--ffz-channel-color) !important;
+}
+/* Current Streamer -- "Stream Chat" -- "Resizable Chat" - On Active - {if (resizable_chat_column) experiment is enabled} */
+.right-column__resize-handle-container .fzzVQu {
   background-color: var(--ffz-channel-color) !important;
 }
 
@@ -469,6 +480,7 @@ var(--ffz-color-accent)
 
 /* Current Streamer -- "Stream Chat" -- "You scored a Drop! Claim now or go to Inventory" -- Background-color */
 /* Current Streamer -- "Stream Chat" -- "Unlocked Channel Point Rewards" -- Background-color */
+/* Current Streamer -- "Stream Chat" -- "Follow X to unlock free emotes to use in chat!" */
 .chat-input .fVJaKG {
   background-color: var(--ffz-channel-color-30) !important;
 }
