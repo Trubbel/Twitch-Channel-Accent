@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.51
+@version     0.0.52
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -208,11 +208,16 @@ var(--ffz-color-accent)
   background-color: var(--ffz-channel-color);
 }
 
-/* verified badge in the about streamer section */
+/* Current Streamer -- About Section -- Verified Badge */
 .about-section__panel .kMNUwy [d="M10 2l6 2 2 6-2 6-6 2-6-2-2-6 2-6 6-2zM8.889 13.636l5.43-5.429-1.415-1.414-4.015 4.015-2.015-2.015-1.414 1.414 3.429 3.43z"] {
   fill: var(--ffz-channel-color);
 }
-/* about streamer, social links on hover, arrow colouring */
+
+/* Current Streamer -- About Section -- Team & About links on hover */
+.about-section .AKPzc:hover {
+  color: var(--ffz-channel-color);
+}
+/* Current Streamer -- About Section -- About links hover - Arrow Icon Color */
 .social-media-link__container:hover + .social-media-link__external-link-icon {
   color: var(--ffz-channel-color);
 }
@@ -525,6 +530,11 @@ var(--ffz-color-accent)
   background-color: var(--ffz-channel-color-30) !important;
 }
 
+/* Current Streamer -- "Stream Chat" -- Chat Tray Opened - Thread Opened - Replies-border-color */
+.chat-input-tray__open .chat-replies-list__container .chat-replies-list {
+  border-left: 4px solid var(--ffz-channel-color);
+}
+
 
 /* Current Streamer -- "Stream Chat" -- "Use [Alt] [⬆️] to select recent messages sent by this user." -- "Tip"-badge-color */
 [data-test-selector="chat-private-callout-queue__callout-container"] .eqaYMR {
@@ -744,6 +754,11 @@ var(--ffz-color-accent)
   background-color: var(--ffz-channel-color-30);
 }
 
+/* ffz -- control center -- "Mark All Seen"-button */
+.ffz-button--hollow:hover, .ffz-button--hollow:focus, .ffz-button--hollow:active {
+  background: var(--ffz-channel-color) !important;
+}
+
 /* ffz -- control center -- "Reset to Default"-button-color */
 .tw-button--text {
   color: var(--ffz-channel-color);
@@ -790,6 +805,11 @@ var(--ffz-color-accent)
 }
 .right-column__resize-handle-container .dKmapp {
   background-color: var(--ffz-channel-color) !important;
+}
+
+/* ffz -- control center -- "Data Management » Backup and Restore" -- "X items have been restored. Please refresh this page." */
+.ffz--backup-restore .tw-c-background-accent-alt-2 {
+  background-color: var(--ffz-channel-color-30) !important;
 }
 
 /* fzz -- Stream Chat -- Mentions - On hover */
