@@ -33,7 +33,7 @@ var(--ffz-color-accent)
 
 /* ===== following page */
 /* changes the "LIVE"-badge colour on the preview cards, to be the same as their channel accent colour */
-.tw-media-card-image__corners .hwlNix {
+[data-a-target="preview-card-image-link"] .hwlNix {
   background-color: var(--color-accent);
 }
 /* ===== /following page */
@@ -77,7 +77,7 @@ var(--ffz-color-accent)
 }
 
 /* Current Streamer -- Notifications -- Prime Loot, Notifications, Whispers -- Background-color */
-.cewWYg {
+.hRpxYe {
   background-color: var(--ffz-channel-color);
 }
 /* Current Streamer -- Notifications -- Whispers -- Whispers Popup -- on Hover Items */
@@ -687,7 +687,7 @@ var(--ffz-color-accent)
 }
 
 /* Current Streamer -- Mod View -- widgets -- "Other Channels You Follow (X Live)" */
-[class="modview-dock-widget__panel"] .fhGgsz {
+[class="modview-dock-widget__panel"] .iodoaw {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
@@ -783,6 +783,12 @@ var(--ffz-color-accent)
 .ffz-input:focus::placeholder, .ffz-input:focus:hover::placeholder, .ffz-select:focus::placeholder, .ffz-select:focus:hover::placeholder, .ffz-textarea:focus::placeholder, .ffz-textarea:focus:hover::placeholder {
   color: var(--ffz-channel-color) !important;
   opacity: 1 !important;
+}
+
+/* ffz -- control center -- "NEW"-feature-badge */
+.ffz--menu-page .ffz--widget .tw-pill {
+  background-color: var(--ffz-channel-color);
+  color: var(--color-text-alt);
 }
 
 /* ffz -- control center -- active item */
