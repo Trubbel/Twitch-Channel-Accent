@@ -1,13 +1,13 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.53
+@version     0.0.54
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
 ==/UserStyle== */
 
-@-moz-document domain("twitch.tv") {
+@-moz-document domain("www.twitch.tv") {
 
 /* needs FFZ to work
 
