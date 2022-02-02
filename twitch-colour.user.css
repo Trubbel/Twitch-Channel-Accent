@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.54
+@version     0.0.55
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -46,7 +46,7 @@ var(--ffz-color-accent)
 }
 
 /* Current Streamer -- Sticky Footer (when not signed in) "Sign up to experience the best of X Chat, follow or subscribe – Twitch is your oyster."-background-color */
-[id="twilight-sticky-footer-root"] .jSwKMB {
+[id="twilight-sticky-footer-root"] .bvEyGN {
   background-color: var(--ffz-channel-color-30) !important;
 }
 
@@ -478,7 +478,7 @@ var(--ffz-color-accent)
 
 
 /* Current Streamer -- "Stream Chat" -- "Animated Emotes can be disabled in Settings" */
-[data-test-selector="chat-private-callout-queue__callout-container"] .hpRepK {
+[data-test-selector="chat-private-callout-queue__callout-container"] .fNSyNy {
   background-color: var(--ffz-channel-color-30) !important;
 }
 
@@ -687,13 +687,9 @@ var(--ffz-color-accent)
 }
 
 /* Current Streamer -- Mod View -- widgets -- "Other Channels You Follow (X Live)" */
-[class="modview-dock-widget__panel"] .iodoaw {
+[class="modview-dock-widget__panel"] .gMetEn {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
-}
-/* Current Streamer -- Mod View -- widgets -- "Other Channels You Follow (X Live)" -- "Show offline channels"-text-color */
-[data-test-selector="followed-channels-modded"] .fPiOdK {
-  color: var(--ffz-channel-color) !important;
 }
 
 /* Current Streamer -- Mod View -- widgets -- "What's New & Feedback"-indicator */
