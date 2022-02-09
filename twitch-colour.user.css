@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.57
+@version     0.0.58
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -646,7 +646,7 @@ var(--ffz-color-accent)
 
 /* ===== mod view page */
 /* Current Streamer -- Mod View -- "LIVE"-badge Above Stream */
-.live-indicator .hwlNix {
+.live-indicator .cbXzwD {
   background-color: var(--ffz-channel-color);
 }
 
@@ -656,14 +656,14 @@ var(--ffz-color-accent)
 }
 
 /* Current Streamer -- Mod View -- Viewer Count */
-.modview-player-widget__viewcount .fgVyFY {
+.modview-player-widget__viewcount .koqatG {
   color: var(--ffz-channel-color) !important;
 }
 
 
 /* widgets */
 /* Current Streamer -- Mod View -- widgets -- "Session"-viewer count text-color */
-[data-test-selector="session-widget-viewer-count"] .XDxkB {
+[data-test-selector="session-widget-viewer-count"] .hJuVPn {
   color: var(--ffz-channel-color) !important;
 }
 
@@ -687,7 +687,7 @@ var(--ffz-color-accent)
 }
 
 /* Current Streamer -- Mod View -- widgets -- "Other Channels You Follow (X Live)" */
-[class="modview-dock-widget__panel"] .gMetEn {
+[class="modview-dock-widget__panel"] .hiLOXJ {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
