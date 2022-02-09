@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.56
+@version     0.0.57
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -33,7 +33,7 @@ var(--ffz-color-accent)
 
 /* ===== following page */
 /* changes the "LIVE"-badge colour on the preview cards, to be the same as their channel accent colour */
-[data-a-target="preview-card-image-link"] .hwlNix {
+[data-a-target="preview-card-image-link"] .cbXzwD {
   background-color: var(--color-accent);
 }
 /* ===== /following page */
@@ -222,15 +222,15 @@ var(--ffz-color-accent)
   color: var(--ffz-channel-color);
 }
 
-/* current channel viewer count */
-.iPvYCd {
+/* Current Streamer -- Channel Viewer Count */
+.hRBkFL {
   fill: var(--ffz-channel-color);
 }
-.jBRdND {
+.gUIXeB {
   color: var(--ffz-channel-color) !important;
 }
 
-/* tags below stream, on hover */
+/* Current Streamer -- Channel Tags - On Hover */
 .hrkHJN:not(:disabled):hover {
   background-color: var(--ffz-channel-color-30);
 }
@@ -278,7 +278,7 @@ var(--ffz-color-accent)
 
 /* Gift a Sub-button -- opened */
 /* Gift a Sub-button -- opened -- "Gift a specific viewer"-text color */
-.support-panel .bUeMDh {
+.support-panel .jwcWqj {
   color: var(--ffz-channel-color);
 }
 
@@ -304,7 +304,7 @@ var(--ffz-color-accent)
 }
 
 /* Continue Sub - X Days Remaining -- opened -- "Your Subscription" -- "Tier Y Gifted Subscription"-star-icon */
-.support-panel [data-test-selector="CurrentSubscriptionIcon"] .kcrFWs {
+.support-panel [data-test-selector="CurrentSubscriptionIcon"] .kEjBVe {
   fill: var(--ffz-channel-color);
 }
 
