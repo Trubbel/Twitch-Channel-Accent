@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.55
+@version     0.0.56
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -18,7 +18,7 @@ var(--ffz-color-accent)
 */
 
 /* Twitch logo, top left */
-.top-nav__menu .bjjKun {
+.top-nav__menu .koVOFt {
   fill: var(--ffz-channel-color);
 }
 
@@ -77,7 +77,7 @@ var(--ffz-color-accent)
 }
 
 /* Current Streamer -- Notifications -- Prime Loot, Notifications, Whispers -- Background-color */
-.hRpxYe {
+.jWbNQM {
   background-color: var(--ffz-channel-color);
 }
 /* Current Streamer -- Notifications -- Whispers -- Whispers Popup -- on Hover Items */
@@ -145,7 +145,7 @@ var(--ffz-color-accent)
   color: var(--ffz-channel-color);
 }
 /* "LIVE"-badge below user avatar */
-.user-avatar-card__live .hwlNix {
+.user-avatar-card__live .cbXzwD {
   background-color: var(--ffz-channel-color);
 }
 /* verified badge next to the user avatar */
@@ -231,7 +231,7 @@ var(--ffz-color-accent)
 }
 
 /* tags below stream, on hover */
-.fHyEvT:not(:disabled):hover {
+.hrkHJN:not(:disabled):hover {
   background-color: var(--ffz-channel-color-30);
 }
 
@@ -426,7 +426,7 @@ var(--ffz-color-accent)
 .live-message-separator-line__hr {
   border-top: var(--border-width-default) solid var(--ffz-channel-color) !important;
 }
-.fooZzD {
+.eVtLxN {
   color: var(--ffz-channel-color) !important;
 }
 
