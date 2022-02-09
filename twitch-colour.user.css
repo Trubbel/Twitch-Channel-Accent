@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.59
+@version     0.0.60
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -64,7 +64,7 @@ var(--ffz-color-accent)
 }
 
 /* Current Streamer -- Search Bar -- Drop Down Menu -- Verified Badge-color */
-.search-tray .kMNUwy [d="M10 2l6 2 2 6-2 6-6 2-6-2-2-6 2-6 6-2zM8.889 13.636l5.43-5.429-1.415-1.414-4.015 4.015-2.015-2.015-1.414 1.414 3.429 3.43z"] {
+.search-tray .bESOCc [d="M10 2l6 2 2 6-2 6-6 2-6-2-2-6 2-6 6-2zM8.889 13.636l5.43-5.429-1.415-1.414-4.015 4.015-2.015-2.015-1.414 1.414 3.429 3.43z"] {
   fill: var(--ffz-channel-color);
 }
 /* Current Streamer -- Search Bar -- Drop Down Menu -- "LIVE"-badge-color */
@@ -90,7 +90,7 @@ var(--ffz-color-accent)
   background-color: var(--ffz-channel-color-30) !important;
 }
 /* Current Streamer -- "Followed Channels" -- on Hover -- "LIVE"-badge - {if (vx_left_pop) experiment is enabled} */
-.online-side-nav-channel-tooltip__body--image .tw-media-card-image__corners .hwlNix {
+.online-side-nav-channel-tooltip__body--image .cbXzwD {
   background-color: var(--ffz-channel-color);
 }
 /* Current Streamer -- "Followed Channels" -- Hover on Current Game Played - {if (vx_left_nav_category_click_thru) experiment is enabled} */
@@ -149,7 +149,7 @@ var(--ffz-color-accent)
   background-color: var(--ffz-channel-color);
 }
 /* verified badge next to the user avatar */
-.channel-info-content .kMNUwy [d="M12.5 3.5L8 2L3.5 3.5L2 8L3.5 12.5L8 14L12.5 12.5L14 8L12.5 3.5ZM7.00008 11L11.5 6.5L10 5L7.00008 8L5.5 6.5L4 8L7.00008 11Z"] {
+.channel-info-content .bESOCc [d="M12.5 3.5L8 2L3.5 3.5L2 8L3.5 12.5L8 14L12.5 12.5L14 8L12.5 3.5ZM7.00008 11L11.5 6.5L10 5L7.00008 8L5.5 6.5L4 8L7.00008 11Z"] {
   fill: var(--ffz-channel-color);
 }
 /* verified badge when on, Home, About, Schedule, Videos-tabs */
@@ -209,7 +209,7 @@ var(--ffz-color-accent)
 }
 
 /* Current Streamer -- About Section -- Verified Badge */
-.about-section__panel .kMNUwy [d="M10 2l6 2 2 6-2 6-6 2-6-2-2-6 2-6 6-2zM8.889 13.636l5.43-5.429-1.415-1.414-4.015 4.015-2.015-2.015-1.414 1.414 3.429 3.43z"] {
+.about-section__panel .bESOCc [d="M10 2l6 2 2 6-2 6-6 2-6-2-2-6 2-6 6-2zM8.889 13.636l5.43-5.429-1.415-1.414-4.015 4.015-2.015-2.015-1.414 1.414 3.429 3.43z"] {
   fill: var(--ffz-channel-color);
 }
 
@@ -380,10 +380,10 @@ var(--ffz-color-accent)
 
 
 /* input, textareas */
-.hZWbpp:focus, .hZWbpp:focus:hover {
+.fIywXv:focus, .fIywXv:focus:hover {
   border-color: var(--ffz-channel-color);
 }
-.hZWbpp:focus::placeholder, .hZWbpp:focus:hover::placeholder {
+.fIywXv:focus::placeholder, .fIywXv:focus:hover::placeholder {
   color: var(--ffz-channel-color) !important;
   opacity: 1 !important;
 }
@@ -567,7 +567,7 @@ var(--ffz-color-accent)
   border-left: 3px solid var(--ffz-channel-color);
 }
 /* Current Streamer -- "Stream Chat" -- "Twitch Native Emote Menu" -- "Frequently Used"-emote tab */
-.emote-picker-tab-item-wrapper__active .kMNUwy {
+.emote-picker-tab-item-wrapper__active .bESOCc {
   fill: var(--ffz-channel-color);
 }
 /* Current Streamer -- "Stream Chat" -- "Twitch Native Emote Menu" -- hover on emotes, background-color */
@@ -585,11 +585,11 @@ var(--ffz-color-accent)
 
 
 /* Current Streamer -- "Stream Chat" -- "Channel Points" */
-.community-points-summary .kMNUwy {
+.community-points-summary .bESOCc {
   color: var(--ffz-channel-color);
 }
 /* Current Streamer -- "Stream Chat" -- "Channel Points" -- "Rewards & Challenges" -- Channel Points Icon */
-.channel-points-icon .kMNUwy {
+.channel-points-icon .bESOCc {
   color: var(--ffz-channel-color);
 }
 /* Current Streamer -- "Stream Chat" -- "Channel Points" -- "Rewards & Challenges" -- Channel Points "NEW"-badge */
@@ -802,10 +802,10 @@ var(--ffz-color-accent)
 }
 
 /* ffz -- control center -- enabled experiments -- "resizable_chat_column"-color */
-.right-column__resize-handle-container .krelXX {
+.right-column__resize-handle-container .cvVUhu {
   background-color: var(--ffz-channel-color) !important;
 }
-.right-column__resize-handle-container .dKmapp {
+.right-column__resize-handle-container .eXEvmo {
   background-color: var(--ffz-channel-color) !important;
 }
 
