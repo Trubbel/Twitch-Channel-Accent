@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.58
+@version     0.0.59
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -46,7 +46,7 @@ var(--ffz-color-accent)
 }
 
 /* Current Streamer -- Sticky Footer (when not signed in) "Sign up to experience the best of X Chat, follow or subscribe – Twitch is your oyster."-background-color */
-[id="twilight-sticky-footer-root"] .bvEyGN {
+[id="twilight-sticky-footer-root"] .epftCf {
   background-color: var(--ffz-channel-color-30) !important;
 }
 
@@ -106,7 +106,7 @@ var(--ffz-color-accent)
 
 
 /* Current Streamer -- HTML Player -- "LIVE"-badge */
-.video-player .hwlNix {
+.video-player .cbXzwD {
   background-color: var(--ffz-channel-color);
 }
 /* Current Streamer -- HTML Player -- "Is video buffering? Use the Low Latency toggle under the Advanced menu in Settings to disable low latency mode"-popup border-color */
@@ -236,13 +236,13 @@ var(--ffz-color-accent)
 }
 
 /* "NEW"-badge -> "Add your bio and social links. Help your viewers get to know you better" */
-.about-section__panel .eqaYMR {
+.about-section__panel .kyyXqX {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
 
 /* Your own stream page -- Home, About, Schedule, Videos-tabs -- "NEW"-badge - "Customize your channel Update your stream schedule, add your social links, and manage your channel preferences" */
-.home-offline-hero__upsell .eqaYMR {
+.home-offline-hero__upsell .kyyXqX {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
@@ -478,7 +478,7 @@ var(--ffz-color-accent)
 
 
 /* Current Streamer -- "Stream Chat" -- "Animated Emotes can be disabled in Settings" */
-[data-test-selector="chat-private-callout-queue__callout-container"] .fNSyNy {
+[data-test-selector="chat-private-callout-queue__callout-container"] .gSHKrs {
   background-color: var(--ffz-channel-color-30) !important;
 }
 
@@ -724,7 +724,7 @@ var(--ffz-color-accent)
 }
 
 /* Current Streamer -- Mod View -- "Users In Chat" -- "Refresh User List"-icon color */
-[data-test-selector="chat-viewers__disabled-refresh"] .cCsRcI {
+[data-test-selector="chat-viewers__disabled-refresh"] .kwfgkq {
   fill: var(--ffz-channel-color);
 }
 
