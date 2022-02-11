@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.61
+@version     0.0.62
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -323,20 +323,6 @@ var(--ffz-color-accent)
   background-color: var(--ffz-channel-color-30);
 }
 
-/* /commands "channel management"-buttons */
-.dMEcCM {
-  background-color: var(--ffz-channel-color-30);
-}
-.dMEcCM:hover {
-  background-color: var(--ffz-channel-color-30);
-}
-.dMEcCM:hover:active {
-  background-color: var(--ffz-channel-color-30);
-}
-.dMEcCM:active {
-  background-color: var(--ffz-channel-color-30);
-}
-
 /* pinned new commands in /commands list */
 [data-test-selector="autocomplete-matches-container"] .epIGZ {
   background-color: var(--ffz-channel-color-30) !important;
@@ -473,6 +459,12 @@ var(--ffz-color-accent)
   color: var(--ffz-channel-color);
 }
 
+/* Current Streamer -- "Stream Chat" -- "Usercard" -- "Banned/Timed out"-badge */
+[data-test-selector="viewer-card-mod-drawer"] .fuPFM {
+  color: var(--color-text-alt);
+  background-color: var(--ffz-channel-color);
+}
+
 
 /* Current Streamer -- "Stream Chat" -- "Animated Emotes can be disabled in Settings" */
 [data-test-selector="chat-private-callout-queue__callout-container"] .gSHKrs {
@@ -525,6 +517,20 @@ var(--ffz-color-accent)
 /* Current Streamer -- "Stream Chat" -- Chant Popup */
 .chat-input .ibEnMt {
   background-color: var(--ffz-channel-color-30) !important;
+}
+
+/* Current Streamer -- "Stream Chat" -- "Channel Management"-buttons, hover */
+.cAfLpy {
+  background-color: var(--ffz-channel-color-30);
+}
+.cAfLpy:hover {
+  background-color: var(--ffz-channel-color-30);
+}
+.cAfLpy:hover:active {
+  background-color: var(--ffz-channel-color-30);
+}
+.cAfLpy:active {
+  background-color: var(--ffz-channel-color-30);
 }
 
 /* Current Streamer -- "Stream Chat" -- Chat Tray Opened - Thread Opened - Replies-border-color */
@@ -624,13 +630,13 @@ var(--ffz-color-accent)
   background-color: var(--ffz-channel-color);
 }
 /* Current Streamer -- "Stream Chat" -- "Chat Settings" -- "Tasks" -- "Review Unban Requests" -- "X NEW"-badge */
-.chat-settings__content .fToerh {
+.chat-settings__content .hqPKsr {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
 
 /* Current Streamer -- "Stream Chat" -- "Chat Settings" -- "Switch to Non-Mod Settings"-text-color */
-[data-test-selector="moderation-mode-toggle-selector"] .bUeMDh {
+[data-test-selector="moderation-mode-toggle-selector"] .jwcWqj {
   color: var(--ffz-channel-color);
 }
 
