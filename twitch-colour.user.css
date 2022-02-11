@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.62
+@version     0.0.63
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -99,7 +99,7 @@ var(--ffz-color-accent)
 }
 
 /* Current Streamer -- (on avatar hover) "The profile image can take you to the channel home" -- "NEW"-badge */
-.home-affordance .eqaYMR {
+.home-affordance .kyyXqX {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
@@ -114,7 +114,7 @@ var(--ffz-color-accent)
   border-top: 3px solid var(--ffz-channel-color);
 }
 /* Current Streamer -- HTML Player -- Current Quality-popup */
-.video-player .gMetEn {
+.video-player .hiLOXJ {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color-30);
 }
@@ -199,7 +199,7 @@ var(--ffz-color-accent)
   background-color: var(--ffz-channel-color);
 }
 /* Current Streamer -- "Videos" -- Recent broadcasts -- Chapters button */
-[data-test-selector="toggle-balloon-wrapper__mouse-enter-detector"] .iodoaw {
+[data-test-selector="toggle-balloon-wrapper__mouse-enter-detector"] .gVnWzG {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
@@ -635,6 +635,12 @@ var(--ffz-color-accent)
   background-color: var(--ffz-channel-color);
 }
 
+/* Current Streamer -- "Stream Chat" -- "Chat Settings" -- "Manage Moderation Settings" -- "NEW"-badge */
+[data-a-target="automod-link-button"] .gpCQTo {
+  color: var(--color-text-alt);
+  background-color: var(--ffz-channel-color);
+}
+
 /* Current Streamer -- "Stream Chat" -- "Chat Settings" -- "Switch to Non-Mod Settings"-text-color */
 [data-test-selector="moderation-mode-toggle-selector"] .jwcWqj {
   color: var(--ffz-channel-color);
@@ -713,6 +719,12 @@ var(--ffz-color-accent)
 /* Current Streamer -- Mod View -- widgets -- "Unban Requests" -- "Unban Request Cooldown Icon"-color */
 .unban-requests-list-sidebar-footer__cooldown-icon {
   color: var(--ffz-channel-color);
+}
+
+/* Current Streamer -- Mod View -- widgets -- "Suspicious User Activity" -- "NEW"-badge */
+[data-highlight-selector="suspicious-user"] .gpCQTo {
+  color: var(--color-text-alt);
+  background-color: var(--ffz-channel-color);
 }
 /* /widgets */
 
