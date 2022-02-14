@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.63
+@version     0.0.64
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -266,7 +266,7 @@ var(--ffz-color-accent)
   fill: var(--ffz-channel-color);
 }
 /* "SAVE"-badge left of "Save by subscribing for longer" */
-.support-panel .fToerh {
+.support-panel .hqPKsr {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
@@ -596,7 +596,7 @@ var(--ffz-color-accent)
   color: var(--ffz-channel-color);
 }
 /* Current Streamer -- "Stream Chat" -- "Channel Points" -- "Rewards & Challenges" -- Channel Points "NEW"-badge */
-.reward-list-item .eqaYMR {
+.reward-list-item .kyyXqX {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
