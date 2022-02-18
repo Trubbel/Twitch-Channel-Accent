@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.64
+@version     0.0.65
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -68,7 +68,7 @@ var(--ffz-color-accent)
   fill: var(--ffz-channel-color);
 }
 /* Current Streamer -- Search Bar -- Drop Down Menu -- "LIVE"-badge-color */
-.search-tray .hwlNix {
+.search-tray .cbXzwD {
   background-color: var(--ffz-channel-color);
 }
 /* Current Streamer -- Search Bar -- Drop Down Menu -- Search Item Color */
@@ -131,11 +131,11 @@ var(--ffz-color-accent)
 }
 
 /* Current Streamer -- Home - About - Schedule - Videos - Chat-active-color (ACTIVE_TAB_INDICATOR) */
-.home-header-sticky .iyBJMB {
+.home-header-sticky .kYOqb {
   color: var(--ffz-channel-color) !important;
 }
 /* Current Streamer -- Home - About - Schedule - Videos - Chat-hover-color (ACTIVE_TAB_INDICATOR) */
-.home-header-sticky .dCwXIp:hover {
+.home-header-sticky .kRfpmL:hover {
   color: var(--ffz-channel-color);
 }
 
@@ -190,7 +190,7 @@ var(--ffz-color-accent)
 
 
 /* Current Streamer -- "Videos" -- "Filter by"-dropdown & "Top"-dropdown, current selected */
-[data-test-selector="balloon-inside-click-detector"] .bbvncg {
+[data-test-selector="balloon-inside-click-detector"] .kLqYKH {
   background-color: var(--ffz-channel-color-30);
 }
 /* Current Streamer -- "Videos" -- "Top"-dropdown, time filter options */
@@ -441,6 +441,10 @@ var(--ffz-color-accent)
 .tw-root--theme-dark .viewer-card-mod-drawer-tab--active {
   background-color: var(--ffz-channel-color-30);
   box-shadow: 0 calc(var(--border-width-default)*-3) 0 var(--ffz-channel-color) inset;
+}
+/* Current Streamer -- "Stream Chat" -- "Usercard" -- Messages, Timeouts, Bans & Mod Comments-font-color */
+[data-test-selector="viewer-card-mod-drawer"] .hcccVl {
+  color: var(--ffz-channel-color) !important;
 }
 
 /* Current Streamer -- "Stream Chat" -- "Usercard" -- "Messages" -- Automod Message */
