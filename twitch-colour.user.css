@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.67
+@version     0.0.68
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -305,12 +305,16 @@ var(--ffz-color-accent)
 .support-panel [data-a-target="tw-progress-bar-animation"] {
   background: var(--ffz-channel-color);
 }
+/* Gift a Sub-button -- "Your Subscription" -- "Next Sub Anniversary on X" "Sub renews on Y"-founders-badge */
+.support-panel .kyyXqX {
+  color: var(--color-text-alt);
+  background-color: var(--ffz-channel-color);
+}
 
 /* Continue Sub - X Days Remaining -- opened -- "Your Subscription" -- "Tier Y Gifted Subscription"-star-icon */
 .support-panel [data-test-selector="CurrentSubscriptionIcon"] .kEjBVe {
   fill: var(--ffz-channel-color);
 }
-
 
 
 /* buttons on hover, hover+active, active */
@@ -341,29 +345,21 @@ var(--ffz-color-accent)
 
 
 
-/* hover on checkbox */
-/* off, on hover border-color */
-.ObwAb:hover {
+/* toggled checkbox button */
+.ScToggleInput-sc-796zbf-1:checked + .dkqBNp.dkqBNp {
   border-color: var(--ffz-channel-color);
 }
-/* toggled on border-color */
-.ScToggleInput-sc-796zbf-1:checked + .ObwAb.ObwAb {
+.ScToggleInput-sc-796zbf-1:checked + .dkqBNp.dkqBNp::before {
   border-color: var(--ffz-channel-color);
 }
-/* toggled on, checkbox button */
-.ScToggleInput-sc-796zbf-1:checked + .ObwAb.ObwAb::after {
+.ScToggleInput-sc-796zbf-1:checked + .dkqBNp.dkqBNp::after {
   background-color: var(--ffz-channel-color);
 }
-/* toggled on, ✔️ icon */
-.ScToggleInput-sc-796zbf-1:checked + .ObwAb.ObwAb::before {
-  border-color: var(--ffz-channel-color);
-}
-
 /* toggled radio button */
-.ScCheckBoxInputBase-sc-1wz0osy-1:checked + .kEnAMA.kEnAMA::before {
+.ScCheckBoxInputBase-sc-1wz0osy-1:checked + .iXepmq.iXepmq::before {
   border-color: var(--ffz-channel-color);
 }
-.ScCheckBoxInputBase-sc-1wz0osy-1:checked + .kEnAMA.kEnAMA::after {
+.ScCheckBoxInputBase-sc-1wz0osy-1:checked + .iXepmq.iXepmq::after {
   background-color: var(--ffz-channel-color);
 }
 
@@ -412,6 +408,16 @@ var(--ffz-color-accent)
 }
 
 /* Current Streamer -- "Stream Chat" -- Hype Train */
+/* Current Streamer -- "Stream Chat" -- Hype Train -- "A Hype Train is close!"-left-border-color */
+.tw-root--theme-dark .hype-train-approaching-view__fill {
+  background-color: var(--ffz-channel-color) !important;
+}
+/* Current Streamer -- "Stream Chat" -- Hype Train -- "A Hype Train is close!"-checkboxes */
+.hype-train-approaching-view__checkboxes-dark {
+  background-color: var(--ffz-channel-color-20);
+  color: var(--ffz-channel-color);
+}
+
 
 
 
