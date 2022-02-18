@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.66
+@version     0.0.67
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -209,7 +209,7 @@ var(--ffz-color-accent)
 }
 
 /* Current Streamer -- About Section -- Verified Badge */
-.about-section__panel .bESOCc [d="M10 2l6 2 2 6-2 6-6 2-6-2-2-6 2-6 6-2zM8.889 13.636l5.43-5.429-1.415-1.414-4.015 4.015-2.015-2.015-1.414 1.414 3.429 3.43z"] {
+.home-header-sticky .kEjBVe [d="M10 2l6 2 2 6-2 6-6 2-6-2-2-6 2-6 6-2zM8.889 13.636l5.43-5.429-1.415-1.414-4.015 4.015-2.015-2.015-1.414 1.414 3.429 3.43z"] {
   fill: var(--ffz-channel-color);
 }
 
@@ -222,6 +222,9 @@ var(--ffz-color-accent)
   color: var(--ffz-channel-color);
 }
 .social-media-link__container .gAJLKe:hover {
+  color: var(--ffz-channel-color);
+}
+.about-section__panel--accent-link:hover {
   color: var(--ffz-channel-color);
 }
 
@@ -311,18 +314,18 @@ var(--ffz-color-accent)
 
 
 /* buttons on hover, hover+active, active */
-.kjAHnz:hover {
+.hMxTJJ:hover {
   background-color: var(--ffz-channel-color-30);
 }
-.kjAHnz:hover:active {
+.hMxTJJ:hover:active {
   background-color: var(--ffz-channel-color-30);
 }
-.kjAHnz:active {
+.hMxTJJ:active {
   background-color: var(--ffz-channel-color-30);
 }
 
 /* current active language, background-color */
-.user-menu-language-list .eCuOGt {
+.user-menu-language-list .kLqYKH {
   background-color: var(--ffz-channel-color-30);
 }
 
@@ -407,6 +410,10 @@ var(--ffz-color-accent)
 [data-test-selector="empty-leaderboard-item-test-selector"] {
   color: var(--ffz-channel-color) !important;
 }
+
+/* Current Streamer -- "Stream Chat" -- Hype Train */
+
+
 
 /* Current Streamer -- "Stream Chat" -- "Live Chat Message Separator Line" */
 .live-message-separator-line__hr {
