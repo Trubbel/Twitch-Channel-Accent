@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.65
+@version     0.0.66
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -219,6 +219,9 @@ var(--ffz-color-accent)
 }
 /* Current Streamer -- About Section -- About links hover - Arrow Icon Color */
 .social-media-link__container:hover + .social-media-link__external-link-icon {
+  color: var(--ffz-channel-color);
+}
+.social-media-link__container .gAJLKe:hover {
   color: var(--ffz-channel-color);
 }
 
