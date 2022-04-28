@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.68
+@version     0.0.69
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -18,7 +18,7 @@ var(--ffz-color-accent)
 */
 
 /* Twitch logo, top left */
-.top-nav__menu .koVOFt {
+.top-nav__menu .kswvAb {
   fill: var(--ffz-channel-color);
 }
 
@@ -33,7 +33,7 @@ var(--ffz-color-accent)
 
 /* ===== following page */
 /* changes the "LIVE"-badge colour on the preview cards, to be the same as their channel accent colour */
-[data-a-target="preview-card-image-link"] .cbXzwD {
+[data-a-target="preview-card-image-link"] .gfqupx {
   background-color: var(--color-accent);
 }
 /* ===== /following page */
@@ -46,7 +46,7 @@ var(--ffz-color-accent)
 }
 
 /* Current Streamer -- Sticky Footer (when not signed in) "Sign up to experience the best of X Chat, follow or subscribe – Twitch is your oyster."-background-color */
-[id="twilight-sticky-footer-root"] .epftCf {
+[id="twilight-sticky-footer-root"] .kJHXRx {
   background-color: var(--ffz-channel-color-30) !important;
 }
 
@@ -64,11 +64,11 @@ var(--ffz-color-accent)
 }
 
 /* Current Streamer -- Search Bar -- Drop Down Menu -- Verified Badge-color */
-.search-tray .bESOCc [d="M10 2l6 2 2 6-2 6-6 2-6-2-2-6 2-6 6-2zM8.889 13.636l5.43-5.429-1.415-1.414-4.015 4.015-2.015-2.015-1.414 1.414 3.429 3.43z"] {
+.search-tray .jxWtmu [d="M10 2l6 2 2 6-2 6-6 2-6-2-2-6 2-6 6-2zM8.889 13.636l5.43-5.429-1.415-1.414-4.015 4.015-2.015-2.015-1.414 1.414 3.429 3.43z"] {
   fill: var(--ffz-channel-color);
 }
 /* Current Streamer -- Search Bar -- Drop Down Menu -- "LIVE"-badge-color */
-.search-tray .cbXzwD {
+.search-tray .gfqupx {
   background-color: var(--ffz-channel-color);
 }
 /* Current Streamer -- Search Bar -- Drop Down Menu -- Search Item Color */
@@ -77,7 +77,14 @@ var(--ffz-color-accent)
 }
 
 /* Current Streamer -- Notifications -- Prime Loot, Notifications, Whispers -- Background-color */
-.jWbNQM {
+.jbnvCy {
+  background-color: var(--ffz-channel-color);
+}
+/* Current Streamer -- Notifications -- Notifications - Selected Tab */
+[aria-describedby="OnsiteNotificationPopover-body"] [aria-selected="true"] .tnwgF {
+  color: var(--ffz-channel-color) !important;
+}
+[aria-describedby="OnsiteNotificationPopover-body"] .iaTrsR {
   background-color: var(--ffz-channel-color);
 }
 /* Current Streamer -- Notifications -- Whispers -- Whispers Popup -- on Hover Items */
@@ -90,11 +97,16 @@ var(--ffz-color-accent)
   background-color: var(--ffz-channel-color-30) !important;
 }
 /* Current Streamer -- "Followed Channels" -- on Hover -- "LIVE"-badge - {if (vx_left_pop) experiment is enabled} */
-.online-side-nav-channel-tooltip__body--image .cbXzwD {
+.online-side-nav-channel-tooltip__body--image .gfqupx {
   background-color: var(--ffz-channel-color);
 }
 /* Current Streamer -- "Followed Channels" -- Hover on Current Game Played - {if (vx_left_nav_category_click_thru) experiment is enabled} */
 .tw-root--theme-dark .side-nav-card__link:hover .tw-link:hover {
+  color: var(--ffz-channel-color);
+}
+/* Current Streamer -- "Followed Channels" -- Gift Icon - {if (sidenav_active_gift) experiment is enabled} */
+.side-nav-card__live-status .cJgFZg {
+  background-color: var(--ffz-channel-color-20);
   color: var(--ffz-channel-color);
 }
 
@@ -106,7 +118,7 @@ var(--ffz-color-accent)
 
 
 /* Current Streamer -- HTML Player -- "LIVE"-badge */
-.video-player .cbXzwD {
+.video-player .gfqupx {
   background-color: var(--ffz-channel-color);
 }
 /* Current Streamer -- HTML Player -- "Is video buffering? Use the Low Latency toggle under the Advanced menu in Settings to disable low latency mode"-popup border-color */
@@ -114,7 +126,7 @@ var(--ffz-color-accent)
   border-top: 3px solid var(--ffz-channel-color);
 }
 /* Current Streamer -- HTML Player -- Current Quality-popup */
-.video-player .hiLOXJ {
+.video-player .hEHNVv {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color-30);
 }
@@ -131,29 +143,33 @@ var(--ffz-color-accent)
 }
 
 /* Current Streamer -- Home - About - Schedule - Videos - Chat-active-color (ACTIVE_TAB_INDICATOR) */
-.home-header-sticky .kYOqb {
+.home-header-sticky .gUkZpl {
   color: var(--ffz-channel-color) !important;
 }
 /* Current Streamer -- Home - About - Schedule - Videos - Chat-hover-color (ACTIVE_TAB_INDICATOR) */
-.home-header-sticky .kRfpmL:hover {
+.home-header-sticky .kMHbQR:hover {
   color: var(--ffz-channel-color);
 }
 
 
-/* (below the "LIVE NOW"-badge) "Watch now with X viewers" */
-.home-carousel-info--live.home-carousel-info .jxwNWA {
+/* Current Streamer -- Home - About - Schedule - Videos - Chat -- "Live Now"-badge -- "X is streaming Y" -- "Watch now with X viewers"-text-color */
+.home-carousel-info--live.home-carousel-info .ktfxqP {
   color: var(--ffz-channel-color);
 }
-/* "LIVE"-badge below user avatar */
-.user-avatar-card__live .cbXzwD {
+/* Current Streamer -- Fix avatar border-color when site is loading */
+.channel-root__info .djUWkE::before {
+  border-color: var(--ffz-channel-color);
+}
+/* Current Streamer -- "LIVE"-badge below user avatar */
+.user-avatar-card__live .gfqupx {
   background-color: var(--ffz-channel-color);
 }
 /* verified badge next to the user avatar */
-.channel-info-content .bESOCc [d="M12.5 3.5L8 2L3.5 3.5L2 8L3.5 12.5L8 14L12.5 12.5L14 8L12.5 3.5ZM7.00008 11L11.5 6.5L10 5L7.00008 8L5.5 6.5L4 8L7.00008 11Z"] {
+.channel-info-content .jxWtmu [d="M12.5 3.5L8 2L3.5 3.5L2 8L3.5 12.5L8 14L12.5 12.5L14 8L12.5 3.5ZM7.00008 11L11.5 6.5L10 5L7.00008 8L5.5 6.5L4 8L7.00008 11Z"] {
   fill: var(--ffz-channel-color);
 }
-/* verified badge when on, Home, About, Schedule, Videos-tabs */
-.kcrFWs [d="M10 2l6 2 2 6-2 6-6 2-6-2-2-6 2-6 6-2zM8.889 13.636l5.43-5.429-1.415-1.414-4.015 4.015-2.015-2.015-1.414 1.414 3.429 3.43z"] {
+/* Current Streamer -- (when offline) -- Home, About, Schedule, Videos-tabs -- Verified icon */
+.home-header-sticky .eNrElQ [d="M10 2l6 2 2 6-2 6-6 2-6-2-2-6 2-6 6-2zM8.889 13.636l5.43-5.429-1.415-1.414-4.015 4.015-2.015-2.015-1.414 1.414 3.429 3.43z"] {
   fill: var(--ffz-channel-color);
 }
 
@@ -190,16 +206,20 @@ var(--ffz-color-accent)
 
 
 /* Current Streamer -- "Videos" -- "Filter by"-dropdown & "Top"-dropdown, current selected */
-[data-test-selector="balloon-inside-click-detector"] .kLqYKH {
+[data-test-selector="balloon-inside-click-detector"] .ifHLGh {
   background-color: var(--ffz-channel-color-30);
 }
 /* Current Streamer -- "Videos" -- "Top"-dropdown, time filter options */
-[data-test-selector="balloon-inside-click-detector"] .ciyqCe {
+button[data-a-target="time-filter-selection"] .kKcsAF {
+  color: var(--color-text-alt);
+  background-color: var(--ffz-channel-color);
+}
+[data-test-selector="balloon-inside-click-detector"] .kKcsAF {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
 /* Current Streamer -- "Videos" -- Recent broadcasts -- Chapters button */
-[data-test-selector="toggle-balloon-wrapper__mouse-enter-detector"] .gVnWzG {
+[data-test-selector="toggle-balloon-wrapper__mouse-enter-detector"] .QlOjE {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
@@ -209,7 +229,7 @@ var(--ffz-color-accent)
 }
 
 /* Current Streamer -- About Section -- Verified Badge */
-.about-section .bESOCc [d="M10 2l6 2 2 6-2 6-6 2-6-2-2-6 2-6 6-2zM8.889 13.636l5.43-5.429-1.415-1.414-4.015 4.015-2.015-2.015-1.414 1.414 3.429 3.43z"] {
+.about-section .jxWtmu [d="M10 2l6 2 2 6-2 6-6 2-6-2-2-6 2-6 6-2zM8.889 13.636l5.43-5.429-1.415-1.414-4.015 4.015-2.015-2.015-1.414 1.414 3.429 3.43z"] {
   fill: var(--ffz-channel-color);
 }
 
@@ -223,7 +243,7 @@ var(--ffz-color-accent)
 }
 
 /* Current Streamer -- About Section -- Team & About links on hover */
-.about-section .AKPzc:hover {
+.about-section .qUcyI:hover {
   color: var(--ffz-channel-color);
 }
 /* Current Streamer -- About Section -- About links hover - Arrow Icon Color */
@@ -238,26 +258,26 @@ var(--ffz-color-accent)
 }
 
 /* Current Streamer -- Channel Viewer Count */
-.hRBkFL {
+.iJGqwF {
   fill: var(--ffz-channel-color);
 }
-.gUIXeB {
+.dGdFJX {
   color: var(--ffz-channel-color) !important;
 }
 
 /* Current Streamer -- Channel Tags - On Hover */
-.hrkHJN:not(:disabled):hover {
+.iKNvdP:not(:disabled):hover {
   background-color: var(--ffz-channel-color-30);
 }
 
 /* "NEW"-badge -> "Add your bio and social links. Help your viewers get to know you better" */
-.about-section__panel .kyyXqX {
+.about-section__panel .kKcsAF {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
 
 /* Your own stream page -- Home, About, Schedule, Videos-tabs -- "NEW"-badge - "Customize your channel Update your stream schedule, add your social links, and manage your channel preferences" */
-.home-offline-hero__upsell .kyyXqX {
+.home-offline-hero__upsell .kKcsAF {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
@@ -286,11 +306,11 @@ var(--ffz-color-accent)
 
 /* Subscribe-button -- opened */
 /* Subscribe-button -- opened -- verified badge */
-.support-panel .hcjcOH [d="M10 2l6 2 2 6-2 6-6 2-6-2-2-6 2-6 6-2zM8.889 13.636l5.43-5.429-1.415-1.414-4.015 4.015-2.015-2.015-1.414 1.414 3.429 3.43z"] {
+.support-panel .ifdSJl [d="M10 2l6 2 2 6-2 6-6 2-6-2-2-6 2-6 6-2zM8.889 13.636l5.43-5.429-1.415-1.414-4.015 4.015-2.015-2.015-1.414 1.414 3.429 3.43z"] {
   fill: var(--ffz-channel-color);
 }
-/* "SAVE"-badge left of "Save by subscribing for longer" */
-.support-panel .hqPKsr {
+/* Subscribe-button -- "Save by subscribing for longer" -- "SAVE"-badge */
+.support-panel .cvUttZ {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
@@ -302,7 +322,7 @@ var(--ffz-color-accent)
 
 /* Gift a Sub-button -- opened */
 /* Gift a Sub-button -- opened -- "Gift a specific viewer"-text color */
-.support-panel .jwcWqj {
+.support-panel .fQvHcx {
   color: var(--ffz-channel-color);
 }
 
@@ -336,38 +356,38 @@ var(--ffz-color-accent)
 
 
 /* buttons on hover, hover+active, active */
-.hMxTJJ:hover {
+.hZWZXL:hover {
   background-color: var(--ffz-channel-color-30);
 }
-.hMxTJJ:hover:active {
+.hZWZXL:hover:active {
   background-color: var(--ffz-channel-color-30);
 }
-.hMxTJJ:active {
+.hZWZXL:active {
   background-color: var(--ffz-channel-color-30);
 }
 
 /* current active language, background-color */
-.user-menu-language-list .kLqYKH {
+.user-menu-language-list .ifHLGh {
   background-color: var(--ffz-channel-color-30);
 }
 
 
 /* toggled checkbox button */
-.ScToggleInput-sc-796zbf-1:checked + .dkqBNp.dkqBNp {
+.ScToggleInput-sc-796zbf-1:checked + .dEPNHE.dEPNHE {
   border-color: var(--ffz-channel-color);
 }
-.ScToggleInput-sc-796zbf-1:checked + .dkqBNp.dkqBNp::before {
-  border-color: var(--ffz-channel-color);
-}
-.ScToggleInput-sc-796zbf-1:checked + .dkqBNp.dkqBNp::after {
+.ScToggleInput-sc-796zbf-1:checked + .dEPNHE.dEPNHE::after {
   background-color: var(--ffz-channel-color);
+}
+.ScToggleInput-sc-796zbf-1:checked + .dEPNHE.dEPNHE::before {
+  border-color: var(--ffz-channel-color);
 }
 /* toggled radio button */
-.ScCheckBoxInputBase-sc-1wz0osy-1:checked + .iXepmq.iXepmq::before {
-  border-color: var(--ffz-channel-color);
-}
-.ScCheckBoxInputBase-sc-1wz0osy-1:checked + .iXepmq.iXepmq::after {
+.ScCheckBoxInputBase-sc-1wz0osy-1:checked + .gilgNR.gilgNR::after {
   background-color: var(--ffz-channel-color);
+}
+.ScCheckBoxInputBase-sc-1wz0osy-1:checked + .gilgNR.gilgNR::before {
+  border-color: var(--ffz-channel-color);
 }
 
 
@@ -428,27 +448,47 @@ var(--ffz-color-accent)
   background: var(--ffz-channel-color);
 }
 
-/* Current Streamer -- "Stream Chat" -- "Gift a Sub now to be #1!" & "Cheer now to be #1!"-text color */
+/* Current Streamer -- "Stream Chat" -- "Leaderboard" -- "Gift a Sub now to be #1!" & "Cheer now to be #1!"-text color */
 [data-test-selector="empty-leaderboard-item-test-selector"] {
   color: var(--ffz-channel-color) !important;
 }
 
-/* Current Streamer -- "Stream Chat" -- Gift / Cheer leaderboard expanded - Hover on collapse arrow-color */
+/* Current Streamer -- "Stream Chat" -- "Leaderboard" -- Gift / Cheer Leaderboard Expanded - Hover on collapse arrow-color */
 .tw-root--theme-dark .bits-leaderboard-expanded__collapse svg {
   fill: var(--ffz-channel-color);
 }
+/* Current Streamer -- "Stream Chat" -- "Leaderboard" -- Gift / Cheer Leaderboard Expanded -- Your current placement */
+.bits-leaderboard-expanded-leaderboard-entry__rank .kKcsAF {
+  color: var(--color-text-alt);
+  background-color: var(--ffz-channel-color);
+}
 
-/* Current Streamer -- "Stream Chat" -- Hype Train */
-/* Current Streamer -- "Stream Chat" -- Hype Train -- "A Hype Train is close!"-left-border-color */
+/* Current Streamer -- "Stream Chat" -- "Hype Train" */
+/* Current Streamer -- "Stream Chat" -- "Hype Train" -- "A Hype Train is close!"-left-border-color */
 .tw-root--theme-dark .hype-train-approaching-view__fill {
   background-color: var(--ffz-channel-color) !important;
 }
-/* Current Streamer -- "Stream Chat" -- Hype Train -- "A Hype Train is close!"-checkboxes */
+/* Current Streamer -- "Stream Chat" -- "Hype Train" -- "A Hype Train is close!"-checkboxes */
 .hype-train-approaching-view__checkboxes-dark {
   background-color: var(--ffz-channel-color-20);
   color: var(--ffz-channel-color);
 }
-
+/* Current Streamer -- "Stream Chat" -- "Hype Train" -- "LVL X Hype Train - Sub, gift, or use Bits to get to the next level" */
+.hype-train-progress-bar__fill {
+  background-color: var(--ffz-channel-color) !important;
+}
+/* Current Streamer -- "Stream Chat" -- "Hype Train" -- "Level X complete!" */
+.hype-train-level-up__container {
+  background-color: var(--ffz-channel-color) !important;
+}
+/* Current Streamer -- "Stream Chat" -- "Hype Train" -- "Train Completed" */
+.hype-train-complete__container {
+  background-color: var(--ffz-channel-color) !important;
+}
+/* Current Streamer -- "Stream Chat" -- "Hype Train" -- "Hype Train incoming!" "You'll have a limited time to earn exclusive emotes" */
+.hype-train-start__container {
+  background-color: var(--ffz-channel-color) !important;
+}
 
 
 
@@ -456,16 +496,24 @@ var(--ffz-color-accent)
 .live-message-separator-line__hr {
   border-top: var(--border-width-default) solid var(--ffz-channel-color) !important;
 }
-.eVtLxN {
+.rjNbb {
   color: var(--ffz-channel-color) !important;
 }
 
+/* Current Streamer -- "Stream Chat" -- AutoMod -- "Messages" -- Automod Message Flagged/Rejected */
+.chat-line__message--alert {
+  background-color: rgb(233, 25, 22, .2) !important;
+}
+/* Current Streamer -- "Stream Chat" -- AutoMod -- "Messages" -- Automod Message Highlight */
+.text-fragment--moderated-highlight {
+  background-color: rgba(236, 19, 19, .5) !important;
+}
 
 
 /* Current Streamer -- "Stream Chat" -- Subscribe Message -- "X subscribed at Tier Y. They've subscribed for Z months!"-background-color */
 /* & "X subscribed with Prime Gaming. */
 .ffz--subscribe-line {
-  background-color: var(--ffz-channel-color-30);
+  background-color: var(--ffz-channel-color-20);
 }
 /* Current Streamer -- "Stream Chat" -- Subscribe Message -- Star Icon-color */
 .ffz--subscribe-line .ffz-i-star::before {
@@ -478,10 +526,54 @@ var(--ffz-color-accent)
 
 
 /* Current Streamer -- "Stream Chat" -- "Only visible to you" -- "It's your X month sub anniversary!"-star-icon */
-.chat-room .inline-private-callout-line__icon .kwfgkq {
+.chat-room .inline-private-callout-line__icon .kjVepY {
   fill: var(--ffz-channel-color);
 }
 
+
+
+/* Current Streamer -- "Stream Chat" -- "Highlights in Chat" */
+/* Current Streamer -- "Stream Chat" -- "Highlights in Chat" -- "First Time Chat from viewer"-background-color */
+/* Uses the same color from the border-color for the background-color */
+.cJgrsK[style="border-left-color: rgb(255, 117, 230);"]  {
+  background-color: rgb(255, 117, 230, .2) !important;
+}
+/* Current Streamer -- "Stream Chat" -- "Highlights in Chat" -- "First Time Chat from viewer"-icon-color */
+.cJgrsK[style="border-left-color: rgb(255, 117, 230);"] .jxWtmu  {
+  fill: rgb(255, 117, 230) !important;
+}
+/* Current Streamer -- "Stream Chat" -- "Highlights in Chat" -- "X is paying forward the Gift they got from Y to Z!" */
+/* & "X is paying forward the Gift they got from Y to the community!" */
+.tw-root--theme-dark .gift-pay-forward-line {
+  border-left: 4px solid var(--ffz-channel-color);
+  background-color: var(--ffz-channel-color-20);
+}
+/* Current Streamer -- "Stream Chat" -- "Highlights in Chat" -- "X is raiding with a party of Y." */
+[style="border-left-color: rgb(255, 170, 14);"] {
+  background-color: var(--ffz-channel-color-20) !important;
+}
+/* Current Streamer -- "Stream Chat" -- "Highlights in Chat" -- "Cheered X Bits" */
+/* & "X redeemed Y" */
+.ffz-notice-line:not(.ffz--subscribe-line):not(.ffz--points-highlight) {
+  background-color: var(--ffz-channel-color-20);
+}
+/* Current Streamer -- "Stream Chat" -- "Highlights in Chat" -- "Suspicious User, Monitored by X"-background-color */
+.cJgrsK[style="border-left-color: rgb(255, 130, 128);"] {
+  background-color: rgba(255, 130, 128, .2) !important;
+}
+/* Current Streamer -- "Stream Chat" -- "Highlights in Chat" -- "Suspicious User, Monitored by X"-icon-color */
+.cJgrsK[style="border-left-color: rgb(255, 130, 128);"] .jxWtmu {
+  fill: rgb(255, 130, 128);
+}
+/* Current Streamer -- "Stream Chat" -- "Highlights in Chat" -- "X is raiding with a party of Y." */
+/* & "X Converted from a Prime sub to a Tier Y sub!" */
+.user-notice-line--highlighted {
+  background-color: var(--ffz-channel-color-20) !important;
+}
+/* Current Streamer -- "Stream Chat" -- "Highlights in Chat" -- "X Converted from a Prime sub to a Tier Y sub!"-star-icon */
+.user-notice-line--highlighted .jxWtmu {
+  fill: var(--ffz-channel-color);
+}
 
 
 /* Current Streamer -- "Stream Chat" -- "Usercard" -- Background-color to Active Tabs */
@@ -490,19 +582,13 @@ var(--ffz-color-accent)
   box-shadow: 0 calc(var(--border-width-default)*-3) 0 var(--ffz-channel-color) inset;
 }
 /* Current Streamer -- "Stream Chat" -- "Usercard" -- Messages, Timeouts, Bans & Mod Comments-font-color */
-[data-test-selector="viewer-card-mod-drawer"] .hcccVl {
+[data-test-selector="viewer-card-mod-drawer"] .gPGSYj {
   color: var(--ffz-channel-color) !important;
 }
 
-/* Current Streamer -- "Stream Chat" -- "Usercard" -- "Messages" -- Automod Message */
-.automod-message {
-  color: var(--ffz-channel-color) !important;
-  background-color: var(--ffz-channel-color-30);
-}
-/* Current Streamer -- "Stream Chat" -- "Usercard" -- "Messages" -- Automod Message Flagged/Rejected */
+/* Current Streamer -- "Stream Chat" -- "Usercard" -- "Messages" -- AutoMod Message Flagged/Rejected */
 .flagged-message--rejected {
-  border-left: 3px solid var(--ffz-channel-color);
-  background-color: var(--ffz-channel-color-30);
+  background-color: rgb(239, 239, 241, .2);
 }
 
 /* Current Streamer -- "Stream Chat" -- "Usercard" -- "⚠ Unable to fetch account"-text-color */
@@ -511,19 +597,19 @@ var(--ffz-color-accent)
 }
 
 /* Current Streamer -- "Stream Chat" -- "Usercard" -- "Banned/Timed out"-badge */
-[data-test-selector="viewer-card-mod-drawer"] .fuPFM {
+[data-test-selector="viewer-card-mod-drawer"] .guUwaK {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
 
 /* Current Streamer -- "Stream Chat" -- "Usercard" -- "Manage Suspicious User" -- "NEW"-badge */
-.viewer-card-header__overlay .gpCQTo {
+.viewer-card-header__overlay .iNzqsS {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
 
 /* Current Streamer -- "Stream Chat" -- "Animated Emotes can be disabled in Settings" */
-[data-test-selector="chat-private-callout-queue__callout-container"] .gSHKrs {
+[data-test-selector="chat-private-callout-queue__callout-container"] .tEmJK {
   background-color: var(--ffz-channel-color-30) !important;
 }
 
@@ -541,12 +627,13 @@ var(--ffz-color-accent)
 }
 
 /* Current Streamer -- "Stream Chat" -- "It's your X month sub anniversary!"-background-color */
-[data-test-selector="chat-private-callout-queue__callout-container"] .fduRKY {
+/* & "Y added you as a Moderator of this channel!" */
+[data-test-selector="chat-private-callout-queue__callout-container"] .hXBSxi {
   background-color: var(--ffz-channel-color-30) !important;
 }
 
 /* Current Streamer -- "Stream Chat" -- "It's your X month sub anniversary!"-star-icon */
-.chat-input .fduRKY .kwfgkq {
+.tw-root--theme-dark .chat-private-callout__icon .kjVepY {
   fill: var(--ffz-channel-color);
 }
 /* Current Streamer -- "Stream Chat" -- "It's your X month sub anniversary!"-star-background-color */
@@ -559,8 +646,12 @@ var(--ffz-color-accent)
   border-color: var(--ffz-channel-color) !important;
 }
 /* Current Streamer -- "Stream Chat" -- Pinned Above Chat-background-color */
-.pinned-callout.iVXXBj {
+.pinned-callout.cAIelx {
   background-color: var(--ffz-channel-color-20) !important;
+}
+/* Current Streamer -- "Stream Chat" -- Pinned Above -- "It's your X month sub anniversary!"-star-icon */
+.pinned-callout__input-revamp .kjVepY {
+  fill: var(--ffz-channel-color);
 }
 
 /* Current Streamer -- "Stream Chat" -- "It's your X month sub anniversary!" -- Pinned in Chat -- Background-color */
@@ -588,31 +679,31 @@ var(--ffz-color-accent)
   background-color: var(--ffz-channel-color-30) !important;
 }
 /* Current Streamer -- "Stream Chat" -- "Commands List" -- New Pinned Command+"NEW"-badge */
-[data-test-selector="autocomplete-matches-container"] .eqaYMR {
+[data-test-selector="autocomplete-matches-container"] .kKcsAF {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color-30);
 }
 
 
-/* Current Streamer -- "Stream Chat" -- "Channel Management"-buttons, hover */
-.cAfLpy {
+/* Current Streamer -- "Stream Chat" -- "Commands List" -- "Channel Management"-buttons */
+.jwoQnU {
   background-color: var(--ffz-channel-color-30);
 }
-.cAfLpy:hover {
+.jwoQnU:hover {
   background-color: var(--ffz-channel-color-30);
 }
-.cAfLpy:hover:active {
+.jwoQnU:hover:active {
   background-color: var(--ffz-channel-color-30);
 }
-.cAfLpy:active {
+.jwoQnU:active {
   background-color: var(--ffz-channel-color-30);
 }
 
-/* Current Streamer -- "Stream Chat" -- Chat Tray - "Emote Only Chat", "Followers-Only Chat" & "Subscribers-Only Chat"-text-color */
-.chat-input-tray__clickable .cFsnxp {
+/* Current Streamer -- "Stream Chat" -- Chat Tray - "Emote Only Chat", "Followers Only Chat", "Slow Mode" & "Subscribers Only Chat"-text-color */
+.chat-input-tray__clickable .gokoKD {
   color: var(--ffz-channel-color) !important;
 }
-.chat-input-tray__clickable .bESOCc {
+.chat-input-tray__clickable .jxWtmu {
   fill: var(--ffz-channel-color);
 }
 
@@ -630,7 +721,7 @@ var(--ffz-color-accent)
 
 
 /* Current Streamer -- "Stream Chat" -- "Cheering Supports Your Streamer!" -- "Cheering Anonymously"-Ghost Icon */
-.t-bits-card__contents--anonymous .kEjBVe {
+.t-bits-card__contents--anonymous .eNrElQ {
   fill: var(--ffz-channel-color);
 }
 /* Current Streamer -- "Stream Chat" -- "Cheering Supports Your Streamer!" -- hover on items */
@@ -643,7 +734,7 @@ var(--ffz-color-accent)
   box-shadow: none;
 }
 /* Current Streamer -- "Stream Chat" -- "Cheering Supports Your Streamer!" -- "Show All Cheermotes"-text-color */
-.bits-card-wrapper .jwcWqj {
+.bits-card-wrapper .fQvHcx {
   color: var(--ffz-channel-color);
 }
 /* Current Streamer -- "Stream Chat" -- "Cheering Supports Your Streamer!"-bottom-background-color */
@@ -651,6 +742,15 @@ var(--ffz-color-accent)
   background-color: var(--ffz-channel-color-30);
 }
 
+
+/* Current Streamer -- "Stream Chat" -- (once unbanned from an appeal) -- "Acknowledge Ban" -- "You have been unbanned from Chat"-border-color */
+.tw-root--theme-dark .acknowledge-unban-request__scrim .unbanned-from-chat-banner {
+  border: 1px solid var(--ffz-channel-color);
+}
+/* Current Streamer -- "Stream Chat" -- (once unbanned from an appeal) -- "Acknowledge Ban" -- "You have been unbanned from Chat"-checkmark-icon */
+.tw-root--theme-dark .acknowledge-unban-request__scrim .unbanned-from-chat-banner__icon {
+  color: var(--ffz-channel-color);
+}
 
 
 
@@ -660,7 +760,7 @@ var(--ffz-color-accent)
   background-color: var(--ffz-channel-color-30);
 }
 /* Current Streamer -- "Stream Chat" -- "Twitch Native Emote Menu" -- "Frequently Used"-emote tab */
-.emote-picker-tab-item-wrapper__active .bESOCc {
+.emote-picker-tab-item-wrapper__active .jxWtmu {
   fill: var(--ffz-channel-color);
 }
 /* Current Streamer -- "Stream Chat" -- "Twitch Native Emote Menu" -- hover on emotes, background-color */
@@ -678,21 +778,30 @@ var(--ffz-color-accent)
 
 
 /* Current Streamer -- "Stream Chat" -- "Channel Points" */
-.community-points-summary .bESOCc {
+.community-points-summary .jxWtmu {
   color: var(--ffz-channel-color);
 }
 /* Current Streamer -- "Stream Chat" -- "Channel Points" -- "Rewards & Challenges" -- Channel Points Icon */
-.channel-points-icon .bESOCc {
+.channel-points-icon .jxWtmu {
   color: var(--ffz-channel-color);
 }
 /* Current Streamer -- "Stream Chat" -- "Channel Points" -- "Rewards & Challenges" -- Channel Points "NEW"-badge */
-.reward-list-item .kyyXqX {
+.reward-list-item .kKcsAF {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
 /* Current Streamer -- "Stream Chat" -- "Channel Points" -- "Rewards & Challenges" -- "Community Goals Item -- 100% Raised" */
 .community-goals-list-item__fill {
   background-color: var(--ffz-channel-color);
+}
+
+/* Current Streamer -- "Stream Chat" -- "Channel Points" -- Earned New Points popup (Big) */
+.community-points-summary__points-add-text {
+  color: var(--ffz-channel-color);
+}
+/* Current Streamer -- "Stream Chat" -- "Channel Points" -- Earned New Points popup (Small) */
+.community-points-summary .idNDiA {
+  color: var(--ffz-channel-color) !important;
 }
 
 
@@ -720,7 +829,7 @@ var(--ffz-color-accent)
   background-color: var(--ffz-channel-color);
 }
 /* Current Streamer -- "Stream Chat" -- "Chat Settings" -- "Tasks" -- "Review Unban Requests" -- "X NEW"-badge */
-.chat-settings__content .hqPKsr {
+.chat-settings__content .cvUttZ {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
@@ -732,7 +841,7 @@ var(--ffz-color-accent)
 }
 
 /* Current Streamer -- "Stream Chat" -- "Chat Settings" -- "Switch to Non-Mod Settings"-text-color */
-[data-test-selector="moderation-mode-toggle-selector"] .jwcWqj {
+[data-test-selector="moderation-mode-toggle-selector"] .fQvHcx {
   color: var(--ffz-channel-color);
 }
 
@@ -745,7 +854,7 @@ var(--ffz-color-accent)
 
 /* ===== mod view page */
 /* Current Streamer -- Mod View -- "LIVE"-badge Above Stream */
-.live-indicator .cbXzwD {
+.live-indicator .gfqupx {
   background-color: var(--ffz-channel-color);
 }
 
@@ -755,7 +864,7 @@ var(--ffz-color-accent)
 }
 
 /* Current Streamer -- Mod View -- Viewer Count */
-.modview-player-widget__viewcount .koqatG {
+.modview-player-widget__viewcount .jpbxak {
   color: var(--ffz-channel-color) !important;
 }
 
@@ -769,7 +878,7 @@ var(--ffz-color-accent)
 
 /* Widgets */
 /* Current Streamer -- Mod View -- Widgets -- "Session"-viewer count text-color */
-[data-test-selector="session-widget-viewer-count"] .hJuVPn {
+[data-test-selector="session-widget-viewer-count"] .hMaWAp {
   color: var(--ffz-channel-color) !important;
 }
 
@@ -779,7 +888,7 @@ var(--ffz-color-accent)
 }
 
 /* Current Streamer -- Mod View -- Widgets -- Whispers (amount of whispers icon) */
-[class="modview-dock-widget__panel"] .fuPFM {
+[class="modview-dock-widget__panel"] .guUwaK {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
@@ -793,7 +902,7 @@ var(--ffz-color-accent)
 }
 
 /* Current Streamer -- Mod View -- Widgets -- "Other Channels You Follow (X Live)" */
-[class="modview-dock-widget__panel"] .hiLOXJ {
+[class="modview-dock-widget__panel"] .hEHNVv {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
@@ -819,7 +928,7 @@ var(--ffz-color-accent)
 }
 
 /* Current Streamer -- Mod View -- Widgets -- "Suspicious User Activity" -- "NEW"-badge */
-[data-highlight-selector="suspicious-user"] .gpCQTo {
+[data-highlight-selector="suspicious-user"] .iNzqsS {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
@@ -841,7 +950,7 @@ var(--ffz-color-accent)
 
 
 /* Current Streamer -- Mod View -- "Users In Chat" -- "Refresh User List"-icon color */
-[data-test-selector="chat-viewers__disabled-refresh"] .kwfgkq {
+[data-test-selector="chat-viewers__disabled-refresh"] .kjVepY {
   fill: var(--ffz-channel-color);
 }
 
@@ -859,30 +968,30 @@ var(--ffz-color-accent)
 
 
 /* ===== addons/extensions */
-/* ffz -- new settings notification badge */
+/* FFZ -- new settings notification badge */
 .ffz-top-nav .tw-pill {
   background-color: var(--ffz-channel-color);
 }
-/* ffz -- control center -- current active profile, border-color */
+/* FFZ -- control center -- current active profile, border-color */
 .ffz--profile-row.current {
   border-left-color: var(--ffz-channel-color);
 }
-/* ffz -- control center -- on hover profile */
+/* FFZ -- control center -- on hover profile */
 .ffz--profile-row:focus, .ffz--profile-row:hover {
   background-color: var(--ffz-channel-color-30);
 }
 
-/* ffz -- control center -- "Mark All Seen"-button */
+/* FFZ -- control center -- "Mark All Seen"-button */
 .ffz-button--hollow:hover, .ffz-button--hollow:focus, .ffz-button--hollow:active {
   background: var(--ffz-channel-color) !important;
 }
 
-/* ffz -- control center -- "Reset to Default"-button-color */
+/* FFZ -- control center -- "Reset to Default"-button-color */
 .tw-button--text {
   color: var(--ffz-channel-color);
 }
 
-/* ffz -- control center -- checkboxes */
+/* FFZ -- control center -- checkboxes */
 .ffz-checkbox__input:checked + .ffz-checkbox__label::before, .ffz-checkbox__input:indeterminate + .ffz-checkbox__label::before {
   border: var(--border-width-input) solid var(--ffz-channel-color);
 }
@@ -894,7 +1003,7 @@ var(--ffz-color-accent)
   border: var(--border-width-input) solid var(--ffz-channel-color);
 }
 
-/* ffz -- control center -- input textarea */
+/* FFZ -- control center -- input textarea */
 .ffz-input:focus, .ffz-input:focus:hover, .ffz-select:focus, .ffz-select:focus:hover, .ffz-textarea:focus, .ffz-textarea:focus:hover {
   border: var(--border-width-input) solid var(--ffz-channel-color);
 }
@@ -903,45 +1012,49 @@ var(--ffz-color-accent)
   opacity: 1 !important;
 }
 
-/* ffz -- control center -- "NEW"-feature-badge */
+/* FFZ -- control center -- "NEW"-feature-badge */
 .ffz--menu-page .ffz--widget .tw-pill {
   background-color: var(--ffz-channel-color);
   color: var(--color-text-alt);
 }
 
-/* ffz -- control center -- active item */
+/* FFZ -- control center -- active item */
 .ffz--menu-tree .active > div, .ffz--menu-tree .active > div:hover, .tw-root--theme-dark .ffz--menu-tree .active > div:hover {
   background-color: var(--ffz-channel-color-30);
 }
-/* ffz -- control center -- hover on item */
+/* FFZ -- control center -- hover on item */
 .ffz--menu-tree div:hover {
   background-color: var(--ffz-channel-color-30);
 }
 
-/* ffz -- control center -- for stuff like "This profile is not active.", "It's dangerous to go at all." etc. */
+/* FFZ -- control center -- for stuff like "This profile is not active.", "It's dangerous to go at all." etc. */
 .ffz--menu-page .tw-c-background-accent {
   background-color: var(--ffz-channel-color-30) !important;
 }
 
-/* ffz -- control center -- enabled experiments -- "resizable_chat_column"-color */
-.right-column__resize-handle-container .cvVUhu {
+/* FFZ -- control center -- enabled experiments -- "resizable_chat_column"-color */
+.right-column__resize-handle-container .bVOZpQ {
   background-color: var(--ffz-channel-color) !important;
 }
-.right-column__resize-handle-container .eXEvmo {
+.right-column__resize-handle-container .eQxVEa {
   background-color: var(--ffz-channel-color) !important;
 }
 
-/* ffz -- control center -- "Data Management » Backup and Restore" -- "X items have been restored. Please refresh this page." */
+/* FFZ -- control center -- "Data Management » Backup and Restore" -- "X items have been restored. Please refresh this page." */
 .ffz--backup-restore .tw-c-background-accent-alt-2 {
   background-color: var(--ffz-channel-color-30) !important;
 }
 
-/* ffz -- Stream Chat -- Mentions - On hover */
+/* FFZ -- Stream Chat -- Mentions - On hover */
 .ffz--reply-mention:hover, .ffz--reply-mention:focus {
   background-color: var(--ffz-channel-color-30);
 }
+/* FFZ -- Current Streamer -- "Stream Chat" -- Twitch Embeded Links - Verified Icon */
+.ffz-i-verified::before {
+  color: var(--ffz-channel-color);
+}
 
-/* ffz -- "Current Streamer" -- Metadata Links -- "Schedule" "Videos" "Clips"-hover */
+/* FFZ -- "Current Streamer" -- Metadata Links -- "Schedule" "Videos" "Clips"-hover */
 /* "Add extra links to live channel pages, next to the streamer's name." */
 .metadata-layout__support .ffz--links a:hover {
   color: var(--ffz-channel-color) !important;
@@ -950,7 +1063,7 @@ var(--ffz-color-accent)
 
 
 /* current channel viewer count */
-/* with "Alternative Viewer Count" enabled within ffz */
+/* with "Alternative Viewer Count" enabled within FFZ */
 /* Channel > Metadata > Alternative Viewer Count */
 .ffz-stat[data-key="viewers"] figure::before {
   color: var(--ffz-channel-color) !important;
@@ -960,7 +1073,7 @@ var(--ffz-color-accent)
 }
 
 
-/* ffz emote menu */
+/* FFZ emote menu */
 /* Chat > Emote Menu > "Use the FrankerFaceZ Emote Menu." */
 /* current active emote tab */
 .ffz-interactable--default.ffz-interactable--selected, .ffz-interactable--default.ffz-interactable--selected.ffz-interactable--hover-enabled:hover:active, .ffz-interactable--default.ffz-interactable--selected.ffz-interactable--hover-forced, .ffz-interactable--default.ffz-interactable--selected:active, .ffz-interactable--default.ffz-interactable--selected[data-focus-visible-added], .tw-root .ffz-interactable--default.ffz-interactable--selected.ffz-interactable--hover-enabled:hover {
@@ -987,16 +1100,16 @@ var(--ffz-color-accent)
 
 
 
-/* bttv -- user dropdown menu, on hover */
+/* BTTV -- user dropdown menu, on hover */
 .user-menu-dropdown__main-menu .bttvSettingsDropDown:hover {
   background-color: var(--ffz-channel-color-30);
 }
-/* bttv -- chat settings menu, on hover */
+/* BTTV -- chat settings menu, on hover */
 .chat-settings__popover .bttv-chat-settings .settingButton:hover {
   background-color: var(--ffz-channel-color-30);
 }
 
-/* bttv -- mod view -- chat header panel settings menu, on hover */
+/* BTTV -- mod view -- chat header panel settings menu, on hover */
 .bttv-chat-settings .settingButton:hover {
   background-color: var(--ffz-channel-color-30);
 }
