@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Colouring
 @namespace   Trubbel
-@version     0.0.69
+@version     0.0.70
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Colouring
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Colouring/blob/main/twitch-colour.user.css
 @author      Trubbel
@@ -392,18 +392,24 @@ button[data-a-target="time-filter-selection"] .kKcsAF {
 
 
 /* input, textareas */
-.fIywXv:focus, .fIywXv:focus:hover {
-  border-color: var(--ffz-channel-color);
+input:focus {
+  border-color: var(--ffz-channel-color) !important;
 }
-.fIywXv:focus::placeholder, .fIywXv:focus:hover::placeholder {
+input:focus::placeholder {
   color: var(--ffz-channel-color) !important;
   opacity: 1 !important;
 }
-/* when logged out, logging in/signing up, password input */
-.eUmSXX:focus, .eUmSXX:focus:hover {
-  border-color: var(--ffz-channel-color);
+select:focus {
+  border-color: var(--ffz-channel-color) !important;
 }
-.eUmSXX:focus::placeholder, .eUmSXX:focus:hover::placeholder {
+select:focus::placeholder {
+  color: var(--ffz-channel-color) !important;
+  opacity: 1 !important;
+}
+textarea:focus {
+  border-color: var(--ffz-channel-color) !important;
+}
+textarea:focus::placeholder {
   color: var(--ffz-channel-color) !important;
   opacity: 1 !important;
 }
@@ -491,6 +497,16 @@ button[data-a-target="time-filter-selection"] .kKcsAF {
 }
 
 
+/* "X is raiding Y with Z raiders." */
+/* "You missed the train - The Hype Train is long gone. Better luck next time!" */
+/* "X is gifting Y Tier Z Subs to the community!" */
+/* "Twitch Drops - Get X by watching Y play Z!" */
+/* "X has enabled Drops for the community! Watch for Y hours and claim the reward. Keep it up! You are Z% away." */
+/* "Predict with Channel Points" */
+[data-a-target="tw-progress-bar-animation"] {
+  background: var(--ffz-channel-color);
+}
+
 
 /* Current Streamer -- "Stream Chat" -- "Live Chat Message Separator Line" */
 .live-message-separator-line__hr {
@@ -573,6 +589,11 @@ button[data-a-target="time-filter-selection"] .kKcsAF {
 /* Current Streamer -- "Stream Chat" -- "Highlights in Chat" -- "X Converted from a Prime sub to a Tier Y sub!"-star-icon */
 .user-notice-line--highlighted .jxWtmu {
   fill: var(--ffz-channel-color);
+}
+
+/* Current Streamer -- "Stream Chat" -- "Highlights in Chat" -- Moderation Actions */
+[data-a-target="moderation-action"] {
+  background-color: rgba(255, 0, 0, .2);
 }
 
 
