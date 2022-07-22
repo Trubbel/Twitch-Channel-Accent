@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Accent
 @namespace   Trubbel
-@version     0.0.70
+@version     0.0.71
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Accent
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Accent/edit/main/twitch-colour.user.css
 @author      Trubbel
@@ -151,7 +151,13 @@ var(--ffz-color-accent)
   color: var(--ffz-channel-color);
 }
 
-
+  
+/* Current Streamer -- "Twitch Recap" -- "Let's see what you made happen this month as a subscriber of X"-"NEW"-badge */
+.channel-info-content .kKcsAF {
+  background-color: var(--ffz-channel-color);
+  color: var(--color-text-alt);
+}
+  
 /* Current Streamer -- Home - About - Schedule - Videos - Chat -- "Live Now"-badge -- "X is streaming Y" -- "Watch now with X viewers"-text-color */
 .home-carousel-info--live.home-carousel-info .ktfxqP {
   color: var(--ffz-channel-color);
@@ -282,15 +288,6 @@ button[data-a-target="time-filter-selection"] .kKcsAF {
   background-color: var(--ffz-channel-color);
 }
 
-/* Your own stream page -- "Start a Goal" -- progress-bar-background-color */
-.goal_widget__progress_bar {
-  background-color: var(--ffz-channel-color);
-}
-.goal_widget {
-  background-color: var(--color-background-base);
-  border: 3px solid var(--ffz-channel-color-30);
-}
-
 
 /* Subscribe, Resubscribe & Gift a Sub-button -- opened */
 /* Subscribe, Resubscribe & Gift a Sub-button -- opened -- "X's Sub Goal" */
@@ -373,13 +370,14 @@ button[data-a-target="time-filter-selection"] .kKcsAF {
 
 
 /* toggled checkbox button */
-.ScToggleInput-sc-796zbf-1:checked + .dEPNHE.dEPNHE {
+.ScToggleInput-sc-796zbf-1:checked + .erOoiO.erOoiO {
   border-color: var(--ffz-channel-color);
+  background-color: var(--color-background-toggle-checked);
 }
-.ScToggleInput-sc-796zbf-1:checked + .dEPNHE.dEPNHE::after {
+.ScToggleInput-sc-796zbf-1:checked + .erOoiO.erOoiO::after {
   background-color: var(--ffz-channel-color);
 }
-.ScToggleInput-sc-796zbf-1:checked + .dEPNHE.dEPNHE::before {
+.ScToggleInput-sc-796zbf-1:checked + .erOoiO.erOoiO::before {
   border-color: var(--ffz-channel-color);
 }
 /* toggled radio button */
@@ -706,17 +704,20 @@ textarea:focus::placeholder {
 }
 
 
-/* Current Streamer -- "Stream Chat" -- "Commands List" -- "Channel Management"-buttons */
-.jwoQnU {
+/* Current Streamer -- "Stream Chat" -- "Commands List" -- "FrankerFaceZ", "Channel Management", "Twitch"-buttons */
+.cHDmsn {
   background-color: var(--ffz-channel-color-30);
 }
-.jwoQnU:hover {
+.cHDmsn:hover {
   background-color: var(--ffz-channel-color-30);
 }
-.jwoQnU:hover:active {
+.cHDmsn:hover:active {
   background-color: var(--ffz-channel-color-30);
 }
-.jwoQnU:active {
+.cHDmsn:active {
+  background-color: var(--ffz-channel-color-30);
+}
+.jLOlPk:active {
   background-color: var(--ffz-channel-color-30);
 }
 
@@ -862,8 +863,11 @@ textarea:focus::placeholder {
 }
 
 /* Current Streamer -- "Stream Chat" -- "Chat Settings" -- "Switch to Non-Mod Settings"-text-color */
-[data-test-selector="moderation-mode-toggle-selector"] .fQvHcx {
+[data-test-selector="moderation-mode-toggle-selector"] .bRFHvC {
   color: var(--ffz-channel-color);
+}
+[data-test-selector="moderation-mode-toggle-selector"] .bRFHvC:hover {
+  background-color: var(--ffz-channel-color-20);
 }
 
 
@@ -952,6 +956,10 @@ textarea:focus::placeholder {
 [data-highlight-selector="suspicious-user"] .iNzqsS {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
+}
+/* Current Streamer -- Mod View -- Widgets -- "Suspicious User Activity" -- "Shared Ban Info"-background-color */
+[data-highlight-selector="suspicious-user"] .bZbsOJ {
+  background-color: var(--ffz-channel-color-30) !important;
 }
 
 /* Current Streamer -- Mod View -- Widgets -- "Reward Requests Queue"-border-color */
