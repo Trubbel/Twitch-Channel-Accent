@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Accent
 @namespace   Trubbel
-@version     0.0.71
+@version     0.0.72
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Accent
 @updateURL   https://github.com/Trubbel/Twitch-Channel-Accent/edit/main/twitch-colour.user.css
 @author      Trubbel
@@ -108,6 +108,11 @@ var(--ffz-color-accent)
 .side-nav-card__live-status .cJgFZg {
   background-color: var(--ffz-channel-color-20);
   color: var(--ffz-channel-color);
+}
+/* Current Streamer -- "Followed Channels" -- Sort Options - "NEW"-badge */
+.smarter-sort-callout .iNzqsS {
+  color: var(--color-text-alt);
+  background-color: var(--ffz-channel-color);
 }
 
 /* Current Streamer -- (on avatar hover) "The profile image can take you to the channel home" -- "NEW"-badge */
