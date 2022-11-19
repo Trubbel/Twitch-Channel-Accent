@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Accent
 @namespace   Trubbel
-@version     0.0.72
+@version     0.0.73
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Accent
 @updateURL   https://raw.githubusercontent.com/Trubbel/Twitch-Channel-Accent/master/twitch-colour.user.css
 @author      Trubbel
@@ -18,7 +18,7 @@ var(--ffz-color-accent)
 */
 
 /* Twitch logo, top left */
-.top-nav__menu .kswvAb {
+.tw-animated-glitch-logo .gktgjG {
   fill: var(--ffz-channel-color);
 }
 
@@ -64,11 +64,12 @@ var(--ffz-color-accent)
 }
 
 /* Current Streamer -- Search Bar -- Drop Down Menu -- Verified Badge-color */
-.search-tray .jxWtmu [d="M10 2l6 2 2 6-2 6-6 2-6-2-2-6 2-6 6-2zM8.889 13.636l5.43-5.429-1.415-1.414-4.015 4.015-2.015-2.015-1.414 1.414 3.429 3.43z"] {
+.search-tray .hdNNzQ [d="M10 2l6 2 2 6-2 6-6 2-6-2-2-6 2-6 6-2zM8.889 13.636l5.43-5.429-1.415-1.414-4.015 4.015-2.015-2.015-1.414 1.414 3.429 3.43z"] {
   fill: var(--ffz-channel-color);
 }
 /* Current Streamer -- Search Bar -- Drop Down Menu -- "LIVE"-badge-color */
-.search-tray .gfqupx {
+.search-tray .ivjxmt {
+  color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
 /* Current Streamer -- Search Bar -- Drop Down Menu -- Search Item Color */
@@ -77,7 +78,7 @@ var(--ffz-color-accent)
 }
 
 /* Current Streamer -- Notifications -- Prime Loot, Notifications, Whispers -- Background-color */
-.jbnvCy {
+.tw-number-badge__badge {
   background-color: var(--ffz-channel-color);
 }
 /* Current Streamer -- Notifications -- Notifications - Selected Tab */
@@ -110,7 +111,7 @@ var(--ffz-color-accent)
   color: var(--ffz-channel-color);
 }
 /* Current Streamer -- "Followed Channels" -- Sort Options - "NEW"-badge */
-.smarter-sort-callout .iNzqsS {
+.smarter-sort-callout .iCQzqC {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
@@ -123,7 +124,8 @@ var(--ffz-color-accent)
 
 
 /* Current Streamer -- HTML Player -- "LIVE"-badge */
-.video-player .gfqupx {
+.video-player .ivjxmt {
+  color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
 /* Current Streamer -- HTML Player -- "Is video buffering? Use the Low Latency toggle under the Advanced menu in Settings to disable low latency mode"-popup border-color */
@@ -158,7 +160,7 @@ var(--ffz-color-accent)
 
   
 /* Current Streamer -- "Twitch Recap" -- "Let's see what you made happen this month as a subscriber of X"-"NEW"-badge */
-.channel-info-content .kKcsAF {
+.channel-info-content .ecMXkN {
   background-color: var(--ffz-channel-color);
   color: var(--color-text-alt);
 }
@@ -172,11 +174,12 @@ var(--ffz-color-accent)
   border-color: var(--ffz-channel-color);
 }
 /* Current Streamer -- "LIVE"-badge below user avatar */
-.user-avatar-card__live .gfqupx {
+.user-avatar-card__live .ivjxmt {
+  color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
-/* verified badge next to the user avatar */
-.channel-info-content .jxWtmu [d="M12.5 3.5L8 2L3.5 3.5L2 8L3.5 12.5L8 14L12.5 12.5L14 8L12.5 3.5ZM7.00008 11L11.5 6.5L10 5L7.00008 8L5.5 6.5L4 8L7.00008 11Z"] {
+/* Current Streamer -- Verified badge next to the user avatar */
+.channel-info-content .hdNNzQ [d="M12.5 3.5L8 2L3.5 3.5L2 8L3.5 12.5L8 14L12.5 12.5L14 8L12.5 3.5ZM7.00008 11L11.5 6.5L10 5L7.00008 8L5.5 6.5L4 8L7.00008 11Z"] {
   fill: var(--ffz-channel-color);
 }
 /* Current Streamer -- (when offline) -- Home, About, Schedule, Videos-tabs -- Verified icon */
@@ -269,15 +272,15 @@ button[data-a-target="time-filter-selection"] .kKcsAF {
 }
 
 /* Current Streamer -- Channel Viewer Count */
-.iJGqwF {
+.gqxDoL {
   fill: var(--ffz-channel-color);
 }
-.dGdFJX {
+.iUzxZP {
   color: var(--ffz-channel-color) !important;
 }
 
 /* Current Streamer -- Channel Tags - On Hover */
-.iKNvdP:not(:disabled):hover {
+.bOVWlO:not(:disabled):hover {
   background-color: var(--ffz-channel-color-30);
 }
 
@@ -288,7 +291,7 @@ button[data-a-target="time-filter-selection"] .kKcsAF {
 }
 
 /* Your own stream page -- Home, About, Schedule, Videos-tabs -- "NEW"-badge - "Customize your channel Update your stream schedule, add your social links, and manage your channel preferences" */
-.home-offline-hero__upsell .kKcsAF {
+.home-offline-hero__upsell .ecMXkN {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
@@ -852,20 +855,18 @@ textarea:focus::placeholder {
 }
 
 /* Current Streamer -- "Stream Chat" -- "Chat Settings" -- New Request Indicator */
-.chat-settings-toggle__new-requests-indicator {
+[aria-label="New Item"] .cJGMdh {
   background-color: var(--ffz-channel-color);
 }
-/* Current Streamer -- "Stream Chat" -- "Chat Settings" -- "Tasks" -- "Review Unban Requests" -- "X NEW"-badge */
-.chat-settings__content .cvUttZ {
+[aria-label="New Item"] .cJGMdh::after {
+  background-color: var(--ffz-channel-color);
+}
+/* Current Streamer -- "Stream Chat" -- "Chat Settings" -- "Mod Settings" -- "X NEW"-badge */
+[data-a-target="chat-settings-mod-view"] .iCQzqC {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
 
-/* Current Streamer -- "Stream Chat" -- "Chat Settings" -- "Manage Moderation Settings" -- "NEW"-badge */
-[data-a-target="automod-link-button"] .gpCQTo {
-  color: var(--color-text-alt);
-  background-color: var(--ffz-channel-color);
-}
 
 /* Current Streamer -- "Stream Chat" -- "Chat Settings" -- "Switch to Non-Mod Settings"-text-color */
 [data-test-selector="moderation-mode-toggle-selector"] .bRFHvC {
@@ -984,7 +985,7 @@ textarea:focus::placeholder {
 
 
 /* Current Streamer -- Mod View -- "Users In Chat" -- "Refresh User List"-icon color */
-[data-test-selector="chat-viewers__disabled-refresh"] .kjVepY {
+[data-test-selector="chat-viewers__disabled-refresh"] .ijdUiK {
   fill: var(--ffz-channel-color);
 }
 
