@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Accent
 @namespace   Trubbel
-@version     0.0.73
+@version     0.0.74
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Accent
 @updateURL   https://raw.githubusercontent.com/Trubbel/Twitch-Channel-Accent/master/twitch-colour.user.css
 @author      Trubbel
@@ -243,7 +243,7 @@ button[data-a-target="time-filter-selection"] .kKcsAF {
 }
 
 /* Current Streamer -- About Section -- Verified Badge */
-.about-section .jxWtmu [d="M10 2l6 2 2 6-2 6-6 2-6-2-2-6 2-6 6-2zM8.889 13.636l5.43-5.429-1.415-1.414-4.015 4.015-2.015-2.015-1.414 1.414 3.429 3.43z"] {
+.about-section .hdNNzQ [d="M10 2l6 2 2 6-2 6-6 2-6-2-2-6 2-6 6-2zM8.889 13.636l5.43-5.429-1.415-1.414-4.015 4.015-2.015-2.015-1.414 1.414 3.429 3.43z"] {
   fill: var(--ffz-channel-color);
 }
 
@@ -311,11 +311,11 @@ button[data-a-target="time-filter-selection"] .kKcsAF {
 
 /* Subscribe-button -- opened */
 /* Subscribe-button -- opened -- verified badge */
-.support-panel .ifdSJl [d="M10 2l6 2 2 6-2 6-6 2-6-2-2-6 2-6 6-2zM8.889 13.636l5.43-5.429-1.415-1.414-4.015 4.015-2.015-2.015-1.414 1.414 3.429 3.43z"] {
+.support-panel .dSicFr [d="M10 2l6 2 2 6-2 6-6 2-6-2-2-6 2-6 6-2zM8.889 13.636l5.43-5.429-1.415-1.414-4.015 4.015-2.015-2.015-1.414 1.414 3.429 3.43z"] {
   fill: var(--ffz-channel-color);
 }
 /* Subscribe-button -- "Save by subscribing for longer" -- "SAVE"-badge */
-.support-panel .cvUttZ {
+.support-panel .ixexCN {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
