@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Accent
 @namespace   Trubbel
-@version     0.0.76
+@version     0.0.77
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Accent
 @updateURL   https://raw.githubusercontent.com/Trubbel/Twitch-Channel-Accent/master/twitch-colour.user.css
 @author      Trubbel
@@ -23,7 +23,8 @@ var(--ffz-color-accent)
 }
 
 /* "LIVE"-badge in the subscriptions-page */
-.subscription-card__channel-avatar .hwlNix {
+.subscription-card__channel-avatar .ivjxmt {
+  color: var(--color-text-alt) !important;
   background-color: var(--color-accent) !important;
 }
 /* fixes the background-color behind the "LIVE"-badge */
@@ -33,7 +34,8 @@ var(--ffz-color-accent)
 
 /* ===== following page */
 /* changes the "LIVE"-badge colour on the preview cards, to be the same as their channel accent colour */
-[data-a-target="preview-card-image-link"] .gfqupx {
+[data-a-target="preview-card-image-link"] .ivjxmt {
+  color: var(--color-text-alt);
   background-color: var(--color-accent);
 }
 /* ===== /following page */
@@ -379,21 +381,21 @@ button[data-a-target="time-filter-selection"] .kKcsAF {
 
 
 /* toggled checkbox button */
-.ScToggleInput-sc-796zbf-1:checked + .erOoiO.erOoiO {
+.ScToggleInput-sc-iguyno-1:checked + .qZlTz.qZlTz {
   border-color: var(--ffz-channel-color);
   background-color: var(--color-background-toggle-checked);
 }
-.ScToggleInput-sc-796zbf-1:checked + .erOoiO.erOoiO::after {
+.ScToggleInput-sc-iguyno-1:checked + .qZlTz.qZlTz::after {
   background-color: var(--ffz-channel-color);
 }
-.ScToggleInput-sc-796zbf-1:checked + .erOoiO.erOoiO::before {
+.ScToggleInput-sc-iguyno-1:checked + .qZlTz.qZlTz::before {
   border-color: var(--ffz-channel-color);
 }
 /* toggled radio button */
-.ScCheckBoxInputBase-sc-1wz0osy-1:checked + .gilgNR.gilgNR::after {
+.ScCheckBoxInputBase-sc-vu7u7d-1:checked + .cvAAxA.cvAAxA::after {
   background-color: var(--ffz-channel-color);
 }
-.ScCheckBoxInputBase-sc-1wz0osy-1:checked + .gilgNR.gilgNR::before {
+.ScCheckBoxInputBase-sc-vu7u7d-1:checked + .cvAAxA.cvAAxA::before {
   border-color: var(--ffz-channel-color);
 }
 
