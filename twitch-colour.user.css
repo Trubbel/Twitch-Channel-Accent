@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Accent
 @namespace   Trubbel
-@version     0.0.74
+@version     0.0.75
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Accent
 @updateURL   https://raw.githubusercontent.com/Trubbel/Twitch-Channel-Accent/master/twitch-colour.user.css
 @author      Trubbel
@@ -98,7 +98,8 @@ var(--ffz-color-accent)
   background-color: var(--ffz-channel-color-30) !important;
 }
 /* Current Streamer -- "Followed Channels" -- on Hover -- "LIVE"-badge - {if (vx_left_pop) experiment is enabled} */
-.online-side-nav-channel-tooltip__body--image .gfqupx {
+.online-side-nav-channel-tooltip__body--image .ivjxmt {
+  color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
 /* Current Streamer -- "Followed Channels" -- Hover on Current Game Played - {if (vx_left_nav_category_click_thru) experiment is enabled} */
@@ -361,18 +362,18 @@ button[data-a-target="time-filter-selection"] .kKcsAF {
 
 
 /* buttons on hover, hover+active, active */
-.hZWZXL:hover {
+.ijKhlK:hover {
   background-color: var(--ffz-channel-color-30);
 }
-.hZWZXL:hover:active {
+.ijKhlK:hover:active {
   background-color: var(--ffz-channel-color-30);
 }
-.hZWZXL:active {
+.ijKhlK:active {
   background-color: var(--ffz-channel-color-30);
 }
 
 /* current active language, background-color */
-.user-menu-language-list .ifHLGh {
+.user-menu-language-list .esRSpc {
   background-color: var(--ffz-channel-color-30);
 }
 
@@ -518,7 +519,7 @@ textarea:focus::placeholder {
 .live-message-separator-line__hr {
   border-top: var(--border-width-default) solid var(--ffz-channel-color) !important;
 }
-.rjNbb {
+.fTHFXj {
   color: var(--ffz-channel-color) !important;
 }
 
@@ -919,21 +920,21 @@ textarea:focus::placeholder {
 }
 
 /* Current Streamer -- Mod View -- Widgets -- Whispers (amount of whispers icon) */
-[class="modview-dock-widget__panel"] .guUwaK {
+[class="modview-dock-widget__panel"] .eZJzou {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
 
 /* Current Streamer -- Mod View -- Widgets -- "Reward Requests Queue" -- "All Requests"-background-color */
-.reward-queue-view .BXTpY {
+.reward-queue-view .hpUYfO {
   background-color: var(--ffz-channel-color-30);
 }
-.BXTpY:hover:active {
+.hpUYfO:hover:active {
   background-color: var(--ffz-channel-color-30);
 }
 
 /* Current Streamer -- Mod View -- Widgets -- "Other Channels You Follow (X Live)" */
-[class="modview-dock-widget__panel"] .hEHNVv {
+[class="modview-dock-widget__panel"] .icehjL {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
@@ -954,17 +955,17 @@ textarea:focus::placeholder {
 }
 
 /* Current Streamer -- Mod View -- Widgets -- "Unban Requests" -- "Unban Request Cooldown Icon"-color */
-.unban-requests-list-sidebar-footer__cooldown-icon {
+[data-test-selector="cooldown-indicator-icon"] {
   color: var(--ffz-channel-color);
 }
 
 /* Current Streamer -- Mod View -- Widgets -- "Suspicious User Activity" -- "NEW"-badge */
-[data-highlight-selector="suspicious-user"] .iNzqsS {
+[data-highlight-selector="suspicious-user"] .iCQzqC {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
 /* Current Streamer -- Mod View -- Widgets -- "Suspicious User Activity" -- "Shared Ban Info"-background-color */
-[data-highlight-selector="suspicious-user"] .bZbsOJ {
+[data-highlight-selector="suspicious-user"] .gIlHKI {
   background-color: var(--ffz-channel-color-30) !important;
 }
 
