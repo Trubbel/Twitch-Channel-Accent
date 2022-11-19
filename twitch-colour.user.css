@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Accent
 @namespace   Trubbel
-@version     0.0.75
+@version     0.0.76
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Accent
 @updateURL   https://raw.githubusercontent.com/Trubbel/Twitch-Channel-Accent/master/twitch-colour.user.css
 @author      Trubbel
@@ -46,7 +46,7 @@ var(--ffz-color-accent)
 }
 
 /* Current Streamer -- Sticky Footer (when not signed in) "Sign up to experience the best of X Chat, follow or subscribe – Twitch is your oyster."-background-color */
-[id="twilight-sticky-footer-root"] .kJHXRx {
+[id="twilight-sticky-footer-root"] .bsRjSc {
   background-color: var(--ffz-channel-color-30) !important;
 }
 
@@ -637,7 +637,7 @@ textarea:focus::placeholder {
 }
 
 /* Current Streamer -- "Stream Chat" -- "Animated Emotes can be disabled in Settings" */
-[data-test-selector="chat-private-callout-queue__callout-container"] .tEmJK {
+[data-test-selector="chat-private-callout-queue__callout-container"] .dxyVIj {
   background-color: var(--ffz-channel-color-30) !important;
 }
 
