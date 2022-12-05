@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Accent
 @namespace   Trubbel
-@version     0.0.77
+@version     0.0.78
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Accent
 @updateURL   https://raw.githubusercontent.com/Trubbel/Twitch-Channel-Accent/master/twitch-colour.user.css
 @author      Trubbel
@@ -136,7 +136,7 @@ var(--ffz-color-accent)
   border-top: 3px solid var(--ffz-channel-color);
 }
 /* Current Streamer -- HTML Player -- Current Quality-popup */
-.video-player .hEHNVv {
+.video-player .icehjL {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color-30);
 }
@@ -259,18 +259,19 @@ button[data-a-target="time-filter-selection"] .kKcsAF {
   fill: var(--ffz-channel-color);
 }
 
-/* Current Streamer -- About Section -- Team & About links on hover */
-.about-section .qUcyI:hover {
+/* Current Streamer -- About Section -- About links on hover */
+.about-section .gZxBHd:hover {
   color: var(--ffz-channel-color);
 }
 /* Current Streamer -- About Section -- About links hover - Arrow Icon Color */
 .social-media-link__container:hover + .social-media-link__external-link-icon {
   color: var(--ffz-channel-color);
 }
-.social-media-link__container .gAJLKe:hover {
-  color: var(--ffz-channel-color);
+/* Current Streamer -- About Section -- Team link on hover */
+.about-section .jKBAWW {
+  color: var(--color-text-base);
 }
-.about-section__panel--accent-link:hover {
+.about-section .jKBAWW:hover {
   color: var(--ffz-channel-color);
 }
 
@@ -444,11 +445,11 @@ textarea:focus::placeholder {
 /* ===== streamer chat */
 
 /* Current Streamer -- "Stream Chat" -- "Resizable Chat" - On Hover - {if (resizable_chat_column) experiment is enabled} */
-[data-test-selector="resize-handle-container"] .fmDPDU {
+[data-test-selector="resize-handle-container"] .CXJSh {
   background-color: var(--ffz-channel-color) !important;
 }
 /* Current Streamer -- "Stream Chat" -- "Resizable Chat" - On Active - {if (resizable_chat_column) experiment is enabled} */
-.right-column__resize-handle-container .fzzVQu {
+.right-column__resize-handle-container .fSBkCz {
   background-color: var(--ffz-channel-color) !important;
 }
 /* Current Streamer -- "Stream Chat" -- "Chat Input"-border-color (preview) {if (wysiwyg_chat_input_user_id) experiment is enabled} */
@@ -705,38 +706,35 @@ textarea:focus::placeholder {
 }
 
 /* Current Streamer -- "Stream Chat" -- "Commands List" -- New Pinned Command */
-[data-test-selector="autocomplete-matches-container"] .epIGZ {
+.autocomplete-match-list .gIlHKI {
   background-color: var(--ffz-channel-color-30) !important;
 }
 /* Current Streamer -- "Stream Chat" -- "Commands List" -- New Pinned Command+"NEW"-badge */
-[data-test-selector="autocomplete-matches-container"] .kKcsAF {
+.autocomplete-match-list .iCQzqC {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color-30);
 }
 
 
 /* Current Streamer -- "Stream Chat" -- "Commands List" -- "FrankerFaceZ", "Channel Management", "Twitch"-buttons */
-.cHDmsn {
+.hpUYfO {
   background-color: var(--ffz-channel-color-30);
 }
-.cHDmsn:hover {
+.hpUYfO:hover {
   background-color: var(--ffz-channel-color-30);
 }
-.cHDmsn:hover:active {
+.hpUYfO:hover:active {
   background-color: var(--ffz-channel-color-30);
 }
-.cHDmsn:active {
-  background-color: var(--ffz-channel-color-30);
-}
-.jLOlPk:active {
+.hpUYfO:active {
   background-color: var(--ffz-channel-color-30);
 }
 
-/* Current Streamer -- "Stream Chat" -- Chat Tray - "Emote Only Chat", "Followers Only Chat", "Slow Mode" & "Subscribers Only Chat"-text-color */
-.chat-input-tray__clickable .gokoKD {
+/* Current Streamer -- "Stream Chat" -- Chat Tray - "Emote Only Chat", "Followers Only Chat", "Slow Mode", "Subscribers" & "Verified Accounts Only Chat"-text-color */
+.chat-input-tray__clickable .emRhxP {
   color: var(--ffz-channel-color) !important;
 }
-.chat-input-tray__clickable .jxWtmu {
+.chat-input-tray__clickable .hdNNzQ {
   fill: var(--ffz-channel-color);
 }
 
@@ -811,11 +809,11 @@ textarea:focus::placeholder {
 
 
 /* Current Streamer -- "Stream Chat" -- "Channel Points" */
-.community-points-summary .jxWtmu {
+.community-points-summary .hdNNzQ {
   color: var(--ffz-channel-color);
 }
 /* Current Streamer -- "Stream Chat" -- "Channel Points" -- "Rewards & Challenges" -- Channel Points Icon */
-.channel-points-icon .jxWtmu {
+.channel-points-icon .hdNNzQ {
   color: var(--ffz-channel-color);
 }
 /* Current Streamer -- "Stream Chat" -- "Channel Points" -- "Rewards & Challenges" -- Channel Points "NEW"-badge */
