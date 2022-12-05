@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Accent
 @namespace   Trubbel
-@version     0.0.78
+@version     0.0.79
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Accent
 @updateURL   https://raw.githubusercontent.com/Trubbel/Twitch-Channel-Accent/master/twitch-colour.user.css
 @author      Trubbel
@@ -746,6 +746,21 @@ textarea:focus::placeholder {
 
 /* Current Streamer -- "Stream Chat" -- "Use [Alt] [⬆️] to select recent messages sent by this user." -- "Tip"-badge-color */
 [data-test-selector="chat-private-callout-queue__callout-container"] .eqaYMR {
+  color: var(--color-text-alt);
+  background-color: var(--ffz-channel-color);
+}
+
+
+/* Current Streamer -- "Stream Chat" -- "Shield Mode Shortcut"-popup background-color */
+[aria-labelledby="shield-mode-shortcut-prompt-header"] .gIlHKI {
+  background-color: var(--ffz-channel-color-30) !important;
+}
+[aria-labelledby="shield-mode-shortcut-prompt-header"].kdFPuA {
+  background-color: var(--ffz-channel-color-30) !important;
+	backdrop-filter: blur(20px) !important;
+}
+/* Current Streamer -- "Stream Chat" -- "Shield Mode Shortcut"-new badge */
+[aria-labelledby="shield-mode-shortcut-prompt-header"] .iCQzqC {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
