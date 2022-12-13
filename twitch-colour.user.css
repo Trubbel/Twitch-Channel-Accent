@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Accent
 @namespace   Trubbel
-@version     0.0.80
+@version     0.0.81
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Accent
 @updateURL   https://raw.githubusercontent.com/Trubbel/Twitch-Channel-Accent/master/twitch-colour.user.css
 @author      Trubbel
@@ -47,7 +47,16 @@ var(--ffz-color-accent)
   background-color: var(--ffz-channel-color-30) !important;
 }
 
-/* Current Streamer -- Sticky Footer (when not signed in) "Sign up to experience the best of X Chat, follow or subscribe – Twitch is your oyster."-background-color */
+/* Current Streamer -- Sticky Footer - "The Twitch Recap is here! See and share everything we did together in 2022." */
+[id="twilight-sticky-footer-root"] .gIlHKI {
+  background-color: var(--ffz-channel-color-30) !important;
+}
+[id="twilight-sticky-footer-root"] .iCQzqC {
+  color: var(--color-text-alt);
+  background-color: var(--ffz-channel-color);
+}
+
+/* Current Streamer -- Sticky Footer - (when not signed in) "Sign up to experience the best of X Chat, follow or subscribe – Twitch is your oyster."-background-color */
 [id="twilight-sticky-footer-root"] .bsRjSc {
   background-color: var(--ffz-channel-color-30) !important;
 }
