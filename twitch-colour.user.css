@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Accent
 @namespace   Trubbel
-@version     0.0.81
+@version     0.0.82
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Accent
 @updateURL   https://raw.githubusercontent.com/Trubbel/Twitch-Channel-Accent/master/twitch-colour.user.css
 @author      Trubbel
@@ -561,7 +561,7 @@ textarea:focus::placeholder {
 
 
 /* Current Streamer -- "Stream Chat" -- "Only visible to you" -- "It's your X month sub anniversary!"-star-icon */
-.chat-room .inline-private-callout-line__icon .kjVepY {
+.chat-room .inline-private-callout-line__icon .ijdUiK {
   fill: var(--ffz-channel-color);
 }
 
