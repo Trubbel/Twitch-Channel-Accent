@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Accent
 @namespace   Trubbel
-@version     0.0.82
+@version     0.0.83
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Accent
 @updateURL   https://raw.githubusercontent.com/Trubbel/Twitch-Channel-Accent/master/twitch-colour.user.css
 @author      Trubbel
@@ -673,7 +673,7 @@ textarea:focus::placeholder {
 }
 
 /* Current Streamer -- "Stream Chat" -- "It's your X month sub anniversary!"-star-icon */
-.tw-root--theme-dark .chat-private-callout__icon .kjVepY {
+.tw-root--theme-dark .chat-private-callout__icon .ijdUiK {
   fill: var(--ffz-channel-color);
 }
 /* Current Streamer -- "Stream Chat" -- "It's your X month sub anniversary!"-star-background-color */
