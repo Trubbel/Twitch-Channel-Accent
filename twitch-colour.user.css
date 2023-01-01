@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch – Channel Accent
 @namespace   Trubbel
-@version     0.0.83
+@version     0.0.84
 @homepageURL https://github.com/Trubbel/Twitch-Channel-Accent
 @updateURL   https://raw.githubusercontent.com/Trubbel/Twitch-Channel-Accent/master/twitch-colour.user.css
 @author      Trubbel
@@ -637,7 +637,7 @@ textarea:focus::placeholder {
 }
 
 /* Current Streamer -- "Stream Chat" -- "Usercard" -- "Banned/Timed out"-badge */
-[data-test-selector="viewer-card-mod-drawer"] .guUwaK {
+[data-test-selector="viewer-card-mod-drawer"] .eZJzou {
   color: var(--color-text-alt);
   background-color: var(--ffz-channel-color);
 }
